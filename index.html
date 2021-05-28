@@ -150,18 +150,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="Blur-filter-模糊-柔化-滤镜-："><a href="#Blur-filter-模糊-柔化-滤镜-：" class="headerlink" title="Blur filter (模糊/柔化 滤镜)："></a>Blur filter (模糊/柔化 滤镜)：</h2><h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a target="_blank" rel="noopener" href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a target="_blank" rel="noopener" href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 libfftw3f-3.dll放入：<br>64位系统：C:\windows\SysWOW64<br>32位系统：C:\windows\system32</p>
-<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><p>**AverageBlur **（仅支持YV12）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">转换为YV12(false).AverageBlur(1,1)</span><br></pre></td></tr></table></figure>
+<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">转换为YV12(false).AverageBlur(1,1)</span><br></pre></td></tr></table></figure>
 
 <p>radY,radC建议先统一设置为1，模糊程度不够再往上加，仅支持整数。</p>
-<p>**BinomialBlur **（仅支持YV12）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">转换为YV12(false).BinomialBlur(0.5,0.5)</span><br></pre></td></tr></table></figure>
+<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">转换为YV12(false).BinomialBlur(0.5,0.5)</span><br></pre></td></tr></table></figure>
 
 <p>varY,varC支持0.5,1,1.5…这样的0.5的倍数数值设置，建议0.5,模糊程度不够再逐步累加</p>
-<p>**GaussianBlur **（支持RGB24, RGB32, YUY2, YV12）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GaussianBlur(0.3,0.3)</span><br></pre></td></tr></table></figure>
+<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GaussianBlur(0.3,0.3)</span><br></pre></td></tr></table></figure>
 
-<p>varY,varC建议0.3起步，可0.1幅度提高数值，建议以0.2的幅度更改。</p>
+<p>varY,varC建议0.3起步，可0.1幅度提高数值，建议以0.2的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
 <h2 id="个人经验与建议："><a href="#个人经验与建议：" class="headerlink" title="个人经验与建议："></a>个人经验与建议：</h2><p>1.GaussianBlur效果好但非常慢，再加上mangameeya所支持的AVS不支持多线程，一张2400像素宽的彩图GaussianBlur单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用AverageBlur或者BinomialBlur。</p>
 <p>2.Blur（模糊）滤镜一般可以作为Sharpeners（锐化）滤镜（如内置的USM锐化）或者收线滤镜（内置的WarpSharp滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
 
