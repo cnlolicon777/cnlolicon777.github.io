@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Mangameeya - AVS - Blur篇</title>
+    <url>/post/f5fe9c1.html</url>
+    <content><![CDATA[<h3 id="blur（模糊）滤镜："><a href="#blur（模糊）滤镜：" class="headerlink" title="blur（模糊）滤镜："></a>blur（模糊）滤镜：</h3><p>这个类别在漫画阅读场景中的应用非常多，尤其很多汉化组资源后期处理都存在过度锐化的问题。</p>
+<span id="more"></span>
+
+<h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 <code>libfftw3f-3.dll</code>放入：<br>64位系统：C:\windows\SysWOW64<br>32位系统：C:\windows\system32</p>
+<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">AverageBlur(1,1)</span></span><br></pre></td></tr></table></figure>
+
+<p>radY,radC建议先统一设置为<code>1</code>，模糊程度不够再往上加，仅支持整数。</p>
+<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">BinomialBlur(0.5,0.5)</span></span><br></pre></td></tr></table></figure>
+
+<p>varY,varC支持<code>0.5,1,1.5</code>…这样的<code>0.5</code>的倍数数值设置，建议<code>0.5</code>,模糊程度不够再逐步累加</p>
+<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">GaussianBlur</span>(<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<p>varY,varC建议<code>0.3</code>起步，可<code>0.1</code>幅度提高数值，建议以<code>0.2</code>的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
+<h4 id="1-2-个人经验与建议："><a href="#1-2-个人经验与建议：" class="headerlink" title="1.2 个人经验与建议："></a>1.2 个人经验与建议：</h4><p>1.GaussianBlur效果好但非常慢，再加上mangameeya所支持的AVS不支持多线程，一张2400像素宽的彩图GaussianBlur单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用AverageBlur或者BinomialBlur。</p>
+<p>2.Blur（模糊）滤镜一般可以作为Sharpeners（锐化）滤镜（如内置的USM锐化）或者收线滤镜（内置的WarpSharp滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Total Commander 自用重命名规则记录</title>
+    <url>/post/aa610a08.html</url>
+    <content><![CDATA[<h3 id="1-将复数子文件夹中文件提取到上级文件夹"><a href="#1-将复数子文件夹中文件提取到上级文件夹" class="headerlink" title="1.将复数子文件夹中文件提取到上级文件夹"></a>1.将复数子文件夹中文件提取到上级文件夹</h3><span id="more"></span>
+
+<h5 id="应对场景："><a href="#应对场景：" class="headerlink" title="应对场景："></a>应对场景：</h5><blockquote>
+<p>001,002,003……子文件夹中001_01,001_02……002_01……文件批量提取到上级文件夹。</p>
+</blockquote>
+<p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\[N]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-批量将文件夹名称写入文件夹中文件开头"><a href="#2-批量将文件夹名称写入文件夹中文件开头" class="headerlink" title="2.批量将文件夹名称写入文件夹中文件开头"></a>2.批量将文件夹名称写入文件夹中文件开头</h3><h5 id="应对场景：-1"><a href="#应对场景：-1" class="headerlink" title="应对场景："></a>应对场景：</h5><blockquote>
+<p>001,002,003……的子文件夹中01,02,03……开头加上001_ ,002_ ,003_ …….。</p>
+</blockquote>
+<p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[P]_[N]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-已经提取到上级文件夹的文件重新批量放回原文件夹"><a href="#3-已经提取到上级文件夹的文件重新批量放回原文件夹" class="headerlink" title="3.已经提取到上级文件夹的文件重新批量放回原文件夹"></a>3.已经提取到上级文件夹的文件重新批量放回原文件夹</h3><h5 id="应对场景：-2"><a href="#应对场景：-2" class="headerlink" title="应对场景："></a>应对场景：</h5><blockquote>
+<p>已经提取出来的001_01,001_02……002_01……的文件批量重新放回001,002,003……的子文件夹中。</p>
+</blockquote>
+<p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[N1-3]\[N]</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! </p>
+<span id="more"></span>
+
+<p>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
