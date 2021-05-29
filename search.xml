@@ -85,9 +85,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/post/0.html</url>
-    <content><![CDATA[<h1 id="Windows-Terminal-PowerShell-7-2-配置总结"><a href="#Windows-Terminal-PowerShell-7-2-配置总结" class="headerlink" title="Windows Terminal + PowerShell 7.2 配置总结"></a>Windows Terminal + PowerShell 7.2 配置总结</h1><h2 id="1-安装-Windows-Terminal"><a href="#1-安装-Windows-Terminal" class="headerlink" title="1. 安装 Windows Terminal"></a>1. 安装 Windows Terminal</h2><p><a href="https://github.com/microsoft/terminal">单击此处从github下载。</a></p>
+    <title>Windows Terminal + PowerShell 7.2 配置总结</title>
+    <url>/post/954d2ae6.html</url>
+    <content><![CDATA[<h2 id="1-安装-Windows-Terminal"><a href="#1-安装-Windows-Terminal" class="headerlink" title="1. 安装 Windows Terminal"></a>1. 安装 Windows Terminal</h2><p><a href="https://github.com/microsoft/terminal">单击此处从github下载。</a></p>
 <h2 id="2-安装新款-Powershell-Core"><a href="#2-安装新款-Powershell-Core" class="headerlink" title="2. 安装新款 Powershell Core"></a>2. 安装新款 Powershell Core</h2><p><a href="https://github.com/PowerShell/PowerShell">单击此处从 GitHub 下载。</a></p>
 <h2 id="3-安装字体"><a href="#3-安装字体" class="headerlink" title="3. 安装字体"></a>3. 安装字体</h2><p>推荐字体：<strong>Fira Code</strong>。支持 ligature 连字功能，是一款专门为代码显示准备的字体。字体开源，广受海内外程序员好评！</p>
 <p><a href="https://github.com/tonsky/FiraCode">单击此处从 GitHub 下载。</a></p>
