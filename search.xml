@@ -52,6 +52,18 @@
 ]]></content>
   </entry>
   <entry>
+    <title>WinRAR编译去广告+注册</title>
+    <url>/post/422f329d.html</url>
+    <content><![CDATA[<p>自改流程记录。</p>
+<span id="more"></span>
+
+<p>1.<a href="http://www.angusj.com/resourcehacker/#download">下载portable版resource hacker</a></p>
+<p>2.将[安装路径下WinRAR.exe](C:\Program Files\WinRAR\WinRAR.exe)拖入resource hacker,找到String Table下的80:2052,将窗口中最长的一行删除就完成了去广告</p>
+<p>3.先点编译再保存为新的Winrar.exe即可</p>
+<p>4.rarreg.key备份</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">RAR</span> registration data</span><br><span class="line"></span><br><span class="line"><span class="attribute">wncn</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">Unlimited</span> Company License</span><br><span class="line"></span><br><span class="line"><span class="attribute">UID</span>=<span class="number">1</span>b<span class="number">064</span>ef<span class="number">8</span>b<span class="number">57</span>de<span class="number">3</span>ae<span class="number">9</span>b<span class="number">52</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/post/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! </p>
@@ -71,15 +83,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/post/0.html</url>
-    <content><![CDATA[<p><strong><font face="方正兰亭中黑_GBK" size=8 color=404040>WinRAR编译去广告+注册</font></strong></p>
-<p>1.<a href="http://www.angusj.com/resourcehacker/#download">下载portable版resource hacker</a></p>
-<p>2.将[安装路径下WinRAR.exe](C:\Program Files\WinRAR\WinRAR.exe)拖入resource hacker,找到String Table下的80:2052,将窗口中最长的一行删除就完成了去广告</p>
-<p>3.先点编译再保存为新的Winrar.exe即可</p>
-<p>4.rarreg.key备份</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">RAR</span> registration data</span><br><span class="line"></span><br><span class="line"><span class="attribute">wncn</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">Unlimited</span> Company License</span><br><span class="line"></span><br><span class="line"><span class="attribute">UID</span>=<span class="number">1</span>b<span class="number">064</span>ef<span class="number">8</span>b<span class="number">57</span>de<span class="number">3</span>ae<span class="number">9</span>b<span class="number">52</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
