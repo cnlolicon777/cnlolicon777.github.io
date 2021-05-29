@@ -37,7 +37,7 @@
 <p>001,002,003……的子文件夹中01,02,03……开头加上001_ ,002_ ,003_ …….。</p>
 </blockquote>
 <p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[P]_[N]</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-attr">[P]</span>_<span class="selector-attr">[N]</span></span><br></pre></td></tr></table></figure>
 
 
 
