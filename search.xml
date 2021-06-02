@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Mangameeya - AVS - Blur篇</title>
-    <url>/post/f5fe9c1.html</url>
-    <content><![CDATA[<h3 id="blur（模糊）滤镜："><a href="#blur（模糊）滤镜：" class="headerlink" title="blur（模糊）滤镜："></a>blur（模糊）滤镜：</h3><p>这个类别在漫画阅读场景中的应用非常多，尤其很多汉化组资源后期处理都存在过度锐化的问题。</p>
-<span id="more"></span>
-
-<h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 <code>libfftw3f-3.dll</code>放入：<br>64位系统：C:\windows\SysWOW64<br>32位系统：C:\windows\system32</p>
-<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">AverageBlur(1,1)</span></span><br></pre></td></tr></table></figure>
-
-<p>radY,radC建议先统一设置为<code>1</code>，模糊程度不够再往上加，仅支持整数。</p>
-<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">BinomialBlur(0.5,0.5)</span></span><br></pre></td></tr></table></figure>
-
-<p>varY,varC支持<code>0.5,1,1.5</code>…这样的<code>0.5</code>的倍数数值设置，建议<code>0.5</code>,模糊程度不够再逐步累加</p>
-<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">GaussianBlur</span>(<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
-
-<p>varY,varC建议<code>0.3</code>起步，可<code>0.1</code>幅度提高数值，建议以<code>0.2</code>的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
-<h4 id="个人经验与建议："><a href="#个人经验与建议：" class="headerlink" title="个人经验与建议："></a>个人经验与建议：</h4><p>1.GaussianBlur效果好但非常慢，再加上mangameeya所支持的AVS不支持多线程，一张2400像素宽的彩图GaussianBlur单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用AverageBlur或者BinomialBlur。</p>
-<p>2.Blur（模糊）滤镜一般可以作为Sharpeners（锐化）滤镜（如内置的USM锐化）或者收线滤镜（内置的WarpSharp滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Total Commander 自用重命名规则记录</title>
     <url>/post/aa610a08.html</url>
     <content><![CDATA[<h3 id="1-将复数子文件夹中文件提取到上级文件夹"><a href="#1-将复数子文件夹中文件提取到上级文件夹" class="headerlink" title="1.将复数子文件夹中文件提取到上级文件夹"></a>1.将复数子文件夹中文件提取到上级文件夹</h3><span id="more"></span>
@@ -52,36 +32,23 @@
 ]]></content>
   </entry>
   <entry>
-    <title>WinRAR编译去广告+注册</title>
-    <url>/post/422f329d.html</url>
-    <content><![CDATA[<p>自改流程记录。</p>
+    <title>Mangameeya - AVS - Blur篇</title>
+    <url>/post/f5fe9c1.html</url>
+    <content><![CDATA[<h3 id="blur（模糊）滤镜："><a href="#blur（模糊）滤镜：" class="headerlink" title="blur（模糊）滤镜："></a>blur（模糊）滤镜：</h3><p>这个类别在漫画阅读场景中的应用非常多，尤其很多汉化组资源后期处理都存在过度锐化的问题。</p>
 <span id="more"></span>
 
-<p>1.<a href="http://www.angusj.com/resourcehacker/#download">下载portable版resource hacker</a></p>
-<p>2.将[安装路径下WinRAR.exe](C:\Program Files\WinRAR\WinRAR.exe)拖入resource hacker,找到String Table下的80:2052,将窗口中最长的一行删除就完成了去广告</p>
-<p>3.先点编译再保存为新的Winrar.exe即可</p>
-<p>4.rarreg.key备份</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">RAR</span> registration data</span><br><span class="line"></span><br><span class="line"><span class="attribute">wncn</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">Unlimited</span> Company License</span><br><span class="line"></span><br><span class="line"><span class="attribute">UID</span>=<span class="number">1</span>b<span class="number">064</span>ef<span class="number">8</span>b<span class="number">57</span>de<span class="number">3</span>ae<span class="number">9</span>b<span class="number">52</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span></span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/post/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! </p>
-<span id="more"></span>
+<h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 <code>libfftw3f-3.dll</code>放入：<br>64位系统：C:\windows\SysWOW64<br>32位系统：C:\windows\system32</p>
+<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">AverageBlur(1,1)</span></span><br></pre></td></tr></table></figure>
 
-<p>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>radY,radC建议先统一设置为<code>1</code>，模糊程度不够再往上加，仅支持整数。</p>
+<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">BinomialBlur(0.5,0.5)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>varY,varC支持<code>0.5,1,1.5</code>…这样的<code>0.5</code>的倍数数值设置，建议<code>0.5</code>,模糊程度不够再逐步累加</p>
+<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">GaussianBlur</span>(<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>varY,varC建议<code>0.3</code>起步，可<code>0.1</code>幅度提高数值，建议以<code>0.2</code>的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
+<h4 id="个人经验与建议："><a href="#个人经验与建议：" class="headerlink" title="个人经验与建议："></a>个人经验与建议：</h4><p>1.GaussianBlur效果好但非常慢，再加上mangameeya所支持的AVS不支持多线程，一张2400像素宽的彩图GaussianBlur单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用AverageBlur或者BinomialBlur。</p>
+<p>2.Blur（模糊）滤镜一般可以作为Sharpeners（锐化）滤镜（如内置的USM锐化）或者收线滤镜（内置的WarpSharp滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
 ]]></content>
   </entry>
   <entry>
@@ -138,6 +105,39 @@
 ]]></content>
   </entry>
   <entry>
+    <title>WinRAR编译去广告+注册</title>
+    <url>/post/422f329d.html</url>
+    <content><![CDATA[<p>自改流程记录。</p>
+<span id="more"></span>
+
+<p>1.<a href="http://www.angusj.com/resourcehacker/#download">下载portable版resource hacker</a></p>
+<p>2.将[安装路径下WinRAR.exe](C:\Program Files\WinRAR\WinRAR.exe)拖入resource hacker,找到String Table下的80:2052,将窗口中最长的一行删除就完成了去广告</p>
+<p>3.先点编译再保存为新的Winrar.exe即可</p>
+<p>4.rarreg.key备份</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">RAR</span> registration data</span><br><span class="line"></span><br><span class="line"><span class="attribute">wncn</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">Unlimited</span> Company License</span><br><span class="line"></span><br><span class="line"><span class="attribute">UID</span>=<span class="number">1</span>b<span class="number">064</span>ef<span class="number">8</span>b<span class="number">57</span>de<span class="number">3</span>ae<span class="number">9</span>b<span class="number">52</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/post/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! </p>
+<span id="more"></span>
+
+<p>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>work_crawler 安装流程</title>
     <url>/post/e9812fce.html</url>
     <content><![CDATA[<h2 id="克隆仓库源码放到要安装的位置"><a href="#克隆仓库源码放到要安装的位置" class="headerlink" title="克隆仓库源码放到要安装的位置:"></a>克隆仓库源码放到要安装的位置:</h2><span id="more"></span>
@@ -188,5 +188,127 @@
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">electron_mirror=https:<span class="regexp">//</span>npm.taobao.org<span class="regexp">/mirrors/</span>electron/</span><br></pre></td></tr></table></figure>
 
 <h2 id="执行-start-gui-electron-bat即可开始使用"><a href="#执行-start-gui-electron-bat即可开始使用" class="headerlink" title="执行 start_gui_electron.bat即可开始使用"></a>执行 <code>start_gui_electron.bat</code>即可开始使用</h2>]]></content>
+  </entry>
+  <entry>
+    <title>Hexo博客插件安装与设置</title>
+    <url>/post/41e763fc.html</url>
+    <content><![CDATA[<h2 id="Hexo-文章永久链接插件"><a href="#Hexo-文章永久链接插件" class="headerlink" title="Hexo 文章永久链接插件"></a>Hexo 文章永久链接插件</h2><span id="more"></span>
+
+<p><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
+<h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>博客根目录<code>G:\software\Blog\cnlolicon777Blog </code>安装插件：</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在<code>G:\software\Blog\cnlolicon777Blog </code>站点配置文件<code>_config.yml</code> 中修改为如下并保存：</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">url:</span> https:<span class="comment">//cnlolicon777.github.io</span></span><br><span class="line"><span class="symbol"></span></span><br><span class="line"><span class="symbol">permalink:</span> archives/:abbrlink.html</span><br><span class="line"><span class="symbol">abbrlink:</span>  </span><br><span class="line"><span class="symbol">alg:</span> crc32  <span class="meta"># 算法：crc16(default) and crc32  </span></span><br><span class="line"><span class="symbol">rep:</span> hex    <span class="meta"># 进制：dec(default) and hexpermalink_defaults:</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
+
+<p>再重新渲染才能成功</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="Hexo-内容搜索"><a href="#Hexo-内容搜索" class="headerlink" title="Hexo 内容搜索"></a>Hexo 内容搜索</h2><h3 id="安装配置-1"><a href="#安装配置-1" class="headerlink" title="安装配置"></a>安装配置</h3><p>在Blog根目录G:\software\Blog\cnlolicon777Blog 安装插件：</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>修改<code>G:\software\Blog\cnlolicon777Blog</code>目录下站点配置文件<code>_config.yml</code>，添加如下内容：</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 本地搜索</span></span><br><span class="line"><span class="meta"># npm install hexo-generator-searchdb --save</span></span><br><span class="line"><span class="symbol">search:</span></span><br><span class="line"><span class="symbol">  path:</span> search.xml</span><br><span class="line"><span class="symbol">  field:</span> post</span><br><span class="line"><span class="symbol">  format:</span> html</span><br><span class="line"><span class="symbol">  limit:</span> <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>path：索引文件的路径，相对于站点根目录</li>
+<li>field：搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</li>
+<li>limit：限制搜索的条目数</li>
+</ul>
+<p>然后修改<code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code>目录下主题配置文件<code>_config.yml</code></p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="meta"># Local Search</span></span><br><span class="line"><span class="meta"># Dependencies: https:<span class="comment">//github.com/theme-next/hexo-generator-searchdb</span></span></span><br><span class="line"><span class="symbol">local_search:</span></span><br><span class="line"><span class="symbol">  enable:</span> true</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="注意事项：-1"><a href="#注意事项：-1" class="headerlink" title="注意事项："></a>注意事项：</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
+
+<p>再重新渲染才能成功</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="Live-2d-看板娘进阶版"><a href="#Live-2d-看板娘进阶版" class="headerlink" title="Live-2d 看板娘进阶版"></a>Live-2d 看板娘进阶版</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a></p>
+<p><a href="https://github.com/xiazeyu/live2d-widget-models">看板娘模型仓库1</a></p>
+<p><a href="https://github.com/evrstr/live2d-widget-models">看板娘模型仓库2</a></p>
+<p><a href="https://github.com/summerscar/live2dDemo">看板娘模型选择</a></p>
+<h4 id="初阶版"><a href="#初阶版" class="headerlink" title="初阶版"></a>初阶版</h4><p>安装插件<code>hexo-helper-live2d</code>:</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">npm</span> install –save hexo-helper-live<span class="number">2</span>d</span><br></pre></td></tr></table></figure>
+
+<p>可以命令行安装的：</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npm install 模型名称 <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+
+<p>无法命令行安装的：</p>
+<p>比如血小板模型 <a href="https://github.com/evrstr/live2d-widget-models">60.kesyoban</a>，<a href="https://github.com/evrstr/live2d-widget-models">61.platelet</a></p>
+<p>整个仓库打包下载，然后复制压缩包<code>live2d_evrstr</code>路径下文件夹下<code>kesyoban</code>,<code>platelet</code></p>
+<p>在根目录<code>G:\software\Blog\cnlolicon777Blog</code>下新建文件夹<code>live2d_models</code>,将复制的模型文件夹放入</p>
+<p>模型文件夹中<code>model.json</code>文件统一命名为<code>文件夹名称.model.json</code>格式（例：kesyoban.model.json）</p>
+<p>打开<code>G:\software\Blog\cnlolicon777Blog</code>下站点配置文件<code>_config.yml</code>,在末尾添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># live2d</span></span><br><span class="line"><span class="comment"># https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</span></span><br><span class="line"><span class="comment"># https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span> <span class="comment"># 默认</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span> <span class="comment"># 插件在站点上的根目录(相对路径)</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span> <span class="comment"># 脚本文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span> <span class="comment"># 模型文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span> <span class="comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">false</span> <span class="comment"># 调试, 是否在控制台输出日志</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">kesyoban</span> <span class="comment"># 对应  scale: 0.8 width: 180 height: 300 hOffset: 0 vOffset: -12</span></span><br><span class="line">    <span class="comment"># use: platelet # 对应  width: 268 height: 300 hOffset: 3 vOffset: 5</span></span><br><span class="line">    <span class="comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span></span><br><span class="line">    <span class="comment"># use: ./wives/wanko # 相对于博客根目录的路径</span></span><br><span class="line">    <span class="comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 自定义 url</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.8</span></span><br><span class="line">    <span class="attr">hHeadPos:</span> <span class="number">0.5</span></span><br><span class="line">    <span class="attr">vHeadPos:</span> <span class="number">0.618</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">superSample:</span> <span class="number">2</span> <span class="comment"># 超采样等级</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span> <span class="comment"># 显示位置 left/right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">180</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">300</span></span><br><span class="line">    <span class="attr">hOffset:</span> <span class="number">0</span> <span class="comment"># 水平偏移</span></span><br><span class="line">    <span class="attr">vOffset:</span> <span class="number">-12</span> <span class="comment"># 垂直偏移</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">false</span> <span class="comment"># 是否在移动设备上显示</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.5</span> <span class="comment"># 缩放</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacityDefault:</span> <span class="number">0.7</span> <span class="comment"># 透明度</span></span><br><span class="line">    <span class="attr">opacityOnHover:</span> <span class="number">0.2</span></span><br></pre></td></tr></table></figure>
+
+<p>最后执行命令即可生效：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br><span class="line"><span class="attribute">hexo g </span></span><br><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure>
+
+<p>本地查看无问题后上传：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><p>如有安装初阶版，先移除，否者只有简易版会生效：</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">npm</span> uninstall hexo-helper-live<span class="number">2</span>d</span><br></pre></td></tr></table></figure>
+
+<p>下载 <a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a> 最新版 <a href="https://github.com/stevenjoezhang/live2d-widget/releases/tag/v0.8.3">v0.8.3</a></p>
+<p>解压出来的文件夹<code>live2d-widget-0.8.3</code>改名为<code>libe2d-widget</code></p>
+<p>复制到<code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source</code>位置</p>
+<p>修改文件夹<code>live2d-widget-0.8.3</code>中<code>autoload.js</code></p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">const live2d_path = <span class="string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/&quot;</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p>改为本地绝对路径：</p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">const live2d_path = <span class="string">&quot;/live2d-widget/&quot;</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p>修改<code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\layout</code>文件夹中<code>_layout.swig</code></p>
+<p><code>&lt;head&gt;</code>标签下先增加如下依赖，否则无法加载：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;link <span class="attribute">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attribute">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;footer&gt;</code>标签下增加：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d-widget/autoload.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p><strong>如有安装初阶版，，跳过下面这步</strong></p>
+</blockquote>
+<p>打开<code>G:\software\Blog\cnlolicon777Blog</code>下站点配置文件<code>_config.yml</code>,在末尾添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>最后执行命令即可生效：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br><span class="line"><span class="attribute">hexo g </span></span><br><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure>
+
+<p>本地查看无问题后上传：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="注意事项：-2"><a href="#注意事项：-2" class="headerlink" title="注意事项："></a>注意事项：</h3><p>1.进阶版<code>live2d-widget</code>文件夹中<code>waifu.css</code>修改看板大小与位置，<code>waifu-tips.json</code>修改显示的对话</p>
+<p>2.进阶版如需增加模型需自制<a href="https://github.com/fghrsh/live2d_api">live2d_api</a></p>
+<p>3.目前使用初阶版，<code>libe2d-widget</code>路径下<code>autoload.js</code>通过注释<code>const live2d_path = &quot;/live2d-widget/&quot;</code>使进阶版失效。</p>
+<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p><a href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></p>
+<p><a href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/">Next配置live2d 看板娘</a></p>
+<p><a href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/">hexo next主题美化那些事（一）</a></p>
+<p><a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d 中文readme</a></p>
+]]></content>
   </entry>
 </search>
