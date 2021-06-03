@@ -158,6 +158,54 @@
       </tags>
   </entry>
   <entry>
+    <title>Mangameeya - AVS - 伪四色上色（疑似四色刷り）</title>
+    <url>/post/0.html</url>
+    <content><![CDATA[<p>伪四色上色（疑似四色刷り）滤镜是搜寻mangameeya AVS滤镜加载方法的意外收获</p>
+<span id="more"></span>
+
+<p>先演示自动上色效果（ <strong><font face="方正兰亭中黑_GBK" color=47B1EE>4color4.cur</font></strong> 配色为例 ）</p>
+<p><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_ISwKfqDCWv.png" alt="黑白原图"></p>
+<p><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_fa3R3cEN53.png" alt="伪四色AVS插件上色"></p>
+<p>上面是属于比较成功的例子，这个自动上色插件局限性也是非常明显的，如果是上图这种有用浓淡对比明显的色块或是渐变上色的图片，效果会非常不错，但有一些漫画上色只有纯线条，阴影这些都是用的斜线，这样的图片上色效果就差强人意了。</p>
+<h2 id="使用介绍和上色方案汇总（日文）"><a href="#使用介绍和上色方案汇总（日文）" class="headerlink" title="使用介绍和上色方案汇总（日文）"></a>使用介绍和上色方案汇总（日文）</h2><p><a href="http://molunch.blog.fc2.com/blog-entry-2.html">http://molunch.blog.fc2.com/blog-entry-2.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-4.html">http://poolytooth.blog.fc2.com/blog-entry-4.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-12.html">http://poolytooth.blog.fc2.com/blog-entry-12.html</a><br><a href="http://blog.livedoor.jp/tos1941-ttt/archives/32689376.html">http://blog.livedoor.jp/tos1941-ttt/archives/32689376.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-7.html">http://poolytooth.blog.fc2.com/blog-entry-7.html</a></p>
+<p>日文大佬可以直接爬上面原帖，还有不少针对性的色阶修正进阶设置。</p>
+<h2 id="简易加载教程总结"><a href="#简易加载教程总结" class="headerlink" title="简易加载教程总结"></a>简易加载教程总结</h2><div class="note note-danger">
+            <p>[基于汉化版的mangameeya，mangameeyaCE用不了]</p>
+          </div>
+
+<h4 id="1-下载滤镜和各种上色方案压缩档"><a href="#1-下载滤镜和各种上色方案压缩档" class="headerlink" title="1.下载滤镜和各种上色方案压缩档"></a>1.下载滤镜和各种上色方案压缩档</h4><p>链接：<a href="https://pan.baidu.com/s/1yU6Z0awwhZaRPKIQEjruxw">https://pan.baidu.com/s/1yU6Z0awwhZaRPKIQEjruxw</a> 提取码：n13i 解压码:123456</p>
+<h4 id="2-安装插件和配色方案"><a href="#2-安装插件和配色方案" class="headerlink" title="2.安装插件和配色方案"></a>2.安装插件和配色方案</h4><p>将 <strong><font color=47B1EE>GiCoCu.dll</font></strong> 放入 <code>mangameeya</code> 根目录下 <code>AvisynthPlugin</code> 文件夹中；<br>将 <strong><font color=47B1EE>.cur</font></strong> 格式的所有文件放到任意磁盘根目录（不要再建文件夹，会无法加载，建议C盘）；</p>
+<h4 id="3-修改mangameeya-def文件"><a href="#3-修改mangameeya-def文件" class="headerlink" title="3.修改mangameeya.def文件"></a>3.修改mangameeya.def文件</h4><p>记事本打开 <code>mangameeya/AvisynthPlugin/mangameeya.def</code> 文件，复制如下代码到文件末尾：</p>
+<figure class="highlight hsp"><table><tr><td class="code"><pre><code class="hljs hsp">[GiCoCu]<br>f = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;C:/yellowblue.cur&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;f&quot;</span>)<br>alpha = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;false&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;alpha&quot;</span>)<br>photoshop = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;false&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;photoshop&quot;</span>)<br>hsv = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;false&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;hsv&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<p><strong>PS:</strong><br>1.<strong><font color=47B1EE>“C:/yellowblue.cur”</font></strong> 就是.cur文件的绝对路径，想加载哪种上色方案就对应改名，不要建文件夹，很大概率会无法加载;<br>2.<strong><font color=47B1EE>4color4.cur</font></strong> 是原始版本(使用四种颜色进行上色)，其他的都是基于这个版本衍生的双色或单色特化的版本，不同的场景表现各有千秋。</p>
+<h4 id="4-编写AVS滤镜脚本"><a href="#4-编写AVS滤镜脚本" class="headerlink" title="4.编写AVS滤镜脚本"></a>4.编写AVS滤镜脚本</h4><p>打开mangameeya，随便载入一张黑白漫画，点击 <strong><font color=47B1EE>工具</font></strong> 菜单下 <strong><font color=47B1EE>avisynth滤镜设置</font></strong> ：<br>汉化版顺序载入：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">转换为RGB32<br>色调曲线<br>GiCoCu<br></code></pre></td></tr></table></figure>
+
+<p>日文版的话如下：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">RGB24へ変換<br>トーンカーブ<br>Gicocu<br></code></pre></td></tr></table></figure>
+
+
+
+<p>加载正确的截图如下，设置完毕，点开**<font face="方正兰亭中黑_GBK" color=47B1EE>工具</font><strong>菜单选择</strong><font face="方正兰亭中黑_GBK" color=47B1EE>启用avisynth滤镜</font>**即可生效：<br><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_qj7TZINOWC.png" alt="自动上色滤镜设置"></p>
+<p>多色待加载脚本 (想加载哪个方案就去掉前面的 <code>#</code>，只能加载一个配色方案，这里加载的是 <strong><font color=47B1EE>“yellowblue.cur”</font></strong> ):</p>
+<figure class="highlight leaf"><table><tr><td class="code"><pre><code class="hljs leaf">转换为RGB32(false)<br>色调曲线(0.0,0.25,0.5,0.75,1.0,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4color4.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>GiCoCu(&quot;C:/yellowblue.cur&quot;,false,false,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkblue.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkpurple.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/2pink.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/3RED.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4yellow.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/5dark.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>#色阶修正(35,200,(@low+@high+1)/2,false,0,255,false)<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1.伪四色上色插件会造成图像边缘明显锯齿化；</p>
+<p>2.伪四色上色插件不能与去色带AVS插件（ <strong><font color=47B1EE>“f3kdb”</font></strong> ）配合使用；</p>
+<p>3.原图有明显噪点的图片建议先做降噪再搭配伪四色上色插件使用。</p>
+]]></content>
+      <categories>
+        <category>Mangameeya 专题</category>
+      </categories>
+      <tags>
+        <tag>Mangameeya</tag>
+        <tag>AviSynth</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Total Commander 自用重命名规则记录</title>
     <url>/post/aa610a08.html</url>
     <content><![CDATA[<h3 id="将复数子文件夹中文件提取到上级文件夹"><a href="#将复数子文件夹中文件提取到上级文件夹" class="headerlink" title="将复数子文件夹中文件提取到上级文件夹"></a>将复数子文件夹中文件提取到上级文件夹</h3><span id="more"></span>
@@ -196,6 +244,38 @@
       </categories>
       <tags>
         <tag>Total Commander</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WIN10 自带远程桌面开启方案</title>
+    <url>/post/ae2e01f4.html</url>
+    <content><![CDATA[<div class="note note-info">
+            <p>A电脑以管理员身份连接B电脑</p>
+          </div>
+
+<span id="more"></span>
+
+<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>同为专业版/企业版系统</p>
+<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><h4 id="1-【B电脑操作】授权管理员账号允许远程"><a href="#1-【B电脑操作】授权管理员账号允许远程" class="headerlink" title="1.【B电脑操作】授权管理员账号允许远程"></a>1.【B电脑操作】授权管理员账号允许远程</h4><p>B电脑右击【我的电脑】-【系统属性】-勾选【允许用户远程连接到此计算机】-勾选【仅允许运行使用网络级别身份验证的远程桌面的计算机连接(建议)】</p>
+<h4 id="2-【B电脑操作】可不做"><a href="#2-【B电脑操作】可不做" class="headerlink" title="2.【B电脑操作】可不做"></a>2.【B电脑操作】可不做</h4><p>Win+R – 键入gpedit.msc 调出组策略 –  【计算机配置】 – 【windows设置】 – 【安全设置】 - 【本地策略】 - 【网络访问：本地账户的共享和安全模型】右键属性 - 【经典 - 对本地用户进行身份验证，不改变其本来身份】</p>
+<h4 id="3-【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗"><a href="#3-【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗" class="headerlink" title="3.【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗"></a>3.【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗</h4><div class="note note-success">
+            <p>【远程计算机：这可能是由于CredSSP加密Oracle修正】</p>
+          </div>
+
+<p>Win+R – 键入gpedit.msc 调出组策略 –  【计算机配置】 – 【管理模板】 – 【系统】 – 【凭据分配】 – 【加密Oracle修正】 – 【‘缓解’改为‘易受攻击’】</p>
+<h4 id="4-【B电脑操作】解决B电脑无开机密码问题"><a href="#4-【B电脑操作】解决B电脑无开机密码问题" class="headerlink" title="4.【B电脑操作】解决B电脑无开机密码问题"></a>4.【B电脑操作】解决B电脑无开机密码问题</h4><div class="note note-success">
+            <p>B电脑管理员账户密码为空无法连接【B电脑开机登录账号有密码可不做】</p>
+          </div>
+
+<p>Win+R – 键入gpedit.msc 调出组策略 –  【Windows 设置】-【安全设置】-【本地策略】-【安全选项】 - 右侧的窗口里找到【帐户：使用空白密码的本地帐户只允许进行控制台登录】 - 右击选择【属性】 - 【‘已启用’改为‘已禁用’】</p>
+<h4 id="5-【A电脑操作】尝试远程连接"><a href="#5-【A电脑操作】尝试远程连接" class="headerlink" title="5.【A电脑操作】尝试远程连接"></a>5.【A电脑操作】尝试远程连接</h4><p>Win+R – 键入mstsc调出远程桌面窗口 - 【计算机(C):填入B电脑IP地址 (可B电脑WIN+R - cmd - ipconfig /all命令获取 IPV4那行就是)】 - 【用户名：填入B电脑默认登录账户用户名】 - 点开【显示选项】 - 【保存 (默认会将登录信息保存到文档文件夹下的Default.rdp文件中)】 - 连接即可登入B电脑进行操作</p>
+]]></content>
+      <categories>
+        <category>软件配置</category>
+      </categories>
+      <tags>
+        <tag>Win10系统</tag>
+        <tag>远程桌面</tag>
       </tags>
   </entry>
   <entry>
@@ -354,86 +434,6 @@
       <tags>
         <tag>work_crawler</tag>
         <tag>爬虫工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WIN10 自带远程桌面开启方案</title>
-    <url>/post/ae2e01f4.html</url>
-    <content><![CDATA[<div class="note note-info">
-            <p>A电脑以管理员身份连接B电脑</p>
-          </div>
-
-<span id="more"></span>
-
-<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>同为专业版/企业版系统</p>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><h4 id="1-【B电脑操作】授权管理员账号允许远程"><a href="#1-【B电脑操作】授权管理员账号允许远程" class="headerlink" title="1.【B电脑操作】授权管理员账号允许远程"></a>1.【B电脑操作】授权管理员账号允许远程</h4><p>B电脑右击【我的电脑】-【系统属性】-勾选【允许用户远程连接到此计算机】-勾选【仅允许运行使用网络级别身份验证的远程桌面的计算机连接(建议)】</p>
-<h4 id="2-【B电脑操作】可不做"><a href="#2-【B电脑操作】可不做" class="headerlink" title="2.【B电脑操作】可不做"></a>2.【B电脑操作】可不做</h4><p>Win+R – 键入gpedit.msc 调出组策略 –  【计算机配置】 – 【windows设置】 – 【安全设置】 - 【本地策略】 - 【网络访问：本地账户的共享和安全模型】右键属性 - 【经典 - 对本地用户进行身份验证，不改变其本来身份】</p>
-<h4 id="3-【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗"><a href="#3-【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗" class="headerlink" title="3.【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗"></a>3.【A电脑操作】解决仅操作1，2步可能跳出的身份验证错误弹窗</h4><div class="note note-success">
-            <p>【远程计算机：这可能是由于CredSSP加密Oracle修正】</p>
-          </div>
-
-<p>Win+R – 键入gpedit.msc 调出组策略 –  【计算机配置】 – 【管理模板】 – 【系统】 – 【凭据分配】 – 【加密Oracle修正】 – 【‘缓解’改为‘易受攻击’】</p>
-<h4 id="4-【B电脑操作】解决B电脑无开机密码问题"><a href="#4-【B电脑操作】解决B电脑无开机密码问题" class="headerlink" title="4.【B电脑操作】解决B电脑无开机密码问题"></a>4.【B电脑操作】解决B电脑无开机密码问题</h4><div class="note note-success">
-            <p>B电脑管理员账户密码为空无法连接【B电脑开机登录账号有密码可不做】</p>
-          </div>
-
-<p>Win+R – 键入gpedit.msc 调出组策略 –  【Windows 设置】-【安全设置】-【本地策略】-【安全选项】 - 右侧的窗口里找到【帐户：使用空白密码的本地帐户只允许进行控制台登录】 - 右击选择【属性】 - 【‘已启用’改为‘已禁用’】</p>
-<h4 id="5-【A电脑操作】尝试远程连接"><a href="#5-【A电脑操作】尝试远程连接" class="headerlink" title="5.【A电脑操作】尝试远程连接"></a>5.【A电脑操作】尝试远程连接</h4><p>Win+R – 键入mstsc调出远程桌面窗口 - 【计算机(C):填入B电脑IP地址 (可B电脑WIN+R - cmd - ipconfig /all命令获取 IPV4那行就是)】 - 【用户名：填入B电脑默认登录账户用户名】 - 点开【显示选项】 - 【保存 (默认会将登录信息保存到文档文件夹下的Default.rdp文件中)】 - 连接即可登入B电脑进行操作</p>
-]]></content>
-      <categories>
-        <category>软件配置</category>
-      </categories>
-      <tags>
-        <tag>Win10系统</tag>
-        <tag>远程桌面</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mangameeya - AVS - 伪四色上色（疑似四色刷り）</title>
-    <url>/post/0.html</url>
-    <content><![CDATA[<p>伪四色上色（疑似四色刷り）滤镜是搜寻mangameeya AVS滤镜加载方法的意外收获</p>
-<span id="more"></span>
-
-<p>先演示自动上色效果( <strong><font face="方正兰亭中黑_GBK" color=47B1EE>4color4.cur</font></strong> 配色为例)：</p>
-<p><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_ISwKfqDCWv.png" alt="黑白原图"></p>
-<p><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_fa3R3cEN53.png" alt="伪四色AVS插件上色"></p>
-<p>上面是属于比较成功的例子，这个自动上色插件局限性也是非常明显的，如果是上图这种有用浓淡对比明显的色块或是渐变上色的图片，效果会非常不错，但有一些漫画上色只有纯线条，阴影这些都是用的斜线，这样的图片上色效果就差强人意了。</p>
-<h2 id="使用介绍和上色方案汇总（日文）："><a href="#使用介绍和上色方案汇总（日文）：" class="headerlink" title="使用介绍和上色方案汇总（日文）："></a>使用介绍和上色方案汇总（日文）：</h2><p><a href="http://molunch.blog.fc2.com/blog-entry-2.html">http://molunch.blog.fc2.com/blog-entry-2.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-4.html">http://poolytooth.blog.fc2.com/blog-entry-4.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-12.html">http://poolytooth.blog.fc2.com/blog-entry-12.html</a><br><a href="http://blog.livedoor.jp/tos1941-ttt/archives/32689376.html">http://blog.livedoor.jp/tos1941-ttt/archives/32689376.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-7.html">http://poolytooth.blog.fc2.com/blog-entry-7.html</a></p>
-<p>日文大佬可以直接爬上面原帖，还有不少针对性的色阶修正进阶设置。</p>
-<h2 id="简易加载教程总结"><a href="#简易加载教程总结" class="headerlink" title="简易加载教程总结"></a>简易加载教程总结</h2><div class="note note-danger">
-            <p>[基于汉化版的mangameeya，mangameeyaCE用不了]</p>
-          </div>
-
-<h4 id="1-下载滤镜和各种上色方案下载包："><a href="#1-下载滤镜和各种上色方案下载包：" class="headerlink" title="1.下载滤镜和各种上色方案下载包："></a>1.下载滤镜和各种上色方案下载包：</h4><p>链接：<a href="https://pan.baidu.com/s/1yU6Z0awwhZaRPKIQEjruxw">https://pan.baidu.com/s/1yU6Z0awwhZaRPKIQEjruxw</a> 提取码：n13i 解压码:123456</p>
-<h4 id="2-安装插件和配色方案"><a href="#2-安装插件和配色方案" class="headerlink" title="2.安装插件和配色方案"></a>2.安装插件和配色方案</h4><p>将 <strong><font color=47B1EE>GiCoCu.dll</font></strong> 放入 <code>mangameeya</code> 根目录下 <code>AvisynthPlugin</code> 文件夹中；<br>将 <strong><font color=47B1EE>.cur</font></strong> 格式的所有文件放到任意磁盘根目录（不要再建文件夹，会无法加载，建议C盘）；</p>
-<h4 id="3-修改mangameeya-def文件"><a href="#3-修改mangameeya-def文件" class="headerlink" title="3.修改mangameeya.def文件"></a>3.修改mangameeya.def文件</h4><p>记事本打开 <code>mangameeya/AvisynthPlugin/mangameeya.def</code> 文件，复制如下代码到文件末尾：</p>
-<figure class="highlight hsp"><table><tr><td class="code"><pre><code class="hljs hsp">[GiCoCu]<br>f = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;C:/yellowblue.cur&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;f&quot;</span>)<br>alpha = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;false&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;alpha&quot;</span>)<br>photoshop = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;false&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;photoshop&quot;</span>)<br>hsv = Edit(<span class="hljs-keyword">Default</span>=<span class="hljs-string">&quot;false&quot;</span>,<span class="hljs-keyword">Width</span>=<span class="hljs-number">120</span>,<span class="hljs-keyword">Line</span>=<span class="hljs-number">1</span>,Hint=<span class="hljs-string">&quot;hsv&quot;</span>)<br></code></pre></td></tr></table></figure>
-
-<p><strong>PS:</strong><br>1.<strong><font color=47B1EE>“C:/yellowblue.cur”</font></strong> 就是.cur文件的绝对路径，想加载哪种上色方案就对应改名，不要建文件夹，很大概率会无法加载;<br>2.<strong><font color=47B1EE>4color4.cur</font></strong> 是原始版本(使用四种颜色进行上色)，其他的都是基于这个版本衍生的双色或单色特化的版本，不同的场景表现各有千秋。</p>
-<h4 id="4-编写AVS滤镜脚本"><a href="#4-编写AVS滤镜脚本" class="headerlink" title="4.编写AVS滤镜脚本"></a>4.编写AVS滤镜脚本</h4><p>打开mangameeya，随便载入一张黑白漫画，点击 <strong><font color=47B1EE>工具</font></strong> 菜单下 <strong><font color=47B1EE>avisynth滤镜设置</font></strong> ：<br>汉化版顺序载入：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">转换为RGB32<br>色调曲线<br>GiCoCu<br></code></pre></td></tr></table></figure>
-
-<p>日文版的话如下：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">RGB24へ変換<br>トーンカーブ<br>Gicocu<br></code></pre></td></tr></table></figure>
-
-
-
-<p>加载正确的截图如下，设置完毕，点开**<font face="方正兰亭中黑_GBK" color=47B1EE>工具</font><strong>菜单选择</strong><font face="方正兰亭中黑_GBK" color=47B1EE>启用avisynth滤镜</font>**即可生效：<br><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_qj7TZINOWC.png" alt="img"></p>
-<p>多色待加载脚本 (想加载哪个方案就去掉前面的 <code>#</code>，只能加载一个配色方案，这里加载的是 <strong><font color=47B1EE>“yellowblue.cur”</font></strong> ):</p>
-<figure class="highlight leaf"><table><tr><td class="code"><pre><code class="hljs leaf">转换为RGB32(false)<br>色调曲线(0.0,0.25,0.5,0.75,1.0,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4color4.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>GiCoCu(&quot;C:/yellowblue.cur&quot;,false,false,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkblue.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkpurple.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/2pink.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/3RED.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4yellow.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/5dark.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>#色阶修正(35,200,(@low+@high+1)/2,false,0,255,false)<br></code></pre></td></tr></table></figure>
-
-
-
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1.伪四色上色插件会造成图像边缘明显锯齿化；</p>
-<p>2.伪四色上色插件不能与去色带AVS插件（ <strong><font color=47B1EE>“f3kdb”</font></strong> ）配合使用；</p>
-<p>3.原图有明显噪点的图片建议先做降噪再搭配伪四色上色插件使用。</p>
-]]></content>
-      <categories>
-        <category>Mangameeya 专题</category>
-      </categories>
-      <tags>
-        <tag>Mangameeya</tag>
-        <tag>AviSynth</tag>
       </tags>
   </entry>
 </search>
