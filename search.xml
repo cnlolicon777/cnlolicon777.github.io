@@ -207,7 +207,7 @@
 
 
 
-<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
 
 <p>再重新渲染才能成功：</p>
@@ -235,7 +235,7 @@
 
 
 
-<h3 id="注意事项：-1"><a href="#注意事项：-1" class="headerlink" title="注意事项："></a>注意事项：</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
+<h3 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
 
 <p>再重新渲染才能成功：</p>
@@ -245,7 +245,7 @@
 
 
 
-<h2 id="Live-2d-看板娘进阶版"><a href="#Live-2d-看板娘进阶版" class="headerlink" title="Live-2d 看板娘进阶版"></a>Live-2d 看板娘进阶版</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a></p>
+<h2 id="Live-2d-看板娘"><a href="#Live-2d-看板娘" class="headerlink" title="Live-2d 看板娘"></a>Live-2d 看板娘</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a></p>
 <p><a href="https://github.com/xiazeyu/live2d-widget-models">看板娘模型仓库1</a></p>
 <p><a href="https://github.com/evrstr/live2d-widget-models">看板娘模型仓库2</a></p>
 <p><a href="https://github.com/summerscar/live2dDemo">看板娘模型选择</a></p>
@@ -306,10 +306,10 @@
 
 
 
-<h3 id="注意事项：-2"><a href="#注意事项：-2" class="headerlink" title="注意事项："></a>注意事项：</h3><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <code>waifu.css</code> 修改看板大小与位置，<code>waifu-tips.json</code> 修改显示的对话</p>
+<h3 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h3><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <code>waifu.css</code> 修改看板大小与位置，<code>waifu-tips.json</code> 修改显示的对话</p>
 <p>2.进阶版如需增加模型需自制 <a href="https://github.com/fghrsh/live2d_api">live2d_api</a></p>
 <p>3.目前使用初阶版，<code>libe2d-widget</code> 路径下 <code>autoload.js</code> 通过注释 <code>const live2d_path = &quot;/live2d-widget/&quot;</code> 使进阶版失效。</p>
-<h3 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h3><p><a href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></p>
 <p><a href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/">Next配置live2d 看板娘</a></p>
 <p><a href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/">hexo next主题美化那些事（一）</a></p>
 <p><a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d 中文readme</a></p>
