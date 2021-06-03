@@ -1,6 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo + next 博客插件安装与设置</title>
+    <url>/post/41e763fc.html</url>
+    <content><![CDATA[<h2 id="Hexo-文章永久链接插件"><a href="#Hexo-文章永久链接插件" class="headerlink" title="Hexo 文章永久链接插件"></a>Hexo 文章永久链接插件</h2><span id="more"></span>
+
+<p><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
+<h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install hexo-abbrlink <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<p>然后在 <code>G:\software\Blog\cnlolicon777Blog</code> 站点配置文件 <code>_config.yml</code>  中修改为如下并保存：</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">url:</span> https:<span class="hljs-comment">//cnlolicon777.github.io</span><br><span class="hljs-symbol"></span><br><span class="hljs-symbol">permalink:</span> archives/:abbrlink.html<br><span class="hljs-symbol">abbrlink:</span>  <br><span class="hljs-symbol">alg:</span> crc32  <span class="hljs-meta"># 算法：crc16(default) and crc32  </span><br><span class="hljs-symbol">rep:</span> hex    <span class="hljs-meta"># 进制：dec(default) and hexpermalink_defaults:</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></td></tr></table></figure>
+
+<p>再重新渲染才能成功：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="Hexo-内容搜索"><a href="#Hexo-内容搜索" class="headerlink" title="Hexo 内容搜索"></a>Hexo 内容搜索</h2><h3 id="安装配置-1"><a href="#安装配置-1" class="headerlink" title="安装配置"></a>安装配置</h3><p>在Blog根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install hexo-generator-searchdb <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<p>修改 <code>G:\software\Blog\cnlolicon777Blog</code> 目录下站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># 本地搜索</span><br><span class="hljs-meta"># npm install hexo-generator-searchdb --save</span><br><span class="hljs-symbol">search:</span><br><span class="hljs-symbol">  path:</span> search.xml<br><span class="hljs-symbol">  field:</span> post<br><span class="hljs-symbol">  format:</span> html<br><span class="hljs-symbol">  limit:</span> <span class="hljs-number">100</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>path：索引文件的路径，相对于站点根目录</li>
+<li>field：搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</li>
+<li>limit：限制搜索的条目数</li>
+</ul>
+<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code> 目录下主题配置文件 <code>_config.yml</code>：</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Local Search</span><br><span class="hljs-meta"># Dependencies: https:<span class="hljs-comment">//github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="hljs-symbol">local_search:</span><br><span class="hljs-symbol">  enable:</span> true<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></td></tr></table></figure>
+
+<p>再重新渲染才能成功：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="Live-2d-看板娘"><a href="#Live-2d-看板娘" class="headerlink" title="Live-2d 看板娘"></a>Live-2d 看板娘</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a></p>
+<p><a href="https://github.com/xiazeyu/live2d-widget-models">看板娘模型仓库1</a></p>
+<p><a href="https://github.com/evrstr/live2d-widget-models">看板娘模型仓库2</a></p>
+<p><a href="https://github.com/summerscar/live2dDemo">看板娘模型选择</a></p>
+<h4 id="初阶版"><a href="#初阶版" class="headerlink" title="初阶版"></a>初阶版</h4><p>安装插件 <code>hexo-helper-live2d</code> :</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">npm</span> install –save hexo-helper-live<span class="hljs-number">2</span>d<br></code></pre></td></tr></table></figure>
+
+<p>可以命令行安装的：</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install 模型名称 <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<p>无法命令行安装的：</p>
+<p>比如血小板模型 <a href="https://github.com/evrstr/live2d-widget-models">60.kesyoban</a>，<a href="https://github.com/evrstr/live2d-widget-models">61.platelet</a></p>
+<p>整个仓库打包下载，然后复制压缩包 <code>live2d_evrstr</code> 路径下文件夹下 <code>kesyoban</code>,<code>platelet</code></p>
+<p>在根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下新建文件夹 <code>live2d_models</code> ,将复制的模型文件夹放入</p>
+<p>模型文件夹中<code>model.json</code>文件统一命名为<code>文件夹名称.model.json</code>格式（例：kesyoban.model.json）</p>
+<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code> ,在末尾添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># live2d</span><br><span class="hljs-comment"># https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</span><br><span class="hljs-comment"># https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md</span><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span> <br>  <span class="hljs-attr">scriptFrom:</span> <span class="hljs-string">local</span> <span class="hljs-comment"># 默认</span><br>  <span class="hljs-attr">pluginRootPath:</span> <span class="hljs-string">live2dw/</span> <span class="hljs-comment"># 插件在站点上的根目录(相对路径)</span><br>  <span class="hljs-attr">pluginJsPath:</span> <span class="hljs-string">lib/</span> <span class="hljs-comment"># 脚本文件相对与插件根目录路径</span><br>  <span class="hljs-attr">pluginModelPath:</span> <span class="hljs-string">assets/</span> <span class="hljs-comment"># 模型文件相对与插件根目录路径</span><br>  <span class="hljs-attr">tagMode:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span><br>  <span class="hljs-attr">debug:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 调试, 是否在控制台输出日志</span><br>  <span class="hljs-attr">model:</span><br>    <span class="hljs-attr">use:</span> <span class="hljs-string">kesyoban</span> <span class="hljs-comment"># 对应  scale: 0.8 width: 180 height: 300 hOffset: 0 vOffset: -12</span><br>    <span class="hljs-comment"># use: platelet # 对应  width: 268 height: 300 hOffset: 3 vOffset: 5</span><br>    <span class="hljs-comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span><br>    <span class="hljs-comment"># use: ./wives/wanko # 相对于博客根目录的路径</span><br>    <span class="hljs-comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 自定义 url</span><br>    <span class="hljs-attr">scale:</span> <span class="hljs-number">0.8</span><br>    <span class="hljs-attr">hHeadPos:</span> <span class="hljs-number">0.5</span><br>    <span class="hljs-attr">vHeadPos:</span> <span class="hljs-number">0.618</span><br>  <span class="hljs-attr">display:</span><br>    <span class="hljs-attr">superSample:</span> <span class="hljs-number">2</span> <span class="hljs-comment"># 超采样等级</span><br>    <span class="hljs-attr">position:</span> <span class="hljs-string">left</span> <span class="hljs-comment"># 显示位置 left/right</span><br>    <span class="hljs-attr">width:</span> <span class="hljs-number">180</span><br>    <span class="hljs-attr">height:</span> <span class="hljs-number">300</span><br>    <span class="hljs-attr">hOffset:</span> <span class="hljs-number">0</span> <span class="hljs-comment"># 水平偏移</span><br>    <span class="hljs-attr">vOffset:</span> <span class="hljs-number">-12</span> <span class="hljs-comment"># 垂直偏移</span><br>  <span class="hljs-attr">mobile:</span><br>    <span class="hljs-attr">show:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 是否在移动设备上显示</span><br>    <span class="hljs-attr">scale:</span> <span class="hljs-number">0.5</span> <span class="hljs-comment"># 缩放</span><br>  <span class="hljs-attr">react:</span><br>    <span class="hljs-attr">opacityDefault:</span> <span class="hljs-number">0.7</span> <span class="hljs-comment"># 透明度</span><br>    <span class="hljs-attr">opacityOnHover:</span> <span class="hljs-number">0.2</span><br></code></pre></td></tr></table></figure>
+
+<p>最后执行命令即可生效：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g </span><br><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
+
+<p>本地查看无问题后上传：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><p>如有安装初阶版，先移除，否者只有简易版会生效：</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">npm</span> uninstall hexo-helper-live<span class="hljs-number">2</span>d<br></code></pre></td></tr></table></figure>
+
+<p>下载 <a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a> 最新版 <a href="https://github.com/stevenjoezhang/live2d-widget/releases/tag/v0.8.3">v0.8.3</a></p>
+<p>解压出来的文件夹 <code>live2d-widget-0.8.3</code> 改名为 <code>libe2d-widget</code></p>
+<p>复制到 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source</code> 位置</p>
+<p>修改文件夹<code>live2d-widget-0.8.3</code> 中 <code>autoload.js</code></p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><code class="hljs abnf">const live2d_path = <span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/&quot;</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
+<p>改为本地绝对路径：</p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><code class="hljs abnf">const live2d_path = <span class="hljs-string">&quot;/live2d-widget/&quot;</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
+<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\layout</code> 文件夹中 <code>_layout.swig</code></p>
+<p><code>&lt;head&gt;</code> 标签下先增加如下依赖，否则无法加载：</p>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css&quot;</span>&gt;<br></code></pre></td></tr></table></figure>
+
+<p><code>&lt;footer&gt;</code> 标签下增加：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/live2d-widget/autoload.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+
+<div class="note note-success">
+            <p><code>如有安装初阶版，跳过下面这步</code> </p>
+          </div>
+
+<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code>，在末尾添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># live2d</span><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+
+<p>最后执行命令即可生效：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g </span><br><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
+
+<p>本地查看无问题后上传：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h3><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <code>waifu.css</code> 修改看板大小与位置，<code>waifu-tips.json</code> 修改显示的对话</p>
+<p>2.进阶版如需增加模型需自制 <a href="https://github.com/fghrsh/live2d_api">live2d_api</a></p>
+<p>3.目前使用初阶版，<code>libe2d-widget</code> 路径下 <code>autoload.js</code> 通过注释 <code>const live2d_path = &quot;/live2d-widget/&quot;</code> 使进阶版失效。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></p>
+<p><a href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/">Next配置live2d 看板娘</a></p>
+<p><a href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/">hexo next主题美化那些事（一）</a></p>
+<p><a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d 中文readme</a></p>
+]]></content>
+      <categories>
+        <category>博客配置</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mangameeya - AVS - Blur篇</title>
+    <url>/post/f5fe9c1.html</url>
+    <content><![CDATA[<h3 id="blur（模糊）滤镜："><a href="#blur（模糊）滤镜：" class="headerlink" title="blur（模糊）滤镜："></a>blur（模糊）滤镜：</h3><p>这个类别在漫画阅读场景中的应用非常多，尤其很多汉化组资源后期处理都存在过度锐化的问题。</p>
+<span id="more"></span>
+
+<h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 <code>libfftw3f-3.dll</code> 放入：<br>64位系统：<code>C:\windows\SysWOW64 </code><br>32位系统：<code>C:\windows\system32</code></p>
+<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">YV12(<span class="hljs-params">false</span>)</span>.<span class="hljs-constructor">AverageBlur(1,1)</span><br></code></pre></td></tr></table></figure>
+
+<p>radY,radC建议先统一设置为 <code>1</code> ，模糊程度不够再往上加，仅支持整数。</p>
+<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">YV12(<span class="hljs-params">false</span>)</span>.<span class="hljs-constructor">BinomialBlur(0.5,0.5)</span><br></code></pre></td></tr></table></figure>
+
+<p>varY,varC支持 <code>0.5,1,1.5</code> …这样的 <code>0.5</code> 的倍数数值设置，建议 <code>0.5</code> ，模糊程度不够再逐步累加</p>
+<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">GaussianBlur</span>(<span class="hljs-number">0</span>.<span class="hljs-number">3</span>,<span class="hljs-number">0</span>.<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
+
+<p>varY,varC建议 <code>0.3</code> 起步，可 <code>0.1</code> 幅度提高数值，建议以 <code>0.2</code> 的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
+<h4 id="个人经验与建议："><a href="#个人经验与建议：" class="headerlink" title="个人经验与建议："></a>个人经验与建议：</h4><p>1.<strong>GaussianBlur</strong> 效果好但非常慢，再加上 <strong>mangameeya</strong> 所支持的AVS不支持多线程，一张2400像素宽的彩图 <strong>GaussianBlur</strong> 单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用 <strong>AverageBlur</strong> 或者 <strong>BinomialBlur</strong>。</p>
+<p>2.<strong>Blur</strong>（模糊）滤镜一般可以作为 <strong>Sharpeners</strong>（锐化）滤镜（如内置的 <strong>USM</strong> 锐化）或者收线滤镜（内置的 <strong>WarpSharp</strong> 滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
+]]></content>
+      <categories>
+        <category>Mangameeya 专题</category>
+      </categories>
+      <tags>
+        <tag>Mangameeya</tag>
+        <tag>AviSynth</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Total Commander 自用重命名规则记录</title>
     <url>/post/aa610a08.html</url>
     <content><![CDATA[<h3 id="将复数子文件夹中文件提取到上级文件夹"><a href="#将复数子文件夹中文件提取到上级文件夹" class="headerlink" title="将复数子文件夹中文件提取到上级文件夹"></a>将复数子文件夹中文件提取到上级文件夹</h3><span id="more"></span>
@@ -9,7 +166,7 @@
 <p>001,002,003……子文件夹中001_01,001_02……002_01……文件批量提取到上级文件夹。</p>
 </blockquote>
 <p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">..\[N]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs text">..\[N]<br></code></pre></td></tr></table></figure>
 
 
 
@@ -19,7 +176,7 @@
 <p>001,002,003……的子文件夹中01,02,03……开头加上001_ ,002_ ,003_ …….。</p>
 </blockquote>
 <p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-attr">[P]</span>_<span class="selector-attr">[N]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"><span class="hljs-selector-attr">[P]</span>_<span class="hljs-selector-attr">[N]</span><br></code></pre></td></tr></table></figure>
 
 
 
@@ -29,84 +186,17 @@
 <p>已经提取出来的001_01,001_02……002_01……的文件批量重新放回001,002,003……的子文件夹中。</p>
 </blockquote>
 <p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[N1-3]\[N]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs text">[N1-3]\[N]<br></code></pre></td></tr></table></figure>
 
 
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>Mangameeya - AVS - Blur篇</title>
-    <url>/post/f5fe9c1.html</url>
-    <content><![CDATA[<h3 id="blur（模糊）滤镜："><a href="#blur（模糊）滤镜：" class="headerlink" title="blur（模糊）滤镜："></a>blur（模糊）滤镜：</h3><p>这个类别在漫画阅读场景中的应用非常多，尤其很多汉化组资源后期处理都存在过度锐化的问题。</p>
-<span id="more"></span>
-
-<h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 <code>libfftw3f-3.dll</code>放入：<br>64位系统：C:\windows\SysWOW64<br>32位系统：C:\windows\system32</p>
-<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">AverageBlur(1,1)</span></span><br></pre></td></tr></table></figure>
-
-<p>radY,radC建议先统一设置为<code>1</code>，模糊程度不够再往上加，仅支持整数。</p>
-<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">转换为<span class="constructor">YV12(<span class="params">false</span>)</span>.<span class="constructor">BinomialBlur(0.5,0.5)</span></span><br></pre></td></tr></table></figure>
-
-<p>varY,varC支持<code>0.5,1,1.5</code>…这样的<code>0.5</code>的倍数数值设置，建议<code>0.5</code>,模糊程度不够再逐步累加</p>
-<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">GaussianBlur</span>(<span class="number">0</span>.<span class="number">3</span>,<span class="number">0</span>.<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
-
-<p>varY,varC建议<code>0.3</code>起步，可<code>0.1</code>幅度提高数值，建议以<code>0.2</code>的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
-<h4 id="个人经验与建议："><a href="#个人经验与建议：" class="headerlink" title="个人经验与建议："></a>个人经验与建议：</h4><p>1.GaussianBlur效果好但非常慢，再加上mangameeya所支持的AVS不支持多线程，一张2400像素宽的彩图GaussianBlur单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用AverageBlur或者BinomialBlur。</p>
-<p>2.Blur（模糊）滤镜一般可以作为Sharpeners（锐化）滤镜（如内置的USM锐化）或者收线滤镜（内置的WarpSharp滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Windows Terminal + PowerShell 7.2 配置总结</title>
-    <url>/post/954d2ae6.html</url>
-    <content><![CDATA[<h2 id="1-安装-Windows-Terminal"><a href="#1-安装-Windows-Terminal" class="headerlink" title="1. 安装 Windows Terminal"></a>1. 安装 Windows Terminal</h2><p><a href="https://github.com/microsoft/terminal">单击此处从github下载。</a></p>
-<span id="more"></span>
-
-<h2 id="2-安装新款-Powershell-Core"><a href="#2-安装新款-Powershell-Core" class="headerlink" title="2. 安装新款 Powershell Core"></a>2. 安装新款 Powershell Core</h2><p><a href="https://github.com/PowerShell/PowerShell">单击此处从 GitHub 下载。</a></p>
-<h2 id="3-安装字体"><a href="#3-安装字体" class="headerlink" title="3. 安装字体"></a>3. 安装字体</h2><p>推荐字体：<strong>Fira Code</strong>。支持 ligature 连字功能，是一款专门为代码显示准备的字体。字体开源，广受海内外程序员好评！</p>
-<p><a href="https://github.com/tonsky/FiraCode">单击此处从 GitHub 下载。</a></p>
-<h2 id="4-安装-Powershell-插件"><a href="#4-安装-Powershell-插件" class="headerlink" title="4. 安装 Powershell 插件"></a>4. 安装 Powershell 插件</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. 安装 PSReadline 包，该插件可以让命令行更好用，类似 zsh</span></span><br><span class="line"><span class="built_in">Install-Module</span> <span class="literal">-Name</span> PSReadLine <span class="literal">-AllowPrerelease</span> <span class="literal">-Force</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 安装 posh-git 包，让 git 更易用</span></span><br><span class="line"><span class="built_in">Install-Module</span> posh<span class="literal">-git</span> <span class="literal">-Scope</span> CurrentUser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 安装 oh-my-posh 包，命令行界面美化</span></span><br><span class="line"><span class="built_in">Install-Module</span> <span class="built_in">oh</span><span class="literal">-my</span><span class="literal">-posh</span> <span class="literal">-Scope</span> CurrentUser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 安装 scoop 包管理器</span></span><br><span class="line"><span class="built_in">iex</span> (<span class="built_in">new-object</span> net.webclient).downloadstring(<span class="string">&#x27;https://get.scoop.sh&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 5. 安装 sudo</span></span><br><span class="line">scoop install sudo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 6. 使用 sudo 来提升权限,安装 git 并添加系统变量</span></span><br><span class="line">sudo scoop install <span class="literal">-g</span> git</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><strong>2. 3. 来源可能不受系统信任</strong>，直接输入 <code>Y</code> 即可。</p>
-<h2 id="5-配置"><a href="#5-配置" class="headerlink" title="5. 配置"></a>5. 配置</h2><p>Windows Terminal的设置并没有图形界面，是通过修改配置文件的字段来实现具体的设置的。</p>
-<p>设置方法很简单，先打开 Windows Terminal，找到状态栏 <code>+</code> 旁边的向下箭头，点击选择设置选项。<br><img src="https://img-blog.csdnimg.cn/20200828112014462.PNG#pic_center" alt="默认会显示的一段话"></p>
-<p>随后会自动打开 <code>settings.json</code> 的配置文件。下拉配置文件，可以找到如下做对应修改：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 默认的配置就是新 powershell</span></span><br><span class="line"><span class="string">&quot;defaultProfile&quot;</span>: <span class="string">&quot;&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;&quot;</span>,</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Powershell 7.1.0-preview.2 配置</span></span><br><span class="line">    <span class="attr">&quot;guid&quot;</span>: <span class="string">&quot;&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;hidden&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;pwsh&quot;</span>,</span><br><span class="line">    <span class="comment">// 注意：一定要写上 -nologo，否则开启 powershll 会有一段话输出</span></span><br><span class="line">    <span class="attr">&quot;commandline&quot;</span>: <span class="string">&quot;C:/Program Files/PowerShell/7-preview/pwsh.exe -nologo&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;source&quot;</span>: <span class="string">&quot;Windows.Terminal.PowershellCore&quot;</span>,</span><br><span class="line">    <span class="comment">// 启动菜单一定要设置为 &lt;.&gt;，否则后面重要的一步将会无效！</span></span><br><span class="line">    <span class="attr">&quot;startingDirectory&quot;</span>: <span class="string">&quot;.&quot;</span>,</span><br><span class="line">    <span class="comment">// 字体</span></span><br><span class="line">    <span class="attr">&quot;fontFace&quot;</span>: <span class="string">&quot;Fira Code&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;fontSize&quot;</span>: <span class="number">11</span>,</span><br><span class="line">    <span class="attr">&quot;historySize&quot;</span>: <span class="number">9001</span>,</span><br><span class="line">    <span class="attr">&quot;padding&quot;</span>: <span class="string">&quot;5, 5, 20, 25&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;snapOnInput&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;useAcrylic&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="comment">// 颜色</span></span><br><span class="line">    <span class="attr">&quot;colorScheme&quot;</span>: <span class="string">&quot;Homebrew&quot;</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p>继续下拉配置文件，可以找到：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Add custom color schemes to this array</span></span><br><span class="line"><span class="string">&quot;schemes&quot;</span>: [],</span><br></pre></td></tr></table></figure>
-
-<p>配色方案就是放到这里的。我们可以在上面给的网站上面找到一个喜欢的主题，然后点击下面的 <code>Get theme</code> 按钮，配色的方案就会复制到我们的粘贴板。<br>接下来就可以在 <code>schemes</code> 数组中添加颜色配置：</p>
-<p><code>Afterglow</code>配色：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Add custom color schemes to this array</span></span><br><span class="line"><span class="string">&quot;schemes&quot;</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">      <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;Afterglow&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;black&quot;</span>: <span class="string">&quot;#151515&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;red&quot;</span>: <span class="string">&quot;#ac4142&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;green&quot;</span>: <span class="string">&quot;#7e8e50&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;yellow&quot;</span>: <span class="string">&quot;#e5b567&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;blue&quot;</span>: <span class="string">&quot;#6c99bb&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;purple&quot;</span>: <span class="string">&quot;#9f4e85&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;cyan&quot;</span>: <span class="string">&quot;#7dd6cf&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;white&quot;</span>: <span class="string">&quot;#d0d0d0&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightBlack&quot;</span>: <span class="string">&quot;#505050&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightRed&quot;</span>: <span class="string">&quot;#ac4142&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightGreen&quot;</span>: <span class="string">&quot;#7e8e50&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightYellow&quot;</span>: <span class="string">&quot;#e5b567&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightBlue&quot;</span>: <span class="string">&quot;#6c99bb&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightPurple&quot;</span>: <span class="string">&quot;#9f4e85&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightCyan&quot;</span>: <span class="string">&quot;#7dd6cf&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;brightWhite&quot;</span>: <span class="string">&quot;#f5f5f5&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;background&quot;</span>: <span class="string">&quot;#212121&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;foreground&quot;</span>: <span class="string">&quot;#d0d0d0&quot;</span></span><br><span class="line">     &#125;</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-
-<p><code>Homebrew</code> 配色:</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;Homebrew&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;black&quot;</span>: <span class="string">&quot;#000000&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;red&quot;</span>: <span class="string">&quot;#FC5275&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;green&quot;</span>: <span class="string">&quot;#00a600&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;yellow&quot;</span>: <span class="string">&quot;#999900&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;blue&quot;</span>: <span class="string">&quot;#6666e9&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;purple&quot;</span>: <span class="string">&quot;#b200b2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;cyan&quot;</span>: <span class="string">&quot;#00a6b2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;white&quot;</span>: <span class="string">&quot;#bfbfbf&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightBlack&quot;</span>: <span class="string">&quot;#666666&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightRed&quot;</span>: <span class="string">&quot;#e50000&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightGreen&quot;</span>: <span class="string">&quot;#00d900&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightYellow&quot;</span>: <span class="string">&quot;#e5e500&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightBlue&quot;</span>: <span class="string">&quot;#0000ff&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightPurple&quot;</span>: <span class="string">&quot;#e500e5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightCyan&quot;</span>: <span class="string">&quot;#00e5e5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;brightWhite&quot;</span>: <span class="string">&quot;#e5e5e5&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;background&quot;</span>: <span class="string">&quot;#283033&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;foreground&quot;</span>: <span class="string">&quot;#00ff00&quot;</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-
-<p>多个配色方案，需要在 <code>&#123;&#125;</code> 之间用 <code>,</code>隔开。</p>
-<h2 id="6-添加-Powershell-启动参数"><a href="#6-添加-Powershell-启动参数" class="headerlink" title="6. 添加 Powershell 启动参数"></a>6. 添加 Powershell 启动参数</h2><p>在Powershell中输入如下命令来创建 Microsoft.PowerShell_profile.ps1：</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">notepad.exe <span class="variable">$Profile</span></span><br></pre></td></tr></table></figure>
-
-<p>紧接着在弹出的页面中输入下面这一长串代码，保存并关闭。这个 Profile 配置文件与 .zshrc / .bashrc 文件一样，都是控制启动前参数的。</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;#</span></span><br><span class="line"><span class="comment"> * FileName: Microsoft.PowerShell_profile.ps1</span></span><br><span class="line"><span class="comment"> * Author: 刘 鹏</span></span><br><span class="line"><span class="comment"> * Email: littleNewton6@outlook.com</span></span><br><span class="line"><span class="comment"> * Date: 2020, May. 1</span></span><br><span class="line"><span class="comment"> * Copyright: No copyright. You can use this code for anything with no warranty.</span></span><br><span class="line"><span class="comment">#&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#------------------------------- Import Modules BEGIN -------------------------------</span></span><br><span class="line"><span class="comment"># 引入 posh-git</span></span><br><span class="line"><span class="built_in">Import-Module</span> posh<span class="literal">-git</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 引入 oh-my-posh</span></span><br><span class="line"><span class="built_in">Import-Module</span> <span class="built_in">oh</span><span class="literal">-my</span><span class="literal">-posh</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置 PowerShell 主题</span></span><br><span class="line"><span class="built_in">Set-Theme</span> Paradox</span><br><span class="line"><span class="comment">#------------------------------- Import Modules END   -------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#-------------------------------  Set Hot-keys BEGIN  -------------------------------</span></span><br><span class="line"><span class="comment"># 设置 Tab 键补全</span></span><br><span class="line"><span class="comment"># Set-PSReadlineKeyHandler -Key Tab -Function Complete</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置 Ctrl+d 为菜单补全和 Intellisense</span></span><br><span class="line"><span class="built_in">Set-PSReadLineKeyHandler</span> <span class="literal">-Key</span> <span class="string">&quot;Tab&quot;</span> <span class="literal">-Function</span> MenuComplete</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置 Ctrl+d 为退出 PowerShell</span></span><br><span class="line"><span class="built_in">Set-PSReadlineKeyHandler</span> <span class="literal">-Key</span> <span class="string">&quot;Ctrl+d&quot;</span> <span class="literal">-Function</span> ViExit</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置 Ctrl+z 为撤销</span></span><br><span class="line"><span class="built_in">Set-PSReadLineKeyHandler</span> <span class="literal">-Key</span> <span class="string">&quot;Ctrl+z&quot;</span> <span class="literal">-Function</span> Undo</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置向上键为后向搜索历史记录</span></span><br><span class="line"><span class="built_in">Set-PSReadLineKeyHandler</span> <span class="literal">-Key</span> UpArrow <span class="literal">-Function</span> HistorySearchBackward</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置向下键为前向搜索历史纪录</span></span><br><span class="line"><span class="built_in">Set-PSReadLineKeyHandler</span> <span class="literal">-Key</span> DownArrow <span class="literal">-Function</span> HistorySearchForward</span><br><span class="line"><span class="comment">#-------------------------------  Set Hot-keys END    -------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#-------------------------------    Functions BEGIN   -------------------------------</span></span><br><span class="line"><span class="comment"># Python 直接执行</span></span><br><span class="line"><span class="variable">$env:PATHEXT</span> += <span class="string">&quot;;.py&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新 pip 的方法</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Update-Packages</span></span> &#123;</span><br><span class="line">    <span class="comment"># update pip</span></span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;Step 1: 更新 pip&quot;</span> <span class="literal">-ForegroundColor</span> Magenta <span class="literal">-BackgroundColor</span> Cyan</span><br><span class="line">    <span class="variable">$a</span> = pip list -<span class="literal">-outdated</span></span><br><span class="line">    <span class="variable">$num_package</span> = <span class="variable">$a</span>.Length - <span class="number">2</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="variable">$i</span> = <span class="number">0</span>; <span class="variable">$i</span> <span class="operator">-lt</span> <span class="variable">$num_package</span>; <span class="variable">$i</span>++) &#123;</span><br><span class="line">        <span class="variable">$tmp</span> = (<span class="variable">$a</span>[<span class="number">2</span> + <span class="variable">$i</span>].Split(<span class="string">&quot; &quot;</span>))[<span class="number">0</span>]</span><br><span class="line">        pip install <span class="literal">-U</span> <span class="variable">$tmp</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># update TeX Live</span></span><br><span class="line">    <span class="variable">$CurrentYear</span> = <span class="built_in">Get-Date</span> <span class="literal">-Format</span> yyyy</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;Step 2: 更新 TeX Live&quot;</span> <span class="variable">$CurrentYear</span> <span class="literal">-ForegroundColor</span> Magenta <span class="literal">-BackgroundColor</span> Cyan</span><br><span class="line">    tlmgr update -<span class="literal">-self</span></span><br><span class="line">    tlmgr update -<span class="literal">-all</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#-------------------------------    Functions END     -------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#-------------------------------   Set Alias Begin    -------------------------------</span></span><br><span class="line"><span class="comment"># 1. 编译函数 make</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MakeThings</span></span> &#123;</span><br><span class="line">    nmake.exe <span class="variable">$args</span> <span class="literal">-nologo</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> make <span class="literal">-Value</span> MakeThings</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 更新系统 os-update</span></span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> os<span class="literal">-update</span> <span class="literal">-Value</span> <span class="built_in">Update-Packages</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 查看目录 ls &amp; ll</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ListDirectory</span></span> &#123;</span><br><span class="line">    (<span class="built_in">Get-ChildItem</span>).Name</span><br><span class="line">    <span class="built_in">Write-Host</span>(<span class="string">&quot;&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> <span class="built_in">ls</span> <span class="literal">-Value</span> ListDirectory</span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> ll <span class="literal">-Value</span> <span class="built_in">Get-ChildItem</span></span><br><span class="line"><span class="comment">#-------------------------------    Set Alias END     -------------------------------</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="7-添加右键菜单"><a href="#7-添加右键菜单" class="headerlink" title="7. 添加右键菜单"></a>7. 添加右键菜单</h2><p>Github 上面已经有 powershell 脚本了，可以用管理员身份运行该脚本 + 某些参数以实现配置右键菜单。</p>
-<p><a href="https://github.com/lextm/windowsterminal-shell/">原版 Github 仓库</a></p>
-<p><a href="https://github.com/LittleNewton/Open_Windows_Terminal_Here">另一个改版脚本仓库</a></p>
-<p>下载第2个，解压，管理员模式打开powershell 7，进入解压出来的文件夹的src文件夹下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\install.ps1 mini</span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="https://pic2.zhimg.com/80/v2-718823c3fb47a87b14905c9fa2e3d35d_720w.jpg" alt="右键菜单"></p>
-<p><strong>目前发现问题</strong>：该脚本会读取 Windows Terminal 的 profile，然后把其中的非隐藏项目添加到右键菜单（默认视图），这之后如果你修改了 profile，那么需要用 <code>uninstall.ps1</code> 脚本先清除右键菜单，然后重新 install 一遍。</p>
-<h2 id="8-配置后Terminal界面展示"><a href="#8-配置后Terminal界面展示" class="headerlink" title="8. 配置后Terminal界面展示"></a>8. 配置后Terminal界面展示</h2><p>Github 上面已经有 powershell 脚本了，可以用管理员身份运行该脚本 + 某些参数以实现配置右键菜单。</p>
-<p><img src="https://pic2.zhimg.com/80/v2-59db8c16ee82335a0f6229b1f01f5481_720w.jpg" alt="图1：常规展示"></p>
-<p>​                                                                                                               </p>
-<p><img src="https://pic1.zhimg.com/80/v2-f25122805f8f8ab76ffc979238fc2444_720w.jpg" alt="图2：在 git 目录下的效果"></p>
-<p>​                                                                                               </p>
-]]></content>
+      <categories>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Total Commander</tag>
+      </tags>
   </entry>
   <entry>
     <title>WinRAR编译去广告+注册</title>
@@ -118,7 +208,73 @@
 <p>2.将[安装路径下WinRAR.exe](C:\Program Files\WinRAR\WinRAR.exe)拖入resource hacker,找到String Table下的80:2052,将窗口中最长的一行删除就完成了去广告</p>
 <p>3.先点编译再保存为新的Winrar.exe即可</p>
 <p>4.rarreg.key备份</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">RAR</span> registration data</span><br><span class="line"></span><br><span class="line"><span class="attribute">wncn</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">Unlimited</span> Company License</span><br><span class="line"></span><br><span class="line"><span class="attribute">UID</span>=<span class="number">1</span>b<span class="number">064</span>ef<span class="number">8</span>b<span class="number">57</span>de<span class="number">3</span>ae<span class="number">9</span>b<span class="number">52</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">RAR</span> registration data<br><br><span class="hljs-attribute">wncn</span><br><br><span class="hljs-attribute">Unlimited</span> Company License<br><br><span class="hljs-attribute">UID</span>=<span class="hljs-number">1</span>b<span class="hljs-number">064</span>ef<span class="hljs-number">8</span>b<span class="hljs-number">57</span>de<span class="hljs-number">3</span>ae<span class="hljs-number">9</span>b<span class="hljs-number">52</span><br><br><span class="hljs-attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span><br><br><span class="hljs-attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span><br><br><span class="hljs-attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span><br><br><span class="hljs-attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span><br><br><span class="hljs-attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span><br><br><span class="hljs-attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span><br><br><span class="hljs-attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span><br></code></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>软件配置</category>
+      </categories>
+      <tags>
+        <tag>Winrar</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows Terminal + PowerShell 7.2 配置总结</title>
+    <url>/post/954d2ae6.html</url>
+    <content><![CDATA[<h2 id="1-安装-Windows-Terminal"><a href="#1-安装-Windows-Terminal" class="headerlink" title="1. 安装 Windows Terminal"></a>1. 安装 Windows Terminal</h2><p><a href="https://github.com/microsoft/terminal">单击此处从github下载。</a></p>
+<span id="more"></span>
+
+<h2 id="2-安装新款-Powershell-Core"><a href="#2-安装新款-Powershell-Core" class="headerlink" title="2. 安装新款 Powershell Core"></a>2. 安装新款 Powershell Core</h2><p><a href="https://github.com/PowerShell/PowerShell">单击此处从 GitHub 下载。</a></p>
+<h2 id="3-安装字体"><a href="#3-安装字体" class="headerlink" title="3. 安装字体"></a>3. 安装字体</h2><p>推荐字体：<strong>Fira Code</strong>。支持 ligature 连字功能，是一款专门为代码显示准备的字体。字体开源，广受海内外程序员好评！</p>
+<p><a href="https://github.com/tonsky/FiraCode">单击此处从 GitHub 下载。</a></p>
+<h2 id="4-安装-Powershell-插件"><a href="#4-安装-Powershell-插件" class="headerlink" title="4. 安装 Powershell 插件"></a>4. 安装 Powershell 插件</h2><figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell"><span class="hljs-comment"># 1. 安装 PSReadline 包，该插件可以让命令行更好用，类似 zsh</span><br><span class="hljs-built_in">Install-Module</span> <span class="hljs-literal">-Name</span> PSReadLine <span class="hljs-literal">-AllowPrerelease</span> <span class="hljs-literal">-Force</span><br><br><span class="hljs-comment"># 2. 安装 posh-git 包，让 git 更易用</span><br><span class="hljs-built_in">Install-Module</span> posh<span class="hljs-literal">-git</span> <span class="hljs-literal">-Scope</span> CurrentUser<br><br><span class="hljs-comment"># 3. 安装 oh-my-posh 包，命令行界面美化</span><br><span class="hljs-built_in">Install-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span> <span class="hljs-literal">-Scope</span> CurrentUser<br><br><span class="hljs-comment"># 4. 安装 scoop 包管理器</span><br><span class="hljs-built_in">iex</span> (<span class="hljs-built_in">new-object</span> net.webclient).downloadstring(<span class="hljs-string">&#x27;https://get.scoop.sh&#x27;</span>)<br><br><span class="hljs-comment"># 5. 安装 sudo</span><br>scoop install sudo<br><br><span class="hljs-comment"># 6. 使用 sudo 来提升权限,安装 git 并添加系统变量</span><br>sudo scoop install <span class="hljs-literal">-g</span> git<br><br></code></pre></td></tr></table></figure>
+
+<p><strong>2. 3. 来源可能不受系统信任</strong>，直接输入 <code>Y</code> 即可。</p>
+<h2 id="5-配置"><a href="#5-配置" class="headerlink" title="5. 配置"></a>5. 配置</h2><p>Windows Terminal的设置并没有图形界面，是通过修改配置文件的字段来实现具体的设置的。</p>
+<p>设置方法很简单，先打开 Windows Terminal，找到状态栏 <code>+</code> 旁边的向下箭头，点击选择设置选项。<br><img src="https://img-blog.csdnimg.cn/20200828112014462.PNG#pic_center" alt="默认会显示的一段话"></p>
+<p>随后会自动打开 <code>settings.json</code> 的配置文件。下拉配置文件，可以找到如下做对应修改：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-comment">// 默认的配置就是新 powershell</span><br><span class="hljs-string">&quot;defaultProfile&quot;</span>: <span class="hljs-string">&quot;&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;&quot;</span>,<br><br>&#123;<br>    <span class="hljs-comment">// Powershell 7.1.0-preview.2 配置</span><br>    <span class="hljs-attr">&quot;guid&quot;</span>: <span class="hljs-string">&quot;&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;&quot;</span>,<br>    <span class="hljs-attr">&quot;hidden&quot;</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;pwsh&quot;</span>,<br>    <span class="hljs-comment">// 注意：一定要写上 -nologo，否则开启 powershll 会有一段话输出</span><br>    <span class="hljs-attr">&quot;commandline&quot;</span>: <span class="hljs-string">&quot;C:/Program Files/PowerShell/7-preview/pwsh.exe -nologo&quot;</span>,<br>    <span class="hljs-attr">&quot;source&quot;</span>: <span class="hljs-string">&quot;Windows.Terminal.PowershellCore&quot;</span>,<br>    <span class="hljs-comment">// 启动菜单一定要设置为 &lt;.&gt;，否则后面重要的一步将会无效！</span><br>    <span class="hljs-attr">&quot;startingDirectory&quot;</span>: <span class="hljs-string">&quot;.&quot;</span>,<br>    <span class="hljs-comment">// 字体</span><br>    <span class="hljs-attr">&quot;fontFace&quot;</span>: <span class="hljs-string">&quot;Fira Code&quot;</span>,<br>    <span class="hljs-attr">&quot;fontSize&quot;</span>: <span class="hljs-number">11</span>,<br>    <span class="hljs-attr">&quot;historySize&quot;</span>: <span class="hljs-number">9001</span>,<br>    <span class="hljs-attr">&quot;padding&quot;</span>: <span class="hljs-string">&quot;5, 5, 20, 25&quot;</span>,<br>    <span class="hljs-attr">&quot;snapOnInput&quot;</span>: <span class="hljs-literal">true</span>,<br>    <span class="hljs-attr">&quot;useAcrylic&quot;</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-comment">// 颜色</span><br>    <span class="hljs-attr">&quot;colorScheme&quot;</span>: <span class="hljs-string">&quot;Homebrew&quot;</span><br>&#125;,<br></code></pre></td></tr></table></figure>
+
+<p>继续下拉配置文件，可以找到：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-comment">// Add custom color schemes to this array</span><br><span class="hljs-string">&quot;schemes&quot;</span>: [],<br></code></pre></td></tr></table></figure>
+
+<p>配色方案就是放到这里的。我们可以在上面给的网站上面找到一个喜欢的主题，然后点击下面的 <code>Get theme</code> 按钮，配色的方案就会复制到我们的粘贴板。<br>接下来就可以在 <code>schemes</code> 数组中添加颜色配置：</p>
+<p><code>Afterglow</code>配色：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-comment">// Add custom color schemes to this array</span><br><span class="hljs-string">&quot;schemes&quot;</span>: [<br>      &#123;<br>      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Afterglow&quot;</span>,<br>      <span class="hljs-attr">&quot;black&quot;</span>: <span class="hljs-string">&quot;#151515&quot;</span>,<br>      <span class="hljs-attr">&quot;red&quot;</span>: <span class="hljs-string">&quot;#ac4142&quot;</span>,<br>      <span class="hljs-attr">&quot;green&quot;</span>: <span class="hljs-string">&quot;#7e8e50&quot;</span>,<br>      <span class="hljs-attr">&quot;yellow&quot;</span>: <span class="hljs-string">&quot;#e5b567&quot;</span>,<br>      <span class="hljs-attr">&quot;blue&quot;</span>: <span class="hljs-string">&quot;#6c99bb&quot;</span>,<br>      <span class="hljs-attr">&quot;purple&quot;</span>: <span class="hljs-string">&quot;#9f4e85&quot;</span>,<br>      <span class="hljs-attr">&quot;cyan&quot;</span>: <span class="hljs-string">&quot;#7dd6cf&quot;</span>,<br>      <span class="hljs-attr">&quot;white&quot;</span>: <span class="hljs-string">&quot;#d0d0d0&quot;</span>,<br>      <span class="hljs-attr">&quot;brightBlack&quot;</span>: <span class="hljs-string">&quot;#505050&quot;</span>,<br>      <span class="hljs-attr">&quot;brightRed&quot;</span>: <span class="hljs-string">&quot;#ac4142&quot;</span>,<br>      <span class="hljs-attr">&quot;brightGreen&quot;</span>: <span class="hljs-string">&quot;#7e8e50&quot;</span>,<br>      <span class="hljs-attr">&quot;brightYellow&quot;</span>: <span class="hljs-string">&quot;#e5b567&quot;</span>,<br>      <span class="hljs-attr">&quot;brightBlue&quot;</span>: <span class="hljs-string">&quot;#6c99bb&quot;</span>,<br>      <span class="hljs-attr">&quot;brightPurple&quot;</span>: <span class="hljs-string">&quot;#9f4e85&quot;</span>,<br>      <span class="hljs-attr">&quot;brightCyan&quot;</span>: <span class="hljs-string">&quot;#7dd6cf&quot;</span>,<br>      <span class="hljs-attr">&quot;brightWhite&quot;</span>: <span class="hljs-string">&quot;#f5f5f5&quot;</span>,<br>      <span class="hljs-attr">&quot;background&quot;</span>: <span class="hljs-string">&quot;#212121&quot;</span>,<br>      <span class="hljs-attr">&quot;foreground&quot;</span>: <span class="hljs-string">&quot;#d0d0d0&quot;</span><br>     &#125;<br>],<br></code></pre></td></tr></table></figure>
+
+<p><code>Homebrew</code> 配色:</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json">&#123;<br>    <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Homebrew&quot;</span>,<br>    <span class="hljs-attr">&quot;black&quot;</span>: <span class="hljs-string">&quot;#000000&quot;</span>,<br>    <span class="hljs-attr">&quot;red&quot;</span>: <span class="hljs-string">&quot;#FC5275&quot;</span>,<br>    <span class="hljs-attr">&quot;green&quot;</span>: <span class="hljs-string">&quot;#00a600&quot;</span>,<br>    <span class="hljs-attr">&quot;yellow&quot;</span>: <span class="hljs-string">&quot;#999900&quot;</span>,<br>    <span class="hljs-attr">&quot;blue&quot;</span>: <span class="hljs-string">&quot;#6666e9&quot;</span>,<br>    <span class="hljs-attr">&quot;purple&quot;</span>: <span class="hljs-string">&quot;#b200b2&quot;</span>,<br>    <span class="hljs-attr">&quot;cyan&quot;</span>: <span class="hljs-string">&quot;#00a6b2&quot;</span>,<br>    <span class="hljs-attr">&quot;white&quot;</span>: <span class="hljs-string">&quot;#bfbfbf&quot;</span>,<br>    <span class="hljs-attr">&quot;brightBlack&quot;</span>: <span class="hljs-string">&quot;#666666&quot;</span>,<br>    <span class="hljs-attr">&quot;brightRed&quot;</span>: <span class="hljs-string">&quot;#e50000&quot;</span>,<br>    <span class="hljs-attr">&quot;brightGreen&quot;</span>: <span class="hljs-string">&quot;#00d900&quot;</span>,<br>    <span class="hljs-attr">&quot;brightYellow&quot;</span>: <span class="hljs-string">&quot;#e5e500&quot;</span>,<br>    <span class="hljs-attr">&quot;brightBlue&quot;</span>: <span class="hljs-string">&quot;#0000ff&quot;</span>,<br>    <span class="hljs-attr">&quot;brightPurple&quot;</span>: <span class="hljs-string">&quot;#e500e5&quot;</span>,<br>    <span class="hljs-attr">&quot;brightCyan&quot;</span>: <span class="hljs-string">&quot;#00e5e5&quot;</span>,<br>    <span class="hljs-attr">&quot;brightWhite&quot;</span>: <span class="hljs-string">&quot;#e5e5e5&quot;</span>,<br>    <span class="hljs-attr">&quot;background&quot;</span>: <span class="hljs-string">&quot;#283033&quot;</span>,<br>    <span class="hljs-attr">&quot;foreground&quot;</span>: <span class="hljs-string">&quot;#00ff00&quot;</span><br>&#125;,<br></code></pre></td></tr></table></figure>
+
+<p>多个配色方案，需要在 <code>&#123;&#125;</code> 之间用 <code>,</code>隔开。</p>
+<h2 id="6-添加-Powershell-启动参数"><a href="#6-添加-Powershell-启动参数" class="headerlink" title="6. 添加 Powershell 启动参数"></a>6. 添加 Powershell 启动参数</h2><p>在Powershell中输入如下命令来创建 Microsoft.PowerShell_profile.ps1：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell">notepad.exe <span class="hljs-variable">$Profile</span><br></code></pre></td></tr></table></figure>
+
+<p>紧接着在弹出的页面中输入下面这一长串代码，保存并关闭。这个 Profile 配置文件与 .zshrc / .bashrc 文件一样，都是控制启动前参数的。</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell"><span class="hljs-comment">&lt;#</span><br><span class="hljs-comment"> * FileName: Microsoft.PowerShell_profile.ps1</span><br><span class="hljs-comment"> * Author: 刘 鹏</span><br><span class="hljs-comment"> * Email: littleNewton6@outlook.com</span><br><span class="hljs-comment"> * Date: 2020, May. 1</span><br><span class="hljs-comment"> * Copyright: No copyright. You can use this code for anything with no warranty.</span><br><span class="hljs-comment">#&gt;</span><br><br><br><span class="hljs-comment">#------------------------------- Import Modules BEGIN -------------------------------</span><br><span class="hljs-comment"># 引入 posh-git</span><br><span class="hljs-built_in">Import-Module</span> posh<span class="hljs-literal">-git</span><br><br><span class="hljs-comment"># 引入 oh-my-posh</span><br><span class="hljs-built_in">Import-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span><br><br><span class="hljs-comment"># 设置 PowerShell 主题</span><br><span class="hljs-built_in">Set-Theme</span> Paradox<br><span class="hljs-comment">#------------------------------- Import Modules END   -------------------------------</span><br><br><br><br><br><br><span class="hljs-comment">#-------------------------------  Set Hot-keys BEGIN  -------------------------------</span><br><span class="hljs-comment"># 设置 Tab 键补全</span><br><span class="hljs-comment"># Set-PSReadlineKeyHandler -Key Tab -Function Complete</span><br><br><span class="hljs-comment"># 设置 Ctrl+d 为菜单补全和 Intellisense</span><br><span class="hljs-built_in">Set-PSReadLineKeyHandler</span> <span class="hljs-literal">-Key</span> <span class="hljs-string">&quot;Tab&quot;</span> <span class="hljs-literal">-Function</span> MenuComplete<br><br><span class="hljs-comment"># 设置 Ctrl+d 为退出 PowerShell</span><br><span class="hljs-built_in">Set-PSReadlineKeyHandler</span> <span class="hljs-literal">-Key</span> <span class="hljs-string">&quot;Ctrl+d&quot;</span> <span class="hljs-literal">-Function</span> ViExit<br><br><span class="hljs-comment"># 设置 Ctrl+z 为撤销</span><br><span class="hljs-built_in">Set-PSReadLineKeyHandler</span> <span class="hljs-literal">-Key</span> <span class="hljs-string">&quot;Ctrl+z&quot;</span> <span class="hljs-literal">-Function</span> Undo<br><br><span class="hljs-comment"># 设置向上键为后向搜索历史记录</span><br><span class="hljs-built_in">Set-PSReadLineKeyHandler</span> <span class="hljs-literal">-Key</span> UpArrow <span class="hljs-literal">-Function</span> HistorySearchBackward<br><br><span class="hljs-comment"># 设置向下键为前向搜索历史纪录</span><br><span class="hljs-built_in">Set-PSReadLineKeyHandler</span> <span class="hljs-literal">-Key</span> DownArrow <span class="hljs-literal">-Function</span> HistorySearchForward<br><span class="hljs-comment">#-------------------------------  Set Hot-keys END    -------------------------------</span><br><br><br><br><br><br><span class="hljs-comment">#-------------------------------    Functions BEGIN   -------------------------------</span><br><span class="hljs-comment"># Python 直接执行</span><br><span class="hljs-variable">$env:PATHEXT</span> += <span class="hljs-string">&quot;;.py&quot;</span><br><br><span class="hljs-comment"># 更新 pip 的方法</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Update-Packages</span></span> &#123;<br>    <span class="hljs-comment"># update pip</span><br>    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">&quot;Step 1: 更新 pip&quot;</span> <span class="hljs-literal">-ForegroundColor</span> Magenta <span class="hljs-literal">-BackgroundColor</span> Cyan<br>    <span class="hljs-variable">$a</span> = pip list -<span class="hljs-literal">-outdated</span><br>    <span class="hljs-variable">$num_package</span> = <span class="hljs-variable">$a</span>.Length - <span class="hljs-number">2</span><br>    <span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = <span class="hljs-number">0</span>; <span class="hljs-variable">$i</span> <span class="hljs-operator">-lt</span> <span class="hljs-variable">$num_package</span>; <span class="hljs-variable">$i</span>++) &#123;<br>        <span class="hljs-variable">$tmp</span> = (<span class="hljs-variable">$a</span>[<span class="hljs-number">2</span> + <span class="hljs-variable">$i</span>].Split(<span class="hljs-string">&quot; &quot;</span>))[<span class="hljs-number">0</span>]<br>        pip install <span class="hljs-literal">-U</span> <span class="hljs-variable">$tmp</span><br>    &#125;<br><br>    <span class="hljs-comment"># update TeX Live</span><br>    <span class="hljs-variable">$CurrentYear</span> = <span class="hljs-built_in">Get-Date</span> <span class="hljs-literal">-Format</span> yyyy<br>    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">&quot;Step 2: 更新 TeX Live&quot;</span> <span class="hljs-variable">$CurrentYear</span> <span class="hljs-literal">-ForegroundColor</span> Magenta <span class="hljs-literal">-BackgroundColor</span> Cyan<br>    tlmgr update -<span class="hljs-literal">-self</span><br>    tlmgr update -<span class="hljs-literal">-all</span><br>&#125;<br><span class="hljs-comment">#-------------------------------    Functions END     -------------------------------</span><br><br><br><br><br><br><span class="hljs-comment">#-------------------------------   Set Alias Begin    -------------------------------</span><br><span class="hljs-comment"># 1. 编译函数 make</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MakeThings</span></span> &#123;<br>    nmake.exe <span class="hljs-variable">$args</span> <span class="hljs-literal">-nologo</span><br>&#125;<br><span class="hljs-built_in">Set-Alias</span> <span class="hljs-literal">-Name</span> make <span class="hljs-literal">-Value</span> MakeThings<br><br><span class="hljs-comment"># 2. 更新系统 os-update</span><br><span class="hljs-built_in">Set-Alias</span> <span class="hljs-literal">-Name</span> os<span class="hljs-literal">-update</span> <span class="hljs-literal">-Value</span> <span class="hljs-built_in">Update-Packages</span><br><br><span class="hljs-comment"># 3. 查看目录 ls &amp; ll</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ListDirectory</span></span> &#123;<br>    (<span class="hljs-built_in">Get-ChildItem</span>).Name<br>    <span class="hljs-built_in">Write-Host</span>(<span class="hljs-string">&quot;&quot;</span>)<br>&#125;<br><span class="hljs-built_in">Set-Alias</span> <span class="hljs-literal">-Name</span> <span class="hljs-built_in">ls</span> <span class="hljs-literal">-Value</span> ListDirectory<br><span class="hljs-built_in">Set-Alias</span> <span class="hljs-literal">-Name</span> ll <span class="hljs-literal">-Value</span> <span class="hljs-built_in">Get-ChildItem</span><br><span class="hljs-comment">#-------------------------------    Set Alias END     -------------------------------</span><br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="7-添加右键菜单"><a href="#7-添加右键菜单" class="headerlink" title="7. 添加右键菜单"></a>7. 添加右键菜单</h2><p>Github 上面已经有 powershell 脚本了，可以用管理员身份运行该脚本 + 某些参数以实现配置右键菜单。</p>
+<p><a href="https://github.com/lextm/windowsterminal-shell/">原版 Github 仓库</a></p>
+<p><a href="https://github.com/LittleNewton/Open_Windows_Terminal_Here">另一个改版脚本仓库</a></p>
+<p>下载第2个，解压，管理员模式打开powershell 7，进入解压出来的文件夹的src文件夹下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs text">.\install.ps1 mini<br></code></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://pic2.zhimg.com/80/v2-718823c3fb47a87b14905c9fa2e3d35d_720w.jpg" alt="右键菜单"></p>
+<p><strong>目前发现问题</strong>：该脚本会读取 Windows Terminal 的 profile，然后把其中的非隐藏项目添加到右键菜单（默认视图），这之后如果你修改了 profile，那么需要用 <code>uninstall.ps1</code> 脚本先清除右键菜单，然后重新 install 一遍。</p>
+<h2 id="8-配置后Terminal界面展示"><a href="#8-配置后Terminal界面展示" class="headerlink" title="8. 配置后Terminal界面展示"></a>8. 配置后Terminal界面展示</h2><p>Github 上面已经有 powershell 脚本了，可以用管理员身份运行该脚本 + 某些参数以实现配置右键菜单。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-59db8c16ee82335a0f6229b1f01f5481_720w.jpg" alt="图1：常规展示"></p>
+<p>​                                                                                                               </p>
+<p><img src="https://pic1.zhimg.com/80/v2-f25122805f8f8ab76ffc979238fc2444_720w.jpg" alt="图2：在 git 目录下的效果"></p>
+<p>​                                                                                               </p>
+]]></content>
+      <categories>
+        <category>软件配置</category>
+      </categories>
+      <tags>
+        <tag>Windows Terminal</tag>
+        <tag>Powershell</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -127,16 +283,16 @@
 <span id="more"></span>
 
 <p>This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
@@ -154,165 +310,50 @@
 <li><p>将 <code>work_crawler.default_configuration.js</code> 改名成 <code>work_crawler.configuration.js</code>。</p>
 </li>
 <li><p>打开 <code>work_crawler.configuration.js</code>， <strong>默认下载目录</strong>修改如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">global</span>.data_directory = <span class="string">&#x27;C:\\Software\\work_crawler-master\\Download\\&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-built_in">global</span>.data_directory = <span class="hljs-string">&#x27;C:\\Software\\work_crawler-master\\Download\\&#x27;</span>;<br></code></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="以下操作均在C-Software-work-crawler-master下打开CMD后执行"><a href="#以下操作均在C-Software-work-crawler-master下打开CMD后执行" class="headerlink" title="以下操作均在C:\Software\work_crawler-master下打开CMD后执行"></a>以下操作均在C:\Software\work_crawler-master下打开CMD后执行</h2><p><strong>①使用cnpm来安装：</strong></p>
 <p>​    1.安装<strong>cnpm</strong>并添加全局环境变量，解决npm无法使用国内源下载git源码的问题</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm install cnpm -g  --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs JavaScript">npm install cnpm -g  --registry=https:<span class="hljs-comment">//registry.npm.taobao.org</span><br></code></pre></td></tr></table></figure>
 
 <p>​    2.安装<strong>electron</strong>并添加全局环境变量，可通过<code>electron -V</code>检测版本来看是否安装成功</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">cnpm install electron -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">cnpm install electron -g<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">cnpm i -D electron@latest</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">cnpm i -D electron@latest<br></code></pre></td></tr></table></figure>
 
 <p>​    3.下载cejs程式库</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">cnpm install cejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">cnpm install cejs<br></code></pre></td></tr></table></figure>
 
 <p><strong>②.使用npm来安装【临时生效版】：</strong></p>
 <p>​    1.npm更换国内源设定来规避无法下载git源码问题</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">npm config <span class="hljs-built_in">set</span> registry https://registry.npm.taobao.org<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd"><span class="hljs-built_in">set</span> ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/<br></code></pre></td></tr></table></figure>
 
 <p>​    2.安装<strong>electron</strong>并添加全局环境变量，可通过<code>electron -V</code>检测版本来看是否安装成功</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm i -D electron@latest</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">npm i -D electron@latest<br></code></pre></td></tr></table></figure>
 
 <p>​    3.下载cejs程式库</p>
-<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install cejs</span><br></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><code class="hljs cmd">npm install cejs<br></code></pre></td></tr></table></figure>
 
 <p>​    4.如果要重置npm下载源状态：</p>
-<figure class="highlight arduino"><table><tr><td class="code"><pre><span class="line">npm config set registry https:<span class="comment">//registry.npmjs.org</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="code"><pre><code class="hljs arduino">npm config set registry https:<span class="hljs-comment">//registry.npmjs.org</span><br></code></pre></td></tr></table></figure>
 
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line"><span class="builtin-name">set</span> ELECTRON_MIRROR=</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><span class="hljs-builtin-name">set</span> ELECTRON_MIRROR=<br></code></pre></td></tr></table></figure>
 
 <p><strong>③.使用npm来安装【永久生效版】：</strong></p>
 <p>​    1.找到C:\Users\LXY路径下的.npmrc文件，<code>#</code>屏蔽默认下载源路径，复制下列命令替换国内源：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">registry=https:<span class="regexp">//</span>registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">registry=https:<span class="hljs-regexp">//</span>registry.npm.taobao.org<br></code></pre></td></tr></table></figure>
 
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">electron_mirror=https:<span class="regexp">//</span>npm.taobao.org<span class="regexp">/mirrors/</span>electron/</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">electron_mirror=https:<span class="hljs-regexp">//</span>npm.taobao.org<span class="hljs-regexp">/mirrors/</span>electron/<br></code></pre></td></tr></table></figure>
 
 <h2 id="执行-start-gui-electron-bat即可开始使用"><a href="#执行-start-gui-electron-bat即可开始使用" class="headerlink" title="执行 start_gui_electron.bat即可开始使用"></a>执行 <code>start_gui_electron.bat</code>即可开始使用</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Hexo博客插件安装与设置</title>
-    <url>/post/41e763fc.html</url>
-    <content><![CDATA[<h2 id="Hexo-文章永久链接插件"><a href="#Hexo-文章永久链接插件" class="headerlink" title="Hexo 文章永久链接插件"></a>Hexo 文章永久链接插件</h2><span id="more"></span>
-
-<p><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></p>
-<h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-
-<p>然后在 <code>G:\software\Blog\cnlolicon777Blog</code> 站点配置文件 <code>_config.yml</code>  中修改为如下并保存：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">url:</span> https:<span class="comment">//cnlolicon777.github.io</span></span><br><span class="line"><span class="symbol"></span></span><br><span class="line"><span class="symbol">permalink:</span> archives/:abbrlink.html</span><br><span class="line"><span class="symbol">abbrlink:</span>  </span><br><span class="line"><span class="symbol">alg:</span> crc32  <span class="meta"># 算法：crc16(default) and crc32  </span></span><br><span class="line"><span class="symbol">rep:</span> hex    <span class="meta"># 进制：dec(default) and hexpermalink_defaults:</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
-
-<p>再重新渲染才能成功：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-<h2 id="Hexo-内容搜索"><a href="#Hexo-内容搜索" class="headerlink" title="Hexo 内容搜索"></a>Hexo 内容搜索</h2><h3 id="安装配置-1"><a href="#安装配置-1" class="headerlink" title="安装配置"></a>安装配置</h3><p>在Blog根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-
-<p>修改 <code>G:\software\Blog\cnlolicon777Blog</code> 目录下站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 本地搜索</span></span><br><span class="line"><span class="meta"># npm install hexo-generator-searchdb --save</span></span><br><span class="line"><span class="symbol">search:</span></span><br><span class="line"><span class="symbol">  path:</span> search.xml</span><br><span class="line"><span class="symbol">  field:</span> post</span><br><span class="line"><span class="symbol">  format:</span> html</span><br><span class="line"><span class="symbol">  limit:</span> <span class="number">100</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>path：索引文件的路径，相对于站点根目录</li>
-<li>field：搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</li>
-<li>limit：限制搜索的条目数</li>
-</ul>
-<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code> 目录下主题配置文件 <code>_config.yml</code>：</p>
-<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="meta"># Local Search</span></span><br><span class="line"><span class="meta"># Dependencies: https:<span class="comment">//github.com/theme-next/hexo-generator-searchdb</span></span></span><br><span class="line"><span class="symbol">local_search:</span></span><br><span class="line"><span class="symbol">  enable:</span> true</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br></pre></td></tr></table></figure>
-
-<p>再重新渲染才能成功：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h2 id="Live-2d-看板娘"><a href="#Live-2d-看板娘" class="headerlink" title="Live-2d 看板娘"></a>Live-2d 看板娘</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a></p>
-<p><a href="https://github.com/xiazeyu/live2d-widget-models">看板娘模型仓库1</a></p>
-<p><a href="https://github.com/evrstr/live2d-widget-models">看板娘模型仓库2</a></p>
-<p><a href="https://github.com/summerscar/live2dDemo">看板娘模型选择</a></p>
-<h4 id="初阶版"><a href="#初阶版" class="headerlink" title="初阶版"></a>初阶版</h4><p>安装插件 <code>hexo-helper-live2d</code> :</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">npm</span> install –save hexo-helper-live<span class="number">2</span>d</span><br></pre></td></tr></table></figure>
-
-<p>可以命令行安装的：</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">npm install 模型名称 <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
-
-<p>无法命令行安装的：</p>
-<p>比如血小板模型 <a href="https://github.com/evrstr/live2d-widget-models">60.kesyoban</a>，<a href="https://github.com/evrstr/live2d-widget-models">61.platelet</a></p>
-<p>整个仓库打包下载，然后复制压缩包 <code>live2d_evrstr</code> 路径下文件夹下 <code>kesyoban</code>,<code>platelet</code></p>
-<p>在根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下新建文件夹 <code>live2d_models</code> ,将复制的模型文件夹放入</p>
-<p>模型文件夹中<code>model.json</code>文件统一命名为<code>文件夹名称.model.json</code>格式（例：kesyoban.model.json）</p>
-<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code> ,在末尾添加：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># live2d</span></span><br><span class="line"><span class="comment"># https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</span></span><br><span class="line"><span class="comment"># https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> </span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span> <span class="comment"># 默认</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span> <span class="comment"># 插件在站点上的根目录(相对路径)</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span> <span class="comment"># 脚本文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span> <span class="comment"># 模型文件相对与插件根目录路径</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span> <span class="comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">false</span> <span class="comment"># 调试, 是否在控制台输出日志</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">kesyoban</span> <span class="comment"># 对应  scale: 0.8 width: 180 height: 300 hOffset: 0 vOffset: -12</span></span><br><span class="line">    <span class="comment"># use: platelet # 对应  width: 268 height: 300 hOffset: 3 vOffset: 5</span></span><br><span class="line">    <span class="comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span></span><br><span class="line">    <span class="comment"># use: ./wives/wanko # 相对于博客根目录的路径</span></span><br><span class="line">    <span class="comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 自定义 url</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.8</span></span><br><span class="line">    <span class="attr">hHeadPos:</span> <span class="number">0.5</span></span><br><span class="line">    <span class="attr">vHeadPos:</span> <span class="number">0.618</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">superSample:</span> <span class="number">2</span> <span class="comment"># 超采样等级</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">left</span> <span class="comment"># 显示位置 left/right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">180</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">300</span></span><br><span class="line">    <span class="attr">hOffset:</span> <span class="number">0</span> <span class="comment"># 水平偏移</span></span><br><span class="line">    <span class="attr">vOffset:</span> <span class="number">-12</span> <span class="comment"># 垂直偏移</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">false</span> <span class="comment"># 是否在移动设备上显示</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="number">0.5</span> <span class="comment"># 缩放</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacityDefault:</span> <span class="number">0.7</span> <span class="comment"># 透明度</span></span><br><span class="line">    <span class="attr">opacityOnHover:</span> <span class="number">0.2</span></span><br></pre></td></tr></table></figure>
-
-<p>最后执行命令即可生效：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br><span class="line"><span class="attribute">hexo g </span></span><br><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure>
-
-<p>本地查看无问题后上传：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><p>如有安装初阶版，先移除，否者只有简易版会生效：</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">npm</span> uninstall hexo-helper-live<span class="number">2</span>d</span><br></pre></td></tr></table></figure>
-
-<p>下载 <a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a> 最新版 <a href="https://github.com/stevenjoezhang/live2d-widget/releases/tag/v0.8.3">v0.8.3</a></p>
-<p>解压出来的文件夹 <code>live2d-widget-0.8.3</code> 改名为 <code>libe2d-widget</code></p>
-<p>复制到 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source</code> 位置</p>
-<p>修改文件夹<code>live2d-widget-0.8.3</code> 中 <code>autoload.js</code></p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">const live2d_path = <span class="string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/&quot;</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-<p>改为本地绝对路径：</p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">const live2d_path = <span class="string">&quot;/live2d-widget/&quot;</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\layout</code> 文件夹中 <code>_layout.swig</code></p>
-<p><code>&lt;head&gt;</code> 标签下先增加如下依赖，否则无法加载：</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;link <span class="attribute">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attribute">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<p><code>&lt;footer&gt;</code> 标签下增加：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;/live2d-widget/autoload.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<blockquote>
-<p><strong>如有安装初阶版，，跳过下面这步</strong></p>
-</blockquote>
-<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code>，在末尾添加：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># live2d</span></span><br><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>最后执行命令即可生效：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br><span class="line"><span class="attribute">hexo g </span></span><br><span class="line"><span class="attribute">hexo s</span></span><br></pre></td></tr></table></figure>
-
-<p>本地查看无问题后上传：</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h3><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <code>waifu.css</code> 修改看板大小与位置，<code>waifu-tips.json</code> 修改显示的对话</p>
-<p>2.进阶版如需增加模型需自制 <a href="https://github.com/fghrsh/live2d_api">live2d_api</a></p>
-<p>3.目前使用初阶版，<code>libe2d-widget</code> 路径下 <code>autoload.js</code> 通过注释 <code>const live2d_path = &quot;/live2d-widget/&quot;</code> 使进阶版失效。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></p>
-<p><a href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/">Next配置live2d 看板娘</a></p>
-<p><a href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/">hexo next主题美化那些事（一）</a></p>
-<p><a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d 中文readme</a></p>
-]]></content>
+      <categories>
+        <category>软件配置</category>
+      </categories>
+      <tags>
+        <tag>work_crawler</tag>
+        <tag>爬虫工具</tag>
+      </tags>
   </entry>
 </search>

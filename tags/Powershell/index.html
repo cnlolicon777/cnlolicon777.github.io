@@ -14,29 +14,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="将复数子文件夹中文件提取到上级文件夹">
+  <meta name="description" content="有则加勉，无莫强求">
   <meta name="author" content="cnlolicon777">
   <meta name="keywords" content="">
   
-  <title>Total Commander 自用重命名规则记录 - cnlolicon777&#39;s Blog</title>
+  <title>标签 - Powershell - cnlolicon777&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
-    
-  
-
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  
 
 
 
@@ -64,7 +48,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 80vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -163,50 +147,17 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Total Commander 自用重命名规则记录">
+            <span class="h2" id="subtitle" title="标签 - Powershell">
               
             </span>
 
             
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-05-28 21:40" pubdate>
-        2021年5月28日 晚上
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      316 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      3
-       分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
           </div>
 
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
           
         </div>
       </div>
@@ -215,124 +166,40 @@
 
   <main>
     
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 1 篇文章</p>
+  <hr>
+  
+  
+    
       
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">Total Commander 自用重命名规则记录</h1>
-            
-            <div class="markdown-body">
-              <h3 id="将复数子文件夹中文件提取到上级文件夹"><a href="#将复数子文件夹中文件提取到上级文件夹" class="headerlink" title="将复数子文件夹中文件提取到上级文件夹"></a>将复数子文件夹中文件提取到上级文件夹</h3><span id="more"></span>
-
-<h5 id="应对场景："><a href="#应对场景：" class="headerlink" title="应对场景："></a>应对场景：</h5><blockquote>
-<p>001,002,003……子文件夹中001_01,001_02……002_01……文件批量提取到上级文件夹。</p>
-</blockquote>
-<p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">..\[N]<br></code></pre></td></tr></table></figure>
+      <p class="h5">2021</p>
+    
+    <a href="/post/954d2ae6.html" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">Windows Terminal + PowerShell 7.2 配置总结</span>
+      <time style="float: right;">05-29</time>
+    </a>
+  
+</div>
 
 
 
 
 
-<h3 id="批量将文件夹名称写入文件夹中文件开头"><a href="#批量将文件夹名称写入文件夹中文件开头" class="headerlink" title="批量将文件夹名称写入文件夹中文件开头"></a>批量将文件夹名称写入文件夹中文件开头</h3><h5 id="应对场景：-1"><a href="#应对场景：-1" class="headerlink" title="应对场景："></a>应对场景：</h5><blockquote>
-<p>001,002,003……的子文件夹中01,02,03……开头加上001_ ,002_ ,003_ …….。</p>
-</blockquote>
-<p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-attr">[P]</span>_<span class="hljs-selector-attr">[N]</span><br></code></pre></td></tr></table></figure>
-
-
-
-
-
-<h3 id="已经提取到上级文件夹的文件重新批量放回原文件夹"><a href="#已经提取到上级文件夹的文件重新批量放回原文件夹" class="headerlink" title="已经提取到上级文件夹的文件重新批量放回原文件夹"></a>已经提取到上级文件夹的文件重新批量放回原文件夹</h3><h5 id="应对场景：-2"><a href="#应对场景：-2" class="headerlink" title="应对场景："></a>应对场景：</h5><blockquote>
-<p>已经提取出来的001_01,001_02……002_01……的文件批量重新放回001,002,003……的子文件夹中。</p>
-</blockquote>
-<p>TC上索引到最外一级文件夹，ctrl+b显示所有文件，shift+鼠标左键全选需要移动的文件，Ctrl+M唤出重命名工具，“文件名”处写上下列规则即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">[N1-3]\[N]<br></code></pre></td></tr></table></figure>
-
-
-
-
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/Total-Commander/">Total Commander</a>
-                    
-                  </div>
-                
               </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
-              
-                <div class="post-prevnext">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/post/41e763fc.html">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hexo + next 博客插件安装与设置</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/post/f5fe9c1.html">
-                        <span class="hidden-mobile">Mangameeya - AVS - Blur篇</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
             </div>
-
-            
-          </article>
+          </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
 
     
@@ -412,15 +279,9 @@
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
