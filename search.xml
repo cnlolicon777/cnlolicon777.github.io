@@ -583,24 +583,45 @@
 
 
 
-<h3 id="3-2-设定-back2top（返回顶部按钮显示阅读进度）"><a href="#3-2-设定-back2top（返回顶部按钮显示阅读进度）" class="headerlink" title="3.2 设定 back2top（返回顶部按钮显示阅读进度）"></a>3.2 设定 <code>back2top（返回顶部按钮显示阅读进度）</code></h3><p>定位到 <code>back2top</code> 部分，修改如下：</p>
+<h3 id="3-2-设定-back2top（返回顶部按钮显示阅读进度）"><a href="#3-2-设定-back2top（返回顶部按钮显示阅读进度）" class="headerlink" title="3.2 设定 back2top（返回顶部按钮显示阅读进度）"></a>3.2 设定 <code>back2top（返回顶部按钮显示阅读进度）</code></h3><p>定位到 <code>back2top:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">back2top:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Back to top in sidebar.</span><br>  <span class="hljs-attr">sidebar:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># Scroll percent label in b2t button.</span><br>  <span class="hljs-attr">scrollpercent:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-3-设定-highlight-theme（语法高亮风格）"><a href="#3-3-设定-highlight-theme（语法高亮风格）" class="headerlink" title="3.3 设定 highlight_theme（语法高亮风格）"></a>3.3 设定 <code>highlight_theme（语法高亮风格）</code></h3><p>定位到 <code>highlight_theme</code> 部分，修改如下：</p>
+<h3 id="3-3-设定-highlight-theme（语法高亮风格）"><a href="#3-3-设定-highlight-theme（语法高亮风格）" class="headerlink" title="3.3 设定 highlight_theme（语法高亮风格）"></a>3.3 设定 <code>highlight_theme（语法高亮风格）</code></h3><p>定位到 <code>highlight_theme:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">highlight_theme:</span> <span class="hljs-string">night</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-4-设定-copy-button（代码一键复制按钮）"><a href="#3-4-设定-copy-button（代码一键复制按钮）" class="headerlink" title="3.4 设定 copy_button（代码一键复制按钮）"></a>3.4 设定 <code>copy_button（代码一键复制按钮）</code></h3><p>定位到 <code>copy_button</code> 部分，修改如下：</p>
+<h3 id="3-4-设定-copy-button（代码一键复制按钮）"><a href="#3-4-设定-copy-button（代码一键复制按钮）" class="headerlink" title="3.4 设定 copy_button（代码一键复制按钮）"></a>3.4 设定 <code>copy_button（代码一键复制按钮）</code></h3><p>定位到 <code>copy_button:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">copy_button:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Show text copy result.</span><br>  <span class="hljs-attr">show_result:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Available values: default | flat | mac</span><br>  <span class="hljs-attr">style:</span> <span class="hljs-string">flat</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-5-设定-reading-progress（顶部加载条）"><a href="#3-5-设定-reading-progress（顶部加载条）" class="headerlink" title="3.5 设定 reading_progress（顶部加载条）"></a>3.5 设定 <code>reading_progress（顶部加载条）</code></h3><p>定位到 <code>reading_progress</code> 部分，修改如下：</p>
+<h3 id="3-5-设定-reading-progress（顶部加载条）"><a href="#3-5-设定-reading-progress（顶部加载条）" class="headerlink" title="3.5 设定 reading_progress（顶部加载条）"></a>3.5 设定 <code>reading_progress（顶部加载条）</code></h3><p>定位到 <code>reading_progress:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Reading progress bar</span><br><span class="hljs-attr">reading_progress:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <br>  <span class="hljs-comment"># Available values: top | bottom</span><br>  <span class="hljs-attr">position:</span> <span class="hljs-string">top</span><br>  <span class="hljs-attr">color:</span> <span class="hljs-string">&quot;#37c6c0&quot;</span><br>  <span class="hljs-attr">height:</span> <span class="hljs-string">3px</span><br></code></pre></td></tr></table></figure>
 
+
+
+<h3 id="3-6-设定-toc（文章目录菜单）"><a href="#3-6-设定-toc（文章目录菜单）" class="headerlink" title="3.6 设定 toc（文章目录菜单）"></a>3.6 设定 <code>toc（文章目录菜单）</code></h3><p>定位到 <code>toc:</code> 部分，修改如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">toc:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Automatically add list number to toc.</span><br>  <span class="hljs-attr">number:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># If true, all words will placed on next lines if header width longer then sidebar width.</span><br>  <span class="hljs-attr">wrap:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># If true, all level of TOC in a post will be displayed, rather than the activated part of it.</span><br>  <span class="hljs-attr">expand_all:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Maximum heading depth of generated toc.</span><br>  <span class="hljs-attr">max_depth:</span> <span class="hljs-number">6</span><br></code></pre></td></tr></table></figure>
+
+<p>解决中文目录菜单无法点击跳转</p>
+<p><a href="https://github.com/theme-next/hexo-theme-next/pull/1540/files">github 解决方法</a></p>
+<p>打开 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source\js</code> 目录下 <code>util.js</code> 文件</p>
+<p>定位到 <code>registerSidebarTOC: function()</code> ：</p>
+<p>增加2行代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> target = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-built_in">decodeURI</span>(link.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>)).replace(<span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>));<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight aspectj"><table><tr><td class="code"><pre><code class="hljs aspectj"><span class="hljs-keyword">return</span> <span class="hljs-keyword">target</span>;<br></code></pre></td></tr></table></figure>
+
+<p>注释2行代码：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span> var target = document.getElementById(event.currentTarget.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>).replace(<span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>));<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight sas"><table><tr><td class="code"><pre><code class="hljs sas">// <span class="hljs-meta">return</span> document.getElementById(<span class="hljs-meta">link</span>.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>).<span class="hljs-meta">replace</span>(<span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>));<br></code></pre></td></tr></table></figure>
+
+<p>修改如下：</p>
+<p><img src="https://www.z4a.net/images/2021/06/04/next_solve_zh_toc_cannot_jump.png" alt="代码增删图示"></p>
 ]]></content>
       <categories>
         <category>博客配置</category>
