@@ -187,7 +187,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      391 字
+      396 字
     </span>
   
 
@@ -237,13 +237,16 @@
 <span id="more"></span>
 
 <h3 id="Variableblur-0-7版本下载"><a href="#Variableblur-0-7版本下载" class="headerlink" title="Variableblur 0.7版本下载"></a>Variableblur <a target="_blank" rel="noopener" href="https://web.archive.org/web/20140420184040if_/http://bengal.missouri.edu/~kes25c/variableblur.zip">0.7版本下载</a></h3><p>这个多合一模糊滤镜最亮眼的是加入了质量较高的GaussianBlur（高斯模糊），加载前提：<br>下载32bit <a target="_blank" rel="noopener" href="http://www.fftw.org/install/windows.html">FFTW 3.3.5</a> 解压后将 <code>libfftw3f-3.dll</code> 放入：<br>64位系统：<code>C:\windows\SysWOW64 </code><br>32位系统：<code>C:\windows\system32</code></p>
-<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur-（仅支持YV12）："><a href="#AverageBlur-（仅支持YV12）：" class="headerlink" title="AverageBlur （仅支持YV12）："></a><em>AverageBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">YV12(<span class="hljs-params">false</span>)</span>.<span class="hljs-constructor">AverageBlur(1,1)</span><br></code></pre></td></tr></table></figure>
+<h4 id="内置的三种模糊加载："><a href="#内置的三种模糊加载：" class="headerlink" title="内置的三种模糊加载："></a>内置的三种模糊加载：</h4><h5 id="AverageBlur"><a href="#AverageBlur" class="headerlink" title="AverageBlur"></a><em>AverageBlur</em></h5><p><strong>支持格式：</strong> <code>YV12</code></p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">YV12(<span class="hljs-params">false</span>)</span><br><span class="hljs-constructor">AverageBlur(1,1)</span><br></code></pre></td></tr></table></figure>
 
 <p>radY,radC建议先统一设置为 <code>1</code> ，模糊程度不够再往上加，仅支持整数。</p>
-<h5 id="BinomialBlur-（仅支持YV12）："><a href="#BinomialBlur-（仅支持YV12）：" class="headerlink" title="BinomialBlur （仅支持YV12）："></a><em>BinomialBlur</em> （仅支持YV12）：</h5><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">YV12(<span class="hljs-params">false</span>)</span>.<span class="hljs-constructor">BinomialBlur(0.5,0.5)</span><br></code></pre></td></tr></table></figure>
+<h5 id="BinomialBlur"><a href="#BinomialBlur" class="headerlink" title="BinomialBlur"></a><em>BinomialBlur</em></h5><p><strong>支持格式：</strong> <code>YV12</code></p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">YV12(<span class="hljs-params">false</span>)</span><br><span class="hljs-constructor">BinomialBlur(0.5,0.5)</span><br></code></pre></td></tr></table></figure>
 
-<p>varY,varC支持 <code>0.5,1,1.5</code> …这样的 <code>0.5</code> 的倍数数值设置，建议 <code>0.5</code> ，模糊程度不够再逐步累加</p>
-<h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">GaussianBlur</span>(<span class="hljs-number">0</span>.<span class="hljs-number">3</span>,<span class="hljs-number">0</span>.<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
+<p>varY,varC支持 “<code>0.5</code> <code>1.0</code> <code>1.5</code> …” 这样的 <code>0.5</code> 的倍数数值设置，建议 <code>0.5</code> ，模糊程度不够再逐步累加</p>
+<h5 id="GaussianBlur"><a href="#GaussianBlur" class="headerlink" title="GaussianBlur"></a><em>GaussianBlur</em></h5><p><strong>支持格式：</strong> <code>RGB24</code> <code>RGB32</code> <code>YUY2</code> <code>YV12</code></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">GaussianBlur</span>(<span class="hljs-number">0</span>.<span class="hljs-number">3</span>,<span class="hljs-number">0</span>.<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
 
 <p>varY,varC建议 <code>0.3</code> 起步，可 <code>0.1</code> 幅度提高数值，建议以 <code>0.2</code> 的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
 <h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>1.<strong>GaussianBlur</strong> 效果好但非常慢，再加上 <strong>mangameeya</strong> 所支持的AVS不支持多线程，一张2400像素宽的彩图 <strong>GaussianBlur</strong> 单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用 <strong>AverageBlur</strong> 或者 <strong>BinomialBlur</strong>。</p>
