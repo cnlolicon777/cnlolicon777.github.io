@@ -331,7 +331,7 @@
 <h5 id="GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）："><a href="#GaussianBlur-（支持RGB24-RGB32-YUY2-YV12）：" class="headerlink" title="GaussianBlur （支持RGB24, RGB32, YUY2, YV12）："></a><em>GaussianBlur</em> （支持RGB24, RGB32, YUY2, YV12）：</h5><figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">GaussianBlur</span>(<span class="hljs-number">0</span>.<span class="hljs-number">3</span>,<span class="hljs-number">0</span>.<span class="hljs-number">3</span>)<br></code></pre></td></tr></table></figure>
 
 <p>varY,varC建议 <code>0.3</code> 起步，可 <code>0.1</code> 幅度提高数值，建议以 <code>0.2</code> 的幅度更改，<del>修改时建议关闭实时AVS预览</del>。</p>
-<h4 id="个人经验与建议："><a href="#个人经验与建议：" class="headerlink" title="个人经验与建议："></a>个人经验与建议：</h4><p>1.<strong>GaussianBlur</strong> 效果好但非常慢，再加上 <strong>mangameeya</strong> 所支持的AVS不支持多线程，一张2400像素宽的彩图 <strong>GaussianBlur</strong> 单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用 <strong>AverageBlur</strong> 或者 <strong>BinomialBlur</strong>。</p>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>1.<strong>GaussianBlur</strong> 效果好但非常慢，再加上 <strong>mangameeya</strong> 所支持的AVS不支持多线程，一张2400像素宽的彩图 <strong>GaussianBlur</strong> 单滤镜要接近6s的时间做处理，建议可以慢慢看的漫画使用，需要快速切图的使用 <strong>AverageBlur</strong> 或者 <strong>BinomialBlur</strong>。</p>
 <p>2.<strong>Blur</strong>（模糊）滤镜一般可以作为 <strong>Sharpeners</strong>（锐化）滤镜（如内置的 <strong>USM</strong> 锐化）或者收线滤镜（内置的 <strong>WarpSharp</strong> 滤镜）的限制器使用，也就是前置处理导致画面锐化过度锯齿感严重可以适当模糊来综合处理提高观感。</p>
 ]]></content>
       <categories>
