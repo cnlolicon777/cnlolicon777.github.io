@@ -364,8 +364,261 @@
 <p>加载方法：</p>
 <figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">转换为YV12(false)<br><span class="hljs-function"><span class="hljs-title">f3kdb</span><span class="hljs-params">(<span class="hljs-number">15</span>,<span class="hljs-number">128</span>,<span class="hljs-number">128</span>,<span class="hljs-number">128</span>)</span></span><br></code></pre></td></tr></table></figure>
 
-
-
+<p><img src="https://www.z4a.net/images/2021/06/14/f3kdb_set.png" alt="f3kdb参数设置界面"></p>
+<table>
+<thead>
+<tr>
+<th>参数项</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>range</strong></td>
+<td>15</td>
+<td>色带检测范围</td>
+</tr>
+<tr>
+<td><code>Y</code> <code>Cb</code> <code>Cr</code></td>
+<td>64</td>
+<td>各平面色带检测阈值，如当前像素和参考像素之间的差值小于阈值，就会识别为色带，</td>
+</tr>
+<tr>
+<td><code>grainY</code> <code>grainC</code></td>
+<td>64</td>
+<td>指定在最后去色带阶段添加的微粒(grain)值</td>
+</tr>
+<tr>
+<td><strong>sample_mode</strong></td>
+<td>2</td>
+<td>指定参考像素：模式 <code>1</code>：2像素；模式 <code>2</code>：4像素。</td>
+</tr>
+<tr>
+<td><strong>seed</strong></td>
+<td></td>
+<td>Seed for random number generation</td>
+</tr>
+<tr>
+<td><strong>blur_first</strong></td>
+<td>true</td>
+<td>true: 当前像素与所有像素的平均值进行比较</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>false: 当前像素与所有像素进行比较 (只有当所有的差值小于阈值时，才被认为是色带)</td>
+</tr>
+<tr>
+<td><strong>dynamic_grain</strong></td>
+<td>false</td>
+<td>Use different grain pattern for each frame</td>
+</tr>
+<tr>
+<td><strong>opt</strong></td>
+<td>-1</td>
+<td>指定优化模式</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>-1: 使用主机CPU支持的最高等级优化</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>0: 不优化 （仅用于测试）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>1: SSE2 (Pentium 4, AMD K8)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2: SSSE3 (Core 2)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3: SSE4.1 (Core 2 45nm)</td>
+</tr>
+<tr>
+<td><strong>mt</strong></td>
+<td>true</td>
+<td>多线程处理，仅支持AviSynth+，true: <code>Y</code> <code>U</code> <code>V</code> 3个平面同时处理提升速度</td>
+</tr>
+<tr>
+<td><strong>dither_algo</strong></td>
+<td>3</td>
+<td>output bits = 16该参数会被忽略</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>1: 不抖动，LSB is truncated（适合低码率编码）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2: Ordered dithering （有序抖动） （适合低码率编码）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3: Floyd-Steinberg dithering （效果最佳，但容易被x264编码破坏）</td>
+</tr>
+<tr>
+<td><strong>keep_tv_range</strong></td>
+<td>false</td>
+<td>true: 所有像素会被定位到TV range （luma: 16 ~ 235, chroma: 16 ~ 240）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>true适合TV range的视频，除非抖动后像素值会 overflow/underflow</td>
+</tr>
+<tr>
+<td><strong>input_mode</strong></td>
+<td>0</td>
+<td>指定视频源输入模式</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>0: 8-bit 视频</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>1: 9-16 bit 视频，逐行扫描（stacked）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2: 9-16 bit 视频，隔行扫描 （interleaved）</td>
+</tr>
+<tr>
+<td><strong>input_depth</strong></td>
+<td>8</td>
+<td>指定视频源输入位深 （范围：8-16）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>8: (input_mode = 0)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>9-16: (input_mode = 1/2)</td>
+</tr>
+<tr>
+<td><strong>output_mode</strong></td>
+<td>0</td>
+<td>指定视频源输出模式</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>当指定为2时：帧宽度x2且预览乱码，但x264高位深编码后会恢复正常</td>
+</tr>
+<tr>
+<td><strong>output_depth</strong></td>
+<td>8</td>
+<td>指定视频源输出位深 （范围：8-16）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>若设置为16，dither_algo不启用</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>8: (output_mode = 0)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>9-16: (output_mode = 1/2)</td>
+</tr>
+<tr>
+<td><code>random_algo_ref</code> <code>random_algo_grain</code></td>
+<td>1</td>
+<td>Choose random number algorithm for reference positions / grains</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>0: 旧版本算法</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>1: 均匀分布</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2: 高斯分布</td>
+</tr>
+<tr>
+<td><code>random_param_ref</code> <code>random_param_grain</code></td>
+<td>1.0</td>
+<td>各随机数生成器参数（目前只对高斯生成器生效）</td>
+</tr>
+<tr>
+<td><strong>preset</strong></td>
+<td></td>
+<td>预设。预设优先级最高 (可组合使用 例：medium/nograin)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>depth: y=0/cb=0/cr=0/grainy=0/grainc=0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>low: y=32/cb=32/cr=32/grainy=32/grainc=32</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>medium: y=48/cb=48/cr=48/grainy=48/grainc=48</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>high: y=64/cb=64/cr=64/grainy=64/grainc=64</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>veryhigh: y=80/cb=80/cr=80/grainy=80/grainc=80</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>nograin: grainy=0/grainc=0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>luma: cb=0/cr=0/grainc=0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>chroma: y=0/grainy=0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>medium/nograin: y=48/cb=48/cr=48/grainy=0/grainc=0</td>
+</tr>
+</tbody></table>
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1.默认设置下Gradfun2db速度比f3kdb快不少</p>
 ]]></content>
       <categories>
