@@ -29,7 +29,7 @@
 
 <p>​    </p>
 <h2 id="5-github-ssh-配置"><a href="#5-github-ssh-配置" class="headerlink" title="5. github ssh 配置"></a>5. <strong><code>github ssh</code></strong> 配置</h2><p>双击打开 <code>G:\software\Git\</code> 安装路径下 <code>git-bash.exe</code></p>
-<p>复制如下代码到界面（<strong>鼠标右键复制</strong>）</p>
+<p>复制如下代码到界面（<strong>git-bash界面鼠标右键粘贴</strong>）</p>
 <figure class="highlight excel"><table><tr><td class="code"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> rsa -C <span class="hljs-string">&quot;github 注册邮箱&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>然后一直回车，如下则创建成功</p>
@@ -58,7 +58,7 @@
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
 
 <p>然后在浏览器键入 <code>http://localhost:4000</code> 即可访问</p>
-<h2 id="7-Hexo-发布至-github"><a href="#7-Hexo-发布至-github" class="headerlink" title="7.Hexo 发布至 github"></a>7.<strong><code>Hexo</code></strong> 发布至 <strong><code>github</code></strong></h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code></p>
+<h2 id="7-Hexo-发布至-github"><a href="#7-Hexo-发布至-github" class="headerlink" title="7. Hexo 发布至 github"></a>7. <strong><code>Hexo</code></strong> 发布至 <strong><code>github</code></strong></h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code></p>
 <p>修改内容：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/cnlolicon777/cnlolicon777.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
 
