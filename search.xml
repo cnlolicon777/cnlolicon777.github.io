@@ -6,13 +6,13 @@
     <content><![CDATA[<h2 id="1-创建一个-github-账号"><a href="#1-创建一个-github-账号" class="headerlink" title="1.创建一个 github 账号"></a>1.创建一个 <code>github</code> 账号</h2><span id="more"></span>
 
 <p>创建一个新号 （*@qq.com 为注册邮箱），账号名 <code>cnlolicon777</code></p>
-<h2 id="2-创建一个-github-仓库"><a href="#2-创建一个-github-仓库" class="headerlink" title="2.创建一个 github 仓库"></a>2.创建一个 <code>github</code> 仓库</h2><p>打开 <a href="https://github.com/">https://github.com/</a> 首页，点击 <code>Create repository</code></p>
+<h2 id="2-创建一个-github-仓库"><a href="#2-创建一个-github-仓库" class="headerlink" title="2.创建一个 github 仓库"></a>2.创建一个 <code>github</code> 仓库</h2><p>打开 <a class="btn" href="https://github.com/" title="鼠标左击在新标签页打开">github首页</a> ，点击 <code>Create repository</code></p>
 <h3 id="Repository-name-填写"><a href="#Repository-name-填写" class="headerlink" title="Repository name 填写"></a><code>Repository name</code> 填写</h3><figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">c<span class="hljs-symbol">nlolicon777</span>.github.io<br></code></pre></td></tr></table></figure>
 
 <p>勾选 <code>Add a README file</code> 后点击 <code>Create repository</code> 创建成功</p>
-<h2 id="3-安装-nodes-js"><a href="#3-安装-nodes-js" class="headerlink" title="3 .安装 nodes.js"></a>3 .安装 <strong><code>nodes.js</code></strong></h2><p><a href="https://nodejs.org/en/">nodes.js 下载地址</a></p>
+<h2 id="3-安装-nodes-js"><a href="#3-安装-nodes-js" class="headerlink" title="3 .安装 nodes.js"></a>3 .安装 <strong><code>nodes.js</code></strong></h2><p><a class="btn" href="https://nodejs.org/en/" title="鼠标左击在新标签页打开">nodes.js 下载地址</a></p>
 <p>安装到 <code>G:\software</code> 文件夹</p>
-<h2 id="4-安装-git-for-windows"><a href="#4-安装-git-for-windows" class="headerlink" title="4.安装 git for windows"></a>4.安装 <strong><code>git for windows</code></strong></h2><p><a href="https://gitforwindows.org/">git for windows 下载地址</a></p>
+<h2 id="4-安装-git-for-windows"><a href="#4-安装-git-for-windows" class="headerlink" title="4.安装 git for windows"></a>4.安装 <strong><code>git for windows</code></strong></h2><p><a class="btn" href="https://gitforwindows.org/" title="鼠标左击在新标签页打开">git for windows 下载地址</a></p>
 <p>安装到 <code>G:\software</code> 文件夹</p>
 <p>安装过程需要切换的勾选：</p>
 <div class="note note-danger">
@@ -39,8 +39,8 @@
 <p>title 键入 <code>cnlolicon777</code></p>
 <p>Key 键入 C:\Users\用户.ssh 目录下 <code>id_rsa.pub</code> 文件中的内容</p>
 <p>然后点击创建完成</p>
-<h2 id="6-Hexo-安装"><a href="#6-Hexo-安装" class="headerlink" title="6. Hexo 安装"></a>6. <strong><code>Hexo</code></strong> 安装</h2><p><a href="https://hexo.io/zh-cn/">hexo官网</a></p>
-<p><a href="https://hexo.io/zh-cn/docs/">hexo官方文档</a></p>
+<h2 id="6-Hexo-安装"><a href="#6-Hexo-安装" class="headerlink" title="6. Hexo 安装"></a>6. <strong><code>Hexo</code></strong> 安装</h2><p><a class="btn" href="https://hexo.io/zh-cn/" title="鼠标左击在新标签页打开">hexo官网</a></p>
+<p><a class="btn" href="https://hexo.io/zh-cn/docs/" title="鼠标左击在新标签页打开">hexo官方文档</a></p>
 <p>在本地 <code>G:\software\</code> 新建 <strong>Blog</strong> 文件夹并打开该路径下 <strong>CMD</strong></p>
 <p>复制如下代码并回车</p>
 <figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure>
@@ -98,7 +98,7 @@
     <url>/post/41e763fc.html</url>
     <content><![CDATA[<h2 id="Hexo-文章永久链接插件"><a href="#Hexo-文章永久链接插件" class="headerlink" title="Hexo 文章永久链接插件"></a><code>Hexo</code> 文章永久链接插件</h2><span id="more"></span>
 
-<p><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink 项目地址</a></p>
+<p><a class="btn" href="https://github.com/rozbo/hexo-abbrlink" title="鼠标左击在新标签页打开">hexo-abbrlink 项目地址</a></p>
 <h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install hexo-abbrlink <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
 
@@ -112,8 +112,6 @@
 
 <p>再重新渲染才能成功：</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure>
-
-
 
 
 
@@ -145,10 +143,10 @@
 
 
 
-<h2 id="Live-2d-看板娘"><a href="#Live-2d-看板娘" class="headerlink" title="Live-2d 看板娘"></a><code>Live-2d</code> 看板娘</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a></p>
-<p><a href="https://github.com/xiazeyu/live2d-widget-models">看板娘模型仓库1</a></p>
-<p><a href="https://github.com/evrstr/live2d-widget-models">看板娘模型仓库2</a></p>
-<p><a href="https://github.com/summerscar/live2dDemo">看板娘模型选择</a></p>
+<h2 id="Live-2d-看板娘"><a href="#Live-2d-看板娘" class="headerlink" title="Live-2d 看板娘"></a><code>Live-2d</code> 看板娘</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a class="btn" href="https://github.com/stevenjoezhang/live2d-widget" title="鼠标左击在新标签页打开">张书樵魔改 live2d-widget 项目地址</a></p>
+<p><a class="btn" href="https://github.com/xiazeyu/live2d-widget-models" title="鼠标左击在新标签页打开">看板娘模型仓库1</a></p>
+<p><a class="btn" href="https://github.com/evrstr/live2d-widget-models" title="鼠标左击在新标签页打开">看板娘模型仓库2</a></p>
+<p><a class="btn" href="https://github.com/summerscar/live2dDemo" title="鼠标左击在新标签页打开">看板娘模型选择</a></p>
 <h4 id="初阶版"><a href="#初阶版" class="headerlink" title="初阶版"></a>初阶版</h4><p>安装插件 <code>hexo-helper-live2d</code> </p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">npm</span> install –save hexo-helper-live<span class="hljs-number">2</span>d<br></code></pre></td></tr></table></figure>
 
@@ -210,10 +208,10 @@
 <h3 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h3><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <code>waifu.css</code> 修改看板大小与位置，<code>waifu-tips.json</code> 修改显示的对话</p>
 <p>2.进阶版如需增加模型需自制 <a href="https://github.com/fghrsh/live2d_api">live2d_api</a></p>
 <p>3.目前使用初阶版，<code>libe2d-widget</code> 路径下 <code>autoload.js</code> 通过注释 <code>const live2d_path = &quot;/live2d-widget/&quot;</code> 使进阶版失效。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/">hexo添加看板娘</a></p>
-<p><a href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/">Next配置live2d 看板娘</a></p>
-<p><a href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/">hexo next主题美化那些事（一）</a></p>
-<p><a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d 中文readme</a></p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a class="btn" href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/" title="鼠标左击在新标签页打开">hexo添加看板娘</a></p>
+<p><a class="btn" href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/" title="鼠标左击在新标签页打开">Next配置live2d 看板娘</a></p>
+<p><a class="btn" href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/" title="鼠标左击在新标签页打开">hexo next主题美化那些事（一）</a></p>
+<p><a class="btn" href="https://github.com/EYHN/hexo-helper-live2d" title="鼠标左击在新标签页打开">hexo-helper-live2d 中文 readme</a></p>
 ]]></content>
       <categories>
         <category>博客配置</category>
