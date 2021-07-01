@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      564 字
+      559 字
     </span>
   
 
@@ -242,7 +242,7 @@
             <p>fluid Version: 1.8.11</p>
           </div>
 
-<h1 id="配置-next-主题"><a href="#配置-next-主题" class="headerlink" title="配置 next 主题"></a>配置 <strong><code>next</code></strong> 主题</h1><h2 id="1-next-主题安装"><a href="#1-next-主题安装" class="headerlink" title="1. next 主题安装"></a>1. <code>next</code> 主题安装</h2><p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/archive/refs/tags/v7.8.0.zip">next 7.8.0 release 下载地址</a></p>
+<h1 id="配置-next-主题"><a href="#配置-next-主题" class="headerlink" title="配置 next 主题"></a>配置 <strong><code>next</code></strong> 主题</h1><h2 id="1-next-主题安装"><a href="#1-next-主题安装" class="headerlink" title="1. next 主题安装"></a>1. <code>next</code> 主题安装</h2><p><a class="btn" target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/archive/refs/tags/v7.8.0.zip" title="鼠标左击在新标签页打开">next 7.8.0 release 下载地址</a></p>
 <p>解压下载完成的 <code>hexo-theme-next-7.8.0.zip</code> ，文件夹重命名为 <code>next_7.8</code> </p>
 <p>拷贝文件夹到博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 的 <code>themes</code> 文件夹里</p>
 <h2 id="2-next-主题启用"><a href="#2-next-主题启用" class="headerlink" title="2. next 主题启用"></a>2. <code>next</code> 主题启用</h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code></p>
@@ -289,7 +289,6 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">toc:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Automatically add list number to toc.</span><br>  <span class="hljs-attr">number:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># If true, all words will placed on next lines if header width longer then sidebar width.</span><br>  <span class="hljs-attr">wrap:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># If true, all level of TOC in a post will be displayed, rather than the activated part of it.</span><br>  <span class="hljs-attr">expand_all:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Maximum heading depth of generated toc.</span><br>  <span class="hljs-attr">max_depth:</span> <span class="hljs-number">6</span><br></code></pre></td></tr></table></figure>
 
 <p>解决中文目录菜单无法点击跳转</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/1540/files">github 解决方法</a></p>
 <p>打开 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source\js</code> 目录下 <code>util.js</code> 文件</p>
 <p>定位到 <code>registerSidebarTOC: function()</code> ：</p>
 <p>增加2行代码：</p>
