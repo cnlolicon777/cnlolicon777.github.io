@@ -11,34 +11,34 @@
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">chrome:<span class="hljs-regexp">//</span>flags/<span class="hljs-comment">#extensions-on-chrome-urls</span><br></code></pre></td></tr></table></figure>
 
 <p><code>Disabled</code> 改为 <code>Enabled</code> 后重启浏览器生效。</p>
-<p><img src="https://www.z4a.net/images/2021/06/19/chrome_sr5sNpPmR5.png" alt="Chrome 1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/chrome_sr5sNpPmR5.png" alt="Chrome 1"></p>
 <ul>
 <li><strong>Edge 地址栏输入并回车：</strong></li>
 </ul>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">edge:<span class="hljs-regexp">//</span>flags/<span class="hljs-comment">#extensions-on-edge-urls</span><br></code></pre></td></tr></table></figure>
 
 <p><code>已禁用</code> 改为 <code>已启用</code> 后重启浏览器生效。</p>
-<p><img src="https://www.z4a.net/images/2021/06/19/msedge_rVmBhEdw6p.png" alt="Edge 1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/msedge_rVmBhEdw6p.png" alt="Edge 1"></p>
 <h2 id="安装扩展步骤"><a href="#安装扩展步骤" class="headerlink" title="安装扩展步骤"></a>安装扩展步骤</h2><h3 id="1-进入浏览器扩展程序管理页面"><a href="#1-进入浏览器扩展程序管理页面" class="headerlink" title="1.进入浏览器扩展程序管理页面"></a>1.进入浏览器扩展程序管理页面</h3><ul>
 <li><code>Chrome</code> <strong>点击浏览器右上角的三个点 - 更多工具 - 扩展程序</strong></li>
 <li><strong>或者浏览器地址栏输入并回车：</strong></li>
 </ul>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">chrome:<span class="hljs-regexp">//</span>extensions/<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://www.z4a.net/images/2021/06/19/Chrome_2-2.png" alt="Chrome 2"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/Chrome_2-2.png" alt="Chrome 2"></p>
 <ul>
 <li><code>Edge</code> <strong>点击浏览器右上角的三个点 - 扩展</strong></li>
 <li>或者浏览器地址栏输入并回车：</li>
 </ul>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">edge:<span class="hljs-regexp">//</span>extensions/<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://www.z4a.net/images/2021/06/19/Edge_2.png" alt="Edge 2"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/Edge_2.png" alt="Edge 2"></p>
 <h3 id="2-开启-开发者模式"><a href="#2-开启-开发者模式" class="headerlink" title="2.开启 [开发者模式]"></a>2.开启 [开发者模式]</h3><div class="note note-danger">
             <p>Edge 需额外开启 <code>允许来自其他应用商店的扩展</code></p>
           </div>
 
-<p><img src="https://www.z4a.net/images/2021/06/19/Chrome_3.png" alt="Chrome 3"></p>
-<p><img src="https://www.z4a.net/images/2021/06/19/Edge_3.png" alt="Edge 3"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/Chrome_3.png" alt="Chrome 3"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/Edge_3.png" alt="Edge 3"></p>
 <h3 id="3-拖曳安装"><a href="#3-拖曳安装" class="headerlink" title="3.拖曳安装"></a>3.拖曳安装</h3><p>将<strong>扩展文件 .crx 拖入该页面</strong>，然后点击 <strong>[添加扩展程序]</strong> 按钮安装成功</p>
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://zhuanlan.zhihu.com/p/276027099">「技巧」Chrome、Edge 重新开启隐藏的 [拖入安装 .crx 扩展] 功能！全版本！</a></p>
 ]]></content>
@@ -83,7 +83,7 @@
 <figure class="highlight excel"><table><tr><td class="code"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> rsa -C <span class="hljs-string">&quot;github 注册邮箱&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>然后一直回车，如下则创建成功</p>
-<p><img src="https://www.z4a.net/images/2021/06/17/git-bash-control22-2.png" alt="git-bash 界面操作记录"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/git-bash-control22-2.png" alt="git-bash 界面操作记录"></p>
 <p>打开 <code>github</code> 该邮箱对应账号的 <code>settings</code> ：</p>
 <p>找到 <code>SSH and GPG Key</code> 选项，点击 <code>SSH</code> 的 <code>NEW SSH Key</code></p>
 <p>title 键入 <code>cnlolicon777</code></p>
@@ -221,7 +221,7 @@
 
 <p>修改如下：</p>
 <p><a href="https://github.com/theme-next/hexo-theme-next/pull/1540/files">github pull</a></p>
-<p><img src="https://www.z4a.net/images/2021/06/04/next_solve_zh_toc_cannot_jump.png" alt="代码增删图示"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/next_solve_zh_toc_cannot_jump.png" alt="代码增删图示"></p>
 <h1 id="配置-fluid-主题"><a href="#配置-fluid-主题" class="headerlink" title="配置 fluid 主题"></a>配置 <strong><code>fluid</code></strong> 主题</h1><h2 id="1-fluid-主题安装"><a href="#1-fluid-主题安装" class="headerlink" title="1. fluid 主题安装"></a>1. <code>fluid</code> 主题安装</h2><p><a class="btn" href="https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/tags/v1.8.11.zip" title="鼠标左击在新标签页打开">fluid 1.8.11 release 下载地址</a></p>
 <p>解压下载完成的 <code>hexo-theme-fluid-1.8.11.zip</code> ，文件夹重命名为 <code>fluid_1.8.11</code></p>
 <p>拷贝文件夹到博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 的 <code>themes</code> 文件夹里</p>
@@ -467,7 +467,7 @@
 <p>加载方法：</p>
 <figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus">转换为YV12(false)<br><span class="hljs-function"><span class="hljs-title">f3kdb</span><span class="hljs-params">(<span class="hljs-number">15</span>,<span class="hljs-number">128</span>,<span class="hljs-number">128</span>,<span class="hljs-number">128</span>)</span></span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://www.z4a.net/images/2021/06/14/f3kdb_set.png" alt="f3kdb参数设置界面"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/f3kdb_set.png" alt="f3kdb参数设置界面"></p>
 <table>
 <thead>
 <tr>
@@ -739,8 +739,8 @@
 <span id="more"></span>
 
 <h2 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h2><p>自动上色效果（ <strong><font face="方正兰亭中黑_GBK" color=47B1EE>4color4.cur</font></strong> 配色为例 ）</p>
-<p><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_ISwKfqDCWv.png" alt="黑白原图"></p>
-<p><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_fa3R3cEN53.png" alt="伪四色AVS插件上色"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/MangaMeeya_ISwKfqDCWv.png" alt="黑白原图"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/MangaMeeya_fa3R3cEN53.png" alt="伪四色AVS插件上色"></p>
 <h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>上面是属于比较成功的例子，这个自动上色插件局限性也是非常明显的，如果是上图这种有用浓淡对比明显的色块或是渐变上色的图片，效果会非常不错，但有一些漫画上色只有纯线条，阴影这些都是用的斜线，这样的图片上色效果就差强人意了。</p>
 <h2 id="使用介绍和上色方案汇总（日文）"><a href="#使用介绍和上色方案汇总（日文）" class="headerlink" title="使用介绍和上色方案汇总（日文）"></a>使用介绍和上色方案汇总（日文）</h2><p><a href="http://molunch.blog.fc2.com/blog-entry-2.html">http://molunch.blog.fc2.com/blog-entry-2.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-4.html">http://poolytooth.blog.fc2.com/blog-entry-4.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-12.html">http://poolytooth.blog.fc2.com/blog-entry-12.html</a><br><a href="http://blog.livedoor.jp/tos1941-ttt/archives/32689376.html">http://blog.livedoor.jp/tos1941-ttt/archives/32689376.html</a><br><a href="http://poolytooth.blog.fc2.com/blog-entry-7.html">http://poolytooth.blog.fc2.com/blog-entry-7.html</a></p>
 <p>日文熟练的可以直接爬原帖，有不少针对性的色阶修正进阶设置演示。</p>
@@ -805,7 +805,7 @@
 
 
 
-<p>加载正确的截图如下，设置完毕，点开 <strong><font color=47B1EE>工具</font></strong> 菜单选择 <strong><font color=47B1EE>启用avisynth滤镜</font></strong> 即可生效：<br><img src="https://www.z4a.net/images/2021/05/01/MangaMeeya_qj7TZINOWC.png" alt="自动上色滤镜设置"></p>
+<p>加载正确的截图如下，设置完毕，点开 <strong><font color=47B1EE>工具</font></strong> 菜单选择 <strong><font color=47B1EE>启用avisynth滤镜</font></strong> 即可生效：<br><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/MangaMeeya_qj7TZINOWC.png" alt="自动上色滤镜设置"></p>
 <p>多色待加载脚本（想加载哪个方案就去掉前面的 <code>#</code> ，或者在 <strong><font color=47B1EE>avisynth滤镜设置</font></strong>  里 <strong><font color="red">停用</font></strong> <strong>/</strong> <strong><font color="green">启用</font></strong> ，这里加载的是 <strong><font color=47B1EE>“yellowblue.cur”</font></strong> ）：</p>
 <figure class="highlight leaf"><table><tr><td class="code"><pre><code class="hljs leaf">转换为RGB32(false)<br>色调曲线(0.0,0.25,0.5,0.75,1.0,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/2pink.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/3RED.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4color4.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4yellow.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/5dark.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkblue.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkpurple.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>GiCoCu(&quot;C:/yellowblue.cur&quot;,false,false,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/YPINK.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>#色阶修正(35,200,(@low+@high+1)/2,false,0,255,false)<br></code></pre></td></tr></table></figure>
 
@@ -911,9 +911,9 @@
 <h2 id="3-去除-WinRAR-exe-广告"><a href="#3-去除-WinRAR-exe-广告" class="headerlink" title="3.去除 WinRAR.exe 广告"></a>3.去除 <code>WinRAR.exe</code> 广告</h2><p>将安装路径 <code>C:\Program Files\WinRAR</code> 下 <code>WinRAR.exe</code>  拖入 <code>resource hacker</code> </p>
 <p>找到 <strong>String Table</strong> 下的 <code>80:2052</code> 项</p>
 <p>将右边窗口中最长的一行删除完成去广告</p>
-<p><img src="https://www.z4a.net/images/2021/06/17/ResourceHacker_hg2snH2eX8.png" alt="RH图示1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/ResourceHacker_hg2snH2eX8.png" alt="RH图示1"></p>
 <h2 id="4-编译为新的-exe-执行文件"><a href="#4-编译为新的-exe-执行文件" class="headerlink" title="4.编译为新的 .exe 执行文件"></a>4.编译为新的 <code>.exe</code> 执行文件</h2><p>先点 <strong>编译</strong> 再保存为新的 <code>Winrar.exe</code> </p>
-<p><img src="https://www.z4a.net/images/2021/06/17/ResourceHacker_QxuwfLEUPR.png" alt="RH图示2"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/ResourceHacker_QxuwfLEUPR.png" alt="RH图示2"></p>
 <h2 id="5-使用-rarreg-key-注册"><a href="#5-使用-rarreg-key-注册" class="headerlink" title="5.使用 rarreg.key 注册"></a>5.使用 <code>rarreg.key</code> 注册</h2><p>复制下面许可证保存为 <code>rarreg.key</code> 文件</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">RAR</span> registration data<br><br><span class="hljs-attribute">wncn</span><br><br><span class="hljs-attribute">Unlimited</span> Company License<br><br><span class="hljs-attribute">UID</span>=<span class="hljs-number">1</span>b<span class="hljs-number">064</span>ef<span class="hljs-number">8</span>b<span class="hljs-number">57</span>de<span class="hljs-number">3</span>ae<span class="hljs-number">9</span>b<span class="hljs-number">52</span><br><br><span class="hljs-attribute">64122122509b52e35fd885373b214a4a64cc2fc1284b77ed14fa20</span><br><br><span class="hljs-attribute">66ebfca6509f9813b32960fce6cb5ffde62890079861be57638717</span><br><br><span class="hljs-attribute">7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565</span><br><br><span class="hljs-attribute">b41bcf56929486b8bcdac33d50ecf7739960627351a9ef03353a0e</span><br><br><span class="hljs-attribute">592b327cd80645472f0ee622d1915028a9e05298e593db36384f0f</span><br><br><span class="hljs-attribute">f46afd5fed9b0bd095d1788266b81494b976f78fb1c551ca60a054</span><br><br><span class="hljs-attribute">b17ad853ab902058b42c6887e1b3d40e0b45abf37de02106056887</span><br></code></pre></td></tr></table></figure>
 
@@ -939,7 +939,7 @@
 
 <p><strong><code>2.</code> <code>3.</code> 来源可能不受系统信任</strong>，直接输入 <code>Y</code> 确认即可。</p>
 <h2 id="5-配置"><a href="#5-配置" class="headerlink" title="5. 配置"></a>5. 配置</h2><p><strong>Windows Terminal</strong> 的设置并没有图形界面，是通过修改配置文件的字段来实现具体的设置的。</p>
-<p>设置方法很简单，先打开 <strong>Windows Terminal</strong> ，找到状态栏 <code>+</code> 旁边的向下箭头，点击选择设置选项。<br><img src="https://img-blog.csdnimg.cn/20200828112014462.PNG#pic_center" alt="默认会显示的一段话"></p>
+<p>设置方法很简单，先打开 <strong>Windows Terminal</strong> ，找到状态栏 <code>+</code> 旁边的向下箭头，点击选择设置选项。<br><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20200828112014462.PNG" alt="默认会显示的一段话"></p>
 <p>随后会自动打开 <code>settings.json</code> 的配置文件。下拉配置文件，可以找到如下做对应修改：</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-comment">// 默认的配置就是新 powershell</span><br><span class="hljs-string">&quot;defaultProfile&quot;</span>: <span class="hljs-string">&quot;&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;&quot;</span>,<br><br>&#123;<br>    <span class="hljs-comment">// Powershell 7.1.0-preview.2 配置</span><br>    <span class="hljs-attr">&quot;guid&quot;</span>: <span class="hljs-string">&quot;&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;&quot;</span>,<br>    <span class="hljs-attr">&quot;hidden&quot;</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;pwsh&quot;</span>,<br>    <span class="hljs-comment">// 注意：一定要写上 -nologo，否则开启 powershll 会有一段话输出</span><br>    <span class="hljs-attr">&quot;commandline&quot;</span>: <span class="hljs-string">&quot;C:/Program Files/PowerShell/7-preview/pwsh.exe -nologo&quot;</span>,<br>    <span class="hljs-attr">&quot;source&quot;</span>: <span class="hljs-string">&quot;Windows.Terminal.PowershellCore&quot;</span>,<br>    <span class="hljs-comment">// 启动菜单一定要设置为 &lt;.&gt;，否则后面重要的一步将会无效！</span><br>    <span class="hljs-attr">&quot;startingDirectory&quot;</span>: <span class="hljs-string">&quot;.&quot;</span>,<br>    <span class="hljs-comment">// 字体</span><br>    <span class="hljs-attr">&quot;fontFace&quot;</span>: <span class="hljs-string">&quot;Fira Code&quot;</span>,<br>    <span class="hljs-attr">&quot;fontSize&quot;</span>: <span class="hljs-number">11</span>,<br>    <span class="hljs-attr">&quot;historySize&quot;</span>: <span class="hljs-number">9001</span>,<br>    <span class="hljs-attr">&quot;padding&quot;</span>: <span class="hljs-string">&quot;5, 5, 20, 25&quot;</span>,<br>    <span class="hljs-attr">&quot;snapOnInput&quot;</span>: <span class="hljs-literal">true</span>,<br>    <span class="hljs-attr">&quot;useAcrylic&quot;</span>: <span class="hljs-literal">false</span>,<br>    <span class="hljs-comment">// 颜色</span><br>    <span class="hljs-attr">&quot;colorScheme&quot;</span>: <span class="hljs-string">&quot;Homebrew&quot;</span><br>&#125;,<br></code></pre></td></tr></table></figure>
 
@@ -970,11 +970,11 @@
 
 
 
-<p><img src="https://pic2.zhimg.com/80/v2-718823c3fb47a87b14905c9fa2e3d35d_720w.jpg" alt="右键菜单"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/v2-718823c3fb47a87b14905c9fa2e3d35d_720w.jpg" alt="右键菜单"></p>
 <h4 id="目前发现问题"><a href="#目前发现问题" class="headerlink" title="目前发现问题"></a>目前发现问题</h4><p>该脚本会读取 <code>Windows Terminal</code> 的 <code>profile</code> ，然后把其中的非隐藏项目添加到 <strong>右键菜单（默认视图）</strong> ，这之后如果你修改了 <code>profile</code> ，那么需要用 <code>uninstall.ps1</code> 脚本先清除右键菜单，然后重新 <code>install</code> 一遍。</p>
-<h2 id="8-配置后-Terminal-界面展示"><a href="#8-配置后-Terminal-界面展示" class="headerlink" title="8. 配置后 Terminal 界面展示"></a>8. 配置后 <code>Terminal</code> 界面展示</h2><p><img src="https://pic2.zhimg.com/80/v2-59db8c16ee82335a0f6229b1f01f5481_720w.jpg" alt="图1：常规展示"></p>
+<h2 id="8-配置后-Terminal-界面展示"><a href="#8-配置后-Terminal-界面展示" class="headerlink" title="8. 配置后 Terminal 界面展示"></a>8. 配置后 <code>Terminal</code> 界面展示</h2><p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/v2-59db8c16ee82335a0f6229b1f01f5481_720w.jpg" alt="图1：常规展示"></p>
 <p>​                                                                                                               </p>
-<p><img src="https://pic1.zhimg.com/80/v2-f25122805f8f8ab76ffc979238fc2444_720w.jpg" alt="图2：在 git 目录下的效果"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/v2-f25122805f8f8ab76ffc979238fc2444_720w.jpg" alt="图2：在 git 目录下的效果"></p>
 <p>​                                                                                               </p>
 ]]></content>
       <categories>
@@ -1005,6 +1005,100 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>picgo + github 搭建图床</title>
+    <url>/post/2ad4a73b.html</url>
+    <content><![CDATA[<h1 id="1-github-搭建图床"><a href="#1-github-搭建图床" class="headerlink" title="1. github 搭建图床"></a>1. <code>github</code> 搭建图床</h1><span id="more"></span>
+
+<h2 id="1-1-新建图床仓库"><a href="#1-1-新建图床仓库" class="headerlink" title="1.1 新建图床仓库"></a>1.1 新建图床仓库</h2><div class="note note-success">
+            <p><strong>github账号</strong> 使用博客的即可</p>
+          </div>
+
+<ul>
+<li>打开 <a href="https://github.com/">GitHub</a> ，点右上角 <code>+</code> ，弹出菜单点击 <code>New Repository</code> </li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/github_new-Repository.png" alt="新建仓库"></p>
+<ul>
+<li>填写 <code>Repository Name</code> 为 <strong>imagebed</strong></li>
+<li>设置为公开 <code>Public</code> </li>
+<li>点击 <code>Create repository</code> 创建仓库</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/github_new-Repository-create.png" alt="创建仓库"></p>
+<h2 id="1-2-生成令牌-token"><a href="#1-2-生成令牌-token" class="headerlink" title="1.2 生成令牌 (token)"></a>1.2 生成令牌 <code>(token)</code></h2><ul>
+<li>进入 <a href="https://github.com/settings/tokens">token设置页面</a> ，点击 <code>Generate new token</code> </li>
+<li>填写令牌描述为 <code>imagebed</code></li>
+<li>设置里勾选 <code>repo</code></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/imagebed-token-set.png" alt="token 设置"></p>
+<ul>
+<li>拉到网页底部，点击 <code>Generate token</code> 生成令牌</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/imagebed-token-set2.png" alt="生成令牌"></p>
+<div class="note note-warning">
+            <p><strong>※务必复制保存这串令牌备用，GitHub只会显示这一次</strong></p>
+          </div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/imagebed-token3.png" alt="token 令牌"></p>
+<h1 id="2-Picgo-多图床上传客户端"><a href="#2-Picgo-多图床上传客户端" class="headerlink" title="2.Picgo 多图床上传客户端"></a>2.Picgo 多图床上传客户端</h1><h2 id="2-1-Picgo-稳定版下载并安装"><a href="#2-1-Picgo-稳定版下载并安装" class="headerlink" title="2.1 Picgo 稳定版下载并安装"></a>2.1 <code>Picgo</code> 稳定版下载并安装</h2><p><a href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.2.2">Picgo 2.2.2</a></p>
+<p>默认安装即可，<code>Picgo</code> 基础设置如图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo-set.png" alt="Picgo 设置"></p>
+<h2 id="2-2-github-图床设置"><a href="#2-2-github-图床设置" class="headerlink" title="2.2 github 图床设置"></a>2.2 <code>github</code> 图床设置</h2><ul>
+<li>设定仓库名</li>
+</ul>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">c<span class="hljs-symbol">nlolicon777</span>/imagebed<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>设定分支名</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">main</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>设定 <code>token</code></li>
+</ul>
+<figure class="highlight gauss"><table><tr><td class="code"><pre><code class="hljs gauss">填入 之前获取的 <span class="hljs-built_in">token</span> 令牌 <br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>指定存储路径</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><code class="hljs">images/<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>设定自定义域名 (这里套用cdn加速)</li>
+</ul>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>cnlolicon777/imagebed<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/Picgo-github-set.png" alt="github设置图示"></p>
+<h2 id="2-3-pic-migrater-图床批量迁移插件"><a href="#2-3-pic-migrater-图床批量迁移插件" class="headerlink" title="2.3 pic-migrater 图床批量迁移插件"></a>2.3 <code>pic-migrater</code> 图床批量迁移插件</h2><ul>
+<li>进入 <code>插件设置</code></li>
+<li>搜索 <code>pic-migrater</code> 并安装</li>
+<li>显示 <strong>已安装</strong> 表示安装完成，重启 <code>Picgo</code> </li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_install.png" alt="pic-migrater 插件安装"></p>
+<ul>
+<li>重启后进入 <code>插件设置</code></li>
+<li>点击 <strong>齿轮</strong> 图标 ，点选 <strong>配置plugin - pic-migrater</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_set1.png" alt="配置插件"></p>
+<ul>
+<li>文件名后缀键入 <code>_new</code> 后 <strong>确定</strong> 完成插件使用前配置</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_set2.png" alt="插件配置完成"></p>
+<p>点击 <strong>齿轮</strong> 图标 ，点选 <strong>选择文件</strong> 开始使用</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_use.png" alt="插件使用"></p>
+<div class="note note-warning">
+            <p><strong>该插件仅支持Markdown，图片过多有迁移失败可能</strong></p>
+          </div>
+
+]]></content>
+      <categories>
+        <category>博客配置</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>picgo</tag>
+        <tag>图床</tag>
+      </tags>
   </entry>
   <entry>
     <title>work_crawler 安装流程</title>

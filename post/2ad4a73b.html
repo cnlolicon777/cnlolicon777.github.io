@@ -14,13 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="debanding（去色带）滤镜
-            仅记录在Mangameeya中能成功加载应用的滤镜
-          ">
+  <meta name="description" content="1. github 搭建图床">
   <meta name="author" content="cnlolicon777">
   <meta name="keywords" content="">
   
-  <title>Mangameeya - AVS - debanding篇 - cnlolicon777&#39;s Blog</title>
+  <title>picgo + github 搭建图床 - cnlolicon777&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -165,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Mangameeya - AVS - debanding篇">
+            <span class="h2" id="subtitle" title="picgo + github 搭建图床">
               
             </span>
 
@@ -175,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-06-13 07:02" pubdate>
-        2021年6月13日 早上
+      <time datetime="2021-07-13 21:25" pubdate>
+        2021年7月13日 晚上
       </time>
     </span>
   
@@ -187,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      767 字
+      341 字
     </span>
   
 
@@ -197,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10
+      4
        分钟
     </span>
   
@@ -227,284 +225,90 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Mangameeya - AVS - debanding篇</h1>
+            <h1 style="display: none">picgo + github 搭建图床</h1>
             
             <div class="markdown-body">
-              <h2 id="debanding（去色带）滤镜"><a href="#debanding（去色带）滤镜" class="headerlink" title="debanding（去色带）滤镜"></a>debanding（去色带）滤镜</h2><div class="note note-danger">
-            <p>仅记录在Mangameeya中能成功加载应用的滤镜</p>
+              <h1 id="1-github-搭建图床"><a href="#1-github-搭建图床" class="headerlink" title="1. github 搭建图床"></a>1. <code>github</code> 搭建图床</h1><span id="more"></span>
+
+<h2 id="1-1-新建图床仓库"><a href="#1-1-新建图床仓库" class="headerlink" title="1.1 新建图床仓库"></a>1.1 新建图床仓库</h2><div class="note note-success">
+            <p><strong>github账号</strong> 使用博客的即可</p>
           </div>
 
-<span id="more"></span>
+<ul>
+<li>打开 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> ，点右上角 <code>+</code> ，弹出菜单点击 <code>New Repository</code> </li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/github_new-Repository.png" srcset="/img/loading.gif" lazyload alt="新建仓库"></p>
+<ul>
+<li>填写 <code>Repository Name</code> 为 <strong>imagebed</strong></li>
+<li>设置为公开 <code>Public</code> </li>
+<li>点击 <code>Create repository</code> 创建仓库</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/github_new-Repository-create.png" srcset="/img/loading.gif" lazyload alt="创建仓库"></p>
+<h2 id="1-2-生成令牌-token"><a href="#1-2-生成令牌-token" class="headerlink" title="1.2 生成令牌 (token)"></a>1.2 生成令牌 <code>(token)</code></h2><ul>
+<li>进入 <a target="_blank" rel="noopener" href="https://github.com/settings/tokens">token设置页面</a> ，点击 <code>Generate new token</code> </li>
+<li>填写令牌描述为 <code>imagebed</code></li>
+<li>设置里勾选 <code>repo</code></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/imagebed-token-set.png" srcset="/img/loading.gif" lazyload alt="token 设置"></p>
+<ul>
+<li>拉到网页底部，点击 <code>Generate token</code> 生成令牌</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/imagebed-token-set2.png" srcset="/img/loading.gif" lazyload alt="生成令牌"></p>
+<div class="note note-warning">
+            <p><strong>※务必复制保存这串令牌备用，GitHub只会显示这一次</strong></p>
+          </div>
 
-<h2 id="banding的产生"><a href="#banding的产生" class="headerlink" title="banding的产生"></a>banding的产生</h2><p>色带是在平滑的渐变区域，由于颜色变化小，导致用于量化这段颜色的编码值数量不够，从而在显示器上把渐变反映成了色阶的样子。</p>
-<h2 id="GradFun2db"><a href="#GradFun2db" class="headerlink" title="GradFun2db"></a>GradFun2db</h2><p><a target="_blank" rel="noopener" href="http://avisynth.nl/index.php/GradFun2db">下载地址</a></p>
-<p><strong>支持格式：</strong> <code>YV12</code></p>
-<p>加载方法：</p>
-<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs isbl">转换为<span class="hljs-function"><span class="hljs-title">YV12</span>(<span class="hljs-variable"><span class="hljs-literal">false</span></span>)</span><br><span class="hljs-function"><span class="hljs-title">gradfun2db</span>(<span class="hljs-number">1.2</span>)</span><br></code></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/imagebed-token3.png" srcset="/img/loading.gif" lazyload alt="token 令牌"></p>
+<h1 id="2-Picgo-多图床上传客户端"><a href="#2-Picgo-多图床上传客户端" class="headerlink" title="2.Picgo 多图床上传客户端"></a>2.Picgo 多图床上传客户端</h1><h2 id="2-1-Picgo-稳定版下载并安装"><a href="#2-1-Picgo-稳定版下载并安装" class="headerlink" title="2.1 Picgo 稳定版下载并安装"></a>2.1 <code>Picgo</code> 稳定版下载并安装</h2><p><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases/tag/v2.2.2">Picgo 2.2.2</a></p>
+<p>默认安装即可，<code>Picgo</code> 基础设置如图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo-set.png" srcset="/img/loading.gif" lazyload alt="Picgo 设置"></p>
+<h2 id="2-2-github-图床设置"><a href="#2-2-github-图床设置" class="headerlink" title="2.2 github 图床设置"></a>2.2 <code>github</code> 图床设置</h2><ul>
+<li>设定仓库名</li>
+</ul>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">c<span class="hljs-symbol">nlolicon777</span>/imagebed<br></code></pre></td></tr></table></figure>
 
+<ul>
+<li>设定分支名</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">main</span><br></code></pre></td></tr></table></figure>
 
+<ul>
+<li>设定 <code>token</code></li>
+</ul>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gauss">填入 之前获取的 <span class="hljs-built_in">token</span> 令牌 <br></code></pre></td></tr></table></figure>
 
-<h2 id="F3kdb"><a href="#F3kdb" class="headerlink" title="F3kdb"></a>F3kdb</h2><p><a target="_blank" rel="noopener" href="http://avisynth.nl/index.php/F3kdb">下载地址</a></p>
-<p><strong>支持格式：</strong> <code>YV12</code> <code>Y8</code> <code>YV16</code> <code>YV24</code> <code>YV411</code></p>
-<p>加载方法：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs stylus">转换为YV12(false)<br><span class="hljs-function"><span class="hljs-title">f3kdb</span><span class="hljs-params">(<span class="hljs-number">15</span>,<span class="hljs-number">128</span>,<span class="hljs-number">128</span>,<span class="hljs-number">128</span>)</span></span><br></code></pre></td></tr></table></figure>
+<ul>
+<li>指定存储路径</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">images/<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/f3kdb_set.png" srcset="/img/loading.gif" lazyload alt="f3kdb参数设置界面"></p>
-<table>
-<thead>
-<tr>
-<th>参数项</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>range</strong></td>
-<td>15</td>
-<td>色带检测范围</td>
-</tr>
-<tr>
-<td><code>Y</code> <code>Cb</code> <code>Cr</code></td>
-<td>64</td>
-<td>各平面色带检测阈值，如当前像素和参考像素之间的差值小于阈值，就会识别为色带</td>
-</tr>
-<tr>
-<td><code>grainY</code> <code>grainC</code></td>
-<td>64</td>
-<td>指定在最后去色带阶段添加的微粒(grain)值</td>
-</tr>
-<tr>
-<td><strong>sample_mode</strong></td>
-<td>2</td>
-<td>指定参考像素：模式 <code>1</code>：2像素；模式 <code>2</code>：4像素。</td>
-</tr>
-<tr>
-<td><strong>seed</strong></td>
-<td></td>
-<td>Seed for random number generation</td>
-</tr>
-<tr>
-<td><strong>blur_first</strong></td>
-<td>true</td>
-<td>true: 当前像素与所有像素的平均值进行比较</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>false: 当前像素与所有像素进行比较 (只有当所有的差值小于阈值时，才被认为是色带)</td>
-</tr>
-<tr>
-<td><strong>dynamic_grain</strong></td>
-<td>false</td>
-<td>Use different grain pattern for each frame</td>
-</tr>
-<tr>
-<td><strong>opt</strong></td>
-<td>-1</td>
-<td>指定优化模式</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>-1: 使用主机CPU支持的最高等级优化</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>0: 不优化 （仅用于测试）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>1: SSE2 (Pentium 4, AMD K8)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>2: SSSE3 (Core 2)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>3: SSE4.1 (Core 2 45nm)</td>
-</tr>
-<tr>
-<td><strong>mt</strong></td>
-<td>true</td>
-<td>多线程处理，仅支持AviSynth+，true: <code>Y</code> <code>U</code> <code>V</code> 3个平面同时处理提升速度</td>
-</tr>
-<tr>
-<td><strong>dither_algo</strong></td>
-<td>3</td>
-<td>output bits = 16该参数会被忽略</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>1: 不抖动，LSB is truncated（适合低码率编码）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>2: Ordered dithering （有序抖动） （适合低码率编码）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>3: Floyd-Steinberg dithering （效果最佳，但容易被x264编码破坏）</td>
-</tr>
-<tr>
-<td><strong>keep_tv_range</strong></td>
-<td>false</td>
-<td>true: 所有像素会被定位到TV range （luma: 16 ~ 235, chroma: 16 ~ 240）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>true适合TV range的视频，除非抖动后像素值会 overflow/underflow</td>
-</tr>
-<tr>
-<td><strong>input_mode</strong></td>
-<td>0</td>
-<td>指定视频源输入模式</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>0: 8-bit 视频</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>1: 9-16 bit 视频，逐行扫描（stacked）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>2: 9-16 bit 视频，隔行扫描 （interleaved）</td>
-</tr>
-<tr>
-<td><strong>input_depth</strong></td>
-<td>8</td>
-<td>指定视频源输入位深 （范围：8-16）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>8: (input_mode = 0)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>9-16: (input_mode = 1/2)</td>
-</tr>
-<tr>
-<td><strong>output_mode</strong></td>
-<td>0</td>
-<td>指定视频源输出模式</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>当指定为2时：帧宽度x2且预览乱码，但x264高位深编码后会恢复正常</td>
-</tr>
-<tr>
-<td><strong>output_depth</strong></td>
-<td>8</td>
-<td>指定视频源输出位深 （范围：8-16）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>若设置为16，dither_algo不启用</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>8: (output_mode = 0)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>9-16: (output_mode = 1/2)</td>
-</tr>
-<tr>
-<td><code>random_algo_ref</code> <code>random_algo_grain</code></td>
-<td>1</td>
-<td>Choose random number algorithm for reference positions / grains</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>0: 旧版本算法</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>1: 均匀分布</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>2: 高斯分布</td>
-</tr>
-<tr>
-<td><code>random_param_ref</code> <code>random_param_grain</code></td>
-<td>1.0</td>
-<td>各随机数生成器参数（目前只对高斯生成器生效）</td>
-</tr>
-<tr>
-<td><strong>preset</strong></td>
-<td></td>
-<td>预设。预设优先级最高 (可组合使用 例：medium/nograin)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>depth: y=0/cb=0/cr=0/grainy=0/grainc=0</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>low: y=32/cb=32/cr=32/grainy=32/grainc=32</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>medium: y=48/cb=48/cr=48/grainy=48/grainc=48</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>high: y=64/cb=64/cr=64/grainy=64/grainc=64</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>veryhigh: y=80/cb=80/cr=80/grainy=80/grainc=80</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>nograin: grainy=0/grainc=0</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>luma: cb=0/cr=0/grainc=0</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>chroma: y=0/grainy=0</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>medium/nograin: y=48/cb=48/cr=48/grainy=0/grainc=0</td>
-</tr>
-</tbody></table>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1.默认设置下Gradfun2db速度比f3kdb快不少</p>
+<ul>
+<li>设定自定义域名 (这里套用cdn加速)</li>
+</ul>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>cnlolicon777/imagebed<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/Picgo-github-set.png" srcset="/img/loading.gif" lazyload alt="github设置图示"></p>
+<h2 id="2-3-pic-migrater-图床批量迁移插件"><a href="#2-3-pic-migrater-图床批量迁移插件" class="headerlink" title="2.3 pic-migrater 图床批量迁移插件"></a>2.3 <code>pic-migrater</code> 图床批量迁移插件</h2><ul>
+<li>进入 <code>插件设置</code></li>
+<li>搜索 <code>pic-migrater</code> 并安装</li>
+<li>显示 <strong>已安装</strong> 表示安装完成，重启 <code>Picgo</code> </li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_install.png" srcset="/img/loading.gif" lazyload alt="pic-migrater 插件安装"></p>
+<ul>
+<li>重启后进入 <code>插件设置</code></li>
+<li>点击 <strong>齿轮</strong> 图标 ，点选 <strong>配置plugin - pic-migrater</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_set1.png" srcset="/img/loading.gif" lazyload alt="配置插件"></p>
+<ul>
+<li>文件名后缀键入 <code>_new</code> 后 <strong>确定</strong> 完成插件使用前配置</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_set2.png" srcset="/img/loading.gif" lazyload alt="插件配置完成"></p>
+<p>点击 <strong>齿轮</strong> 图标 ，点选 <strong>选择文件</strong> 开始使用</p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_use.png" srcset="/img/loading.gif" lazyload alt="插件使用"></p>
+<div class="note note-warning">
+            <p><strong>该插件仅支持Markdown，图片过多有迁移失败可能</strong></p>
+          </div>
+
 
             </div>
             <hr>
@@ -514,7 +318,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Mangameeya-%E4%B8%93%E9%A2%98/">Mangameeya 专题</a>
+                      <a class="hover-with-bg" href="/categories/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/">博客配置</a>
                     
                   </div>
                 
@@ -522,9 +326,11 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Mangameeya/">Mangameeya</a>
+                      <a class="hover-with-bg" href="/tags/github/">github</a>
                     
-                      <a class="hover-with-bg" href="/tags/AviSynth/">AviSynth</a>
+                      <a class="hover-with-bg" href="/tags/picgo/">picgo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
                     
                   </div>
                 
@@ -541,18 +347,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/884e47b3.html">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Chrome|Edge 开启 [拖入安装 .crx 扩展] 功能</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/f8de35a.html">
-                        <span class="hidden-mobile">Hexo 主题安装与配置</span>
+                      <a href="/post/884e47b3.html">
+                        <span class="hidden-mobile">Chrome|Edge 开启 [拖入安装 .crx 扩展] 功能</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
