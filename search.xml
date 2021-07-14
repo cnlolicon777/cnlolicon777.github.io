@@ -1084,7 +1084,7 @@
 <li>文件名后缀键入 <code>_new</code> 后 <strong>确定</strong> 完成插件使用前配置</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_set2.png" alt="插件配置完成"></p>
-<p>点击 <img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/icon_set.svg" style="zoom:16%;" />图标 ，点选 <strong>选择文件</strong> 开始使用</p>
+<p>点击 <strong>齿轮</strong> 图标 ，点选 <strong>选择文件</strong> 开始使用</p>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/picgo_pic-migrater_use.png" alt="插件使用"></p>
 <div class="note note-warning">
             <p><strong>该插件仅支持Markdown，图片过多有迁移失败可能</strong></p>
