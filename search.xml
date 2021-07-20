@@ -6,20 +6,14 @@
     <content><![CDATA[<h1 id="1-SUP字幕认知"><a href="#1-SUP字幕认知" class="headerlink" title="1.SUP字幕认知"></a>1.SUP字幕认知</h1><span id="more"></span>
 
 <ul>
-<li><p>SUP字幕就是图形字幕</p>
+<li><p><code>SUP</code> 字幕就是图形字幕（ <code>PGS</code> ）</p>
 </li>
-<li><p>SUP字幕最大限度地方便了一些ASS字幕支持较差的播放器能够较完整地复现字幕特效</p>
+<li><p><code>SUP</code> 字幕最大限度地方便了一些 <code>ASS</code> 字幕支持差的播放器能够较完整地复现字幕特效</p>
 </li>
-<li><p>SUP字幕无需安装字体包</p>
+<li><p><code>SUP</code> 字幕无需安装字体包</p>
 </li>
 </ul>
-<h1 id="2-工具安装"><a href="#2-工具安装" class="headerlink" title="2.工具安装"></a>2.工具安装</h1><h2 id="2-1-工具下载-（选择性）"><a href="#2-1-工具下载-（选择性）" class="headerlink" title="2.1 工具下载 （选择性）"></a>2.1 工具下载 （选择性）</h2><p><font color='cornflowerblue'>VerySup</font></p>
-<p><font color='cornflowerblue'>easyavs2bdnxml 0.3.4 (支持VSFilterMod的魔改版)</font></p>
-<p><font color='cornflowerblue'>avs2bdnxml-gui (硬字幕提取交流群 1161766056)</font></p>
-<p><font color='cornflowerblue'>AviSynth 2.6</font></p>
-<p><a href="https://bbs.vcb-s.com/thread-1894-1-1.html">ListAssFonts v210428</a></p>
-<p><a class="btn" href="https://pan.baidu.com/s/19H1Hzt1jZqZ_7KZwQpRfLw" title="提取码：5tru">百度云打包</a></p>
-<h2 id="2-2-工具选择"><a href="#2-2-工具选择" class="headerlink" title="2.2 工具选择"></a>2.2 工具选择</h2><table>
+<h1 id="2-工具准备"><a href="#2-工具准备" class="headerlink" title="2.工具准备"></a>2.工具准备</h1><h2 id="2-1-工具选择"><a href="#2-1-工具选择" class="headerlink" title="2.1 工具选择"></a>2.1 工具选择</h2><table>
 <thead>
 <tr>
 <th>工具名称</th>
@@ -75,18 +69,24 @@
           </div></td>
 </tr>
 </tbody></table>
+<p><a class="btn" href="https://pan.baidu.com/s/19H1Hzt1jZqZ_7KZwQpRfLw" title="提取码：5tru">百度云打包</a></p>
+<p>实际使用过程中：</p>
 <ul>
-<li>3个工具里 <font color='cornflowerblue'>avs2bdnxml-gui</font> 支持最全面，且转制过程缓存文件写内存，选用</li>
+<li><font color='cornflowerblue'>VerySup</font> 转制的字幕体积较小，且不支持 <code>VSFilterMod</code> ，转制过程缓存文件会写入硬盘</li>
+<li><font color='cornflowerblue'>easyavs2bdnxml 0.3.4</font> 魔改版支持 <code>VSFilterMod</code> ，批量处理需搭配 <a href="https://cnlang.org/forum.php?mod=viewthread&tid=74201">ASS2SUP PY脚本</a> 使用（脚本支持自动获取对应视频 <font color='cornflowerblue'>分辨率</font> 和 <font color='cornflowerblue'>帧率</font> 并设定是亮点），转制过程缓存文件会写入硬盘</li>
+<li><font color='cornflowerblue'>avs2bdnxml-gui</font> 基于 <font color='cornflowerblue'>easyavs2bdnxml</font> 制作，支持 <code>VSFilterMod</code> ，转制过程缓存文件仅仅写内存，支持批量处理（需手动设定 <font color='cornflowerblue'>分辨率</font> 和 <font color='cornflowerblue'>帧率</font> ）</li>
 </ul>
-<h2 id="2-3-环境配置"><a href="#2-3-环境配置" class="headerlink" title="2.3 环境配置"></a>2.3 环境配置</h2><ul>
-<li>默认安装 <font color='cornflowerblue'>AviSynth 2.6</font></li>
-<li><font color='cornflowerblue'>avs2bdnxml-gui</font> 解压至任意英文目录，例如</li>
+<p>个人选择 <font color='cornflowerblue'>avs2bdnxml-gui</font> </p>
+<h2 id="2-2-安装配置"><a href="#2-2-安装配置" class="headerlink" title="2.2 安装配置"></a>2.2 安装配置</h2><p>仅以 <font color='cornflowerblue'>avs2bdnxml-gui</font> 为例：</p>
+<ul>
+<li>默认安装 <font color='cornflowerblue'>AviSynth 2.6</font> </li>
+<li><font color='cornflowerblue'>avs2bdnxml-gui</font> 解压至任意英文目录，例如：</li>
 </ul>
 <figure class="highlight taggerscript"><table><tr><td class="code"><pre><code class="hljs taggerscript">G:<span class="hljs-symbol">\s</span>oftware_portable<span class="hljs-symbol">\a</span>vs2bdnxml-gui<br></code></pre></td></tr></table></figure>
 
 
 
-<h1 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h1><p>以 <font color='cornflowerblue'><strong>字幕侠鬼作秀S02E01</strong></font> 为例，简繁 <font color='cornflowerblue'><strong>2</strong></font> 个字幕</p>
+<h1 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h1><p>以 <font color='cornflowerblue'><strong>字幕侠鬼作秀S02E01</strong></font> 为例，简繁 <font color='cornflowerblue'><strong>2</strong></font> 个字幕：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210718141523.png" alt="字幕侠简繁字幕"></p>
 <h2 id="3-1-检测字幕所需字体"><a href="#3-1-检测字幕所需字体" class="headerlink" title="3.1 检测字幕所需字体"></a>3.1 检测字幕所需字体</h2><p><font color='cornflowerblue'>avs2bdnxml-gui</font> 是直接读取系统安装字体：</p>
 <ul>
@@ -95,7 +95,7 @@
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210718132503.png" alt="生成的字体列表"></p>
 <ul>
-<li>没有 <font color='red'><strong>红名字体</strong></font> 代表系统已有待转换字幕所需字体</li>
+<li>没有 <font color='red'><strong>红名字体</strong></font> 代表系统 <font color='green'><strong>已安装</strong></font> 待转换字幕所需字体</li>
 </ul>
 <h2 id="3-2-ASS-to-SUP"><a href="#3-2-ASS-to-SUP" class="headerlink" title="3.2 ASS to SUP"></a>3.2 ASS to SUP</h2><ul>
 <li>打开 <font color='cornflowerblue'>avs2bdnxml-gui</font> (支持批量操作)</li>
