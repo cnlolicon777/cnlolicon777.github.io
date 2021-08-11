@@ -289,7 +289,7 @@
 <li> <strong><font color=47B1EE>4color4.cur</font></strong> 是原始版本（使用四种颜色进行上色），其他的都是基于这个版本衍生的双色特化的版本，不同的场景表现各有千秋。</li>
 </ol>
 <h3 id="4-导入-伪四色-滤镜"><a href="#4-导入-伪四色-滤镜" class="headerlink" title="4.导入 伪四色 滤镜"></a>4.导入 <code>伪四色</code> 滤镜</h3><p>打开 <code>mangameeya</code> ，随便载入一张黑白漫画，点击 <strong><font color=47B1EE>工具</font></strong> 菜单下 <strong><font color=47B1EE>avisynth滤镜设置</font></strong> ：</p>
-<p><strong>以”yellowblue配色为例”</strong></p>
+<p>以 <font color='cornflowerblue'><strong>yellowblue</strong></font> 配色为例</p>
 <p>汉化版复制下列脚本，选择 <code>从剪切板粘贴Script</code> 导入脚本：</p>
 <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">转换为<span class="hljs-constructor">RGB32(<span class="hljs-params">false</span>)</span><br>色调曲线(<span class="hljs-number">0.0</span>,<span class="hljs-number">0.25</span>,<span class="hljs-number">0.5</span>,<span class="hljs-number">0.75</span>,<span class="hljs-number">1.0</span>,<span class="hljs-literal">false</span>)<br><span class="hljs-constructor">GiCoCu(<span class="hljs-string">&quot;C:/yellowblue.cur&quot;</span>,<span class="hljs-params">false</span>,<span class="hljs-params">false</span>,<span class="hljs-params">false</span>)</span><br></code></pre></td></tr></table></figure>
 
@@ -299,14 +299,20 @@
 
 
 <p>加载正确的截图如下，设置完毕，点开 <strong><font color=47B1EE>工具</font></strong> 菜单选择 <strong><font color=47B1EE>启用avisynth滤镜</font></strong> 即可生效：<br><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/MangaMeeya_qj7TZINOWC.png" srcset="/img/loading.gif" lazyload alt="自动上色滤镜设置"></p>
-<p>多色待加载脚本（想加载哪个方案就去掉前面的 <code>#</code> ，或者在 <strong><font color=47B1EE>avisynth滤镜设置</font></strong>  里 <strong><font color="red">停用</font></strong> <strong>/</strong> <strong><font color="green">启用</font></strong> ，这里加载的是 <strong><font color=47B1EE>“yellowblue.cur”</font></strong> ）：</p>
+<p>多色切换加载脚本（这里加载的是 <strong><font color=47B1EE>“yellowblue.cur”</font></strong> ）：</p>
 <figure class="highlight leaf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs leaf">转换为RGB32(false)<br>色调曲线(0.0,0.25,0.5,0.75,1.0,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/2pink.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/3RED.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4color4.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/4yellow.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/5dark.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkblue.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/pinkpurple.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>GiCoCu(&quot;C:/yellowblue.cur&quot;,false,false,false)<br><span class="hljs-function"><span class="hljs-keyword">#</span><span class="hljs-title">GiCoCu</span><span class="hljs-params">(<span class="hljs-string">&quot;C:/YPINK.cur&quot;</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>,<span class="hljs-variable">false</span>)</span></span><br>#色阶修正(35,200,(@low+@high+1)/2,false,0,255,false)<br></code></pre></td></tr></table></figure>
 
-
-
-<h2 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h2><p>1.伪四色上色插件会造成图像边缘明显锯齿化；</p>
-<p>2.伪四色上色插件不能与去色带AVS插件（ <strong><font color=47B1EE>“f3kdb”</font></strong> ）搭配使用,去色带本身的画面抖动机制会在上色后变得非常难看；</p>
-<p>3.原图有明显噪点的图片建议先做降噪再搭配伪四色上色插件使用。</p>
+<ul>
+<li>想加载哪个方案就去掉前面的 <code>#</code> ，或者在 <strong><font color=47B1EE>avisynth滤镜设置</font></strong>  里 <strong><font color="red">停用</font></strong> <strong>/</strong> <strong><font color="green">启用</font></strong> </li>
+</ul>
+<h2 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li><p>伪四色上色插件会造成图像边缘明显锯齿化；</p>
+</li>
+<li><p>伪四色上色插件不能与去色带AVS插件（ <strong><font color=47B1EE>“f3kdb”</font></strong> ）搭配使用,去色带本身的画面抖动机制会在上色后变得非常难看；</p>
+</li>
+<li><p>原图有明显噪点的图片建议先做降噪再搭配伪四色上色插件使用。</p>
+</li>
+</ul>
 
             </div>
             <hr>
