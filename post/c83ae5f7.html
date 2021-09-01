@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.1k 字
+      3k 字
     </span>
   
 
@@ -310,7 +310,7 @@
 <p><font color='cornflowerblue'>cmd</font> 传参如下：</p>
 <figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">youtube-dl <span class="hljs-params">--proxy</span> 127.0.0.1<span class="hljs-function">:1080</span> -o<span class="hljs-string">&quot;%(upload_date)s - %(title)s.%(ext)s&quot;</span> <span class="hljs-params">--dateafter</span> 2018.01.01 <span class="hljs-params">--datebefore</span> 2019.02.04 <span class="hljs-params">--download-archive</span> archive.txt <span class="hljs-params">--format</span> &#x27;<span class="hljs-params">(bestvideo[<span class="hljs-attr">ext</span>=mp4][fps&lt;61]+bestaudio[<span class="hljs-attr">ext</span>=m4a]/best[<span class="hljs-attr">ext</span>=mp4]/bestvideo+bestaudio/best)</span>[protocol^=http]&#x27; <span class="hljs-params">--write-sub</span> <span class="hljs-params">--sub-lang</span> zh-CN,zh-TW,zh-Hans,zh-Hant,zh-HK <span class="hljs-params">--convert-subtitles</span> srt <span class="hljs-params">--write-thumbnail</span> <span class="hljs-params">--embed-thumbnail</span> https:<span class="hljs-string">//www.youtube.com/c/JFlaMusic/videos</span> <span class="hljs-params">--external-downloader</span> aria2c <span class="hljs-params">--external-downloader-args</span> <span class="hljs-string">&quot;-x 16 -s 16 -k 1M&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p>每次都这样传参不仅麻烦，而且容易出错，排查错误也很麻烦，如文件名的保存格式，下载的视频质量，字幕语言和字幕转换，调用aira2加速下载的参数都是可以通用的，不必每次传参都输入一遍，<font color='cornflowerblue'>youtube-dl.conf</font> 的存在就是为了设置常驻命令，而且并不影响cmd下添加其他的命令来灵活配合使用。</p>
+<p>每次都这样传参不仅麻烦，容易出错，排查错误也很麻烦，很多参数是通用的，不必每次传参都输入一遍，<font color='cornflowerblue'>youtube-dl.conf</font> 的存在就是为了设置常驻参数，再搭配 <font color='cornflowerblue'>cmd</font> 下传参来灵活配合使用。</p>
 <h2 id="3-1-配置文件制作与生效"><a href="#3-1-配置文件制作与生效" class="headerlink" title="3.1 配置文件制作与生效"></a>3.1 配置文件制作与生效</h2><div class="note note-danger">
             <p>配置文件中不可出现中文，注释说明使用英文</p>
           </div>
@@ -365,8 +365,8 @@
 
 
 
-<h3 id="3-2-3-格式化下载文件名和路径"><a href="#3-2-3-格式化下载文件名和路径" class="headerlink" title="3.2.3 格式化下载文件名和路径"></a>3.2.3 格式化下载文件名和路径</h3><p><font color='cornflowerblue'>youtube-dl</font> 使用 <code>-o </code> ，通过组合支持的字符串来自定下载的文件名模板</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl#output-template">官方文档 - 支持的字符串</a></p>
+<h3 id="3-2-3-格式化下载文件名和路径"><a href="#3-2-3-格式化下载文件名和路径" class="headerlink" title="3.2.3 格式化下载文件名和路径"></a>3.2.3 格式化下载文件名和路径</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出，通过使用 <code>%</code>开头的转换说明符对文件名包含路径的字符串模板化输出</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl#output-template">官方文档 - 支持的转移说明符</a></p>
 <p>例：</p>
 <ul>
 <li>将视频下载到当前路径下生成的 <font color='cornflowerblue'>视频上传者</font> 命名的文件夹中</li>
@@ -376,8 +376,7 @@
 
 
 
-<h3 id="3-2-4-下载历史路径设置"><a href="#3-2-4-下载历史路径设置" class="headerlink" title="3.2.4 下载历史路径设置"></a>3.2.4 下载历史路径设置</h3><p><font color='cornflowerblue'>–download-archive</font> 能够记录下载成功的视频 <font color='cornflowerblue'>id</font>，下载一整个频道或者播放列表有后续更新时会很好用</p>
-<p><font color='cornflowerblue'>–download-archive</font> 会记录下载成功的视频 <font color='cornflowerblue'>id</font> ，能避免重复下载</p>
+<h3 id="3-2-4-下载历史设置"><a href="#3-2-4-下载历史设置" class="headerlink" title="3.2.4 下载历史设置"></a>3.2.4 下载历史设置</h3><p><font color='cornflowerblue'>–download-archive</font> 会记录下载成功的视频 <font color='cornflowerblue'>id</font> ，能避免重复下载</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl#how-do-i-download-only-new-videos-from-a-playlist">官方文档 - 下载记录</a></p>
 <ul>
 <li>设置固定路径，生成具有唯一性的下载记录档：</li>
@@ -385,7 +384,7 @@
 <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">--download-archive G:<span class="hljs-regexp">/software_portable/y</span>outube/archive.txt<br></code></pre></td></tr></table></figure>
 
 <div class="note note-danger">
-            <p><font color='cornflowerblue'>–download-archive</font> 不支持字符串用作路径设定，只能设置固定路径。</p>
+            <p><font color='cornflowerblue'>–download-archive</font> 不支持 <code>%</code> 开头的转移说明符用作路径格式化，只能设置固定路径。</p>
           </div>
 
 
@@ -401,7 +400,7 @@
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-meta"># download sub</span><br>--write-<span class="hljs-keyword">sub</span><br><span class="hljs-meta"># set download sub language</span><br>--<span class="hljs-keyword">sub</span>-lang <span class="hljs-built_in">zh</span>-CN,<span class="hljs-built_in">zh</span>-TW,<span class="hljs-built_in">zh</span>-Hans,<span class="hljs-built_in">zh</span>-Hant,<span class="hljs-built_in">zh</span>-HK,en<br><span class="hljs-meta"># convert vtt to srt</span><br>--convert-subtitles srt<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><font color='cornflowerblue'>–write-sub</font>下载的 <font color='cornflowerblue'>youtube</font> 字幕默认都是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a target="_blank" rel="noopener" href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性建议转制为 <font color='cornflowerblue'>srt</font> 格式</li>
+<li><font color='cornflowerblue'>–write-sub</font> 下载的 <font color='cornflowerblue'>youtube</font> 字幕默认都是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a target="_blank" rel="noopener" href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性建议转制为 <font color='cornflowerblue'>srt</font> 格式</li>
 <li><font color='cornflowerblue'>–convert-subtitles srt</font> 能够自动在视频下载完成后将 <font color='cornflowerblue'>vtt</font> 格式的字幕转换为 <font color='cornflowerblue'>srt</font> 格式并删除原档</li>
 <li><font color='cornflowerblue'>–sub-lang</font> 用于设定下载的字幕语言，基本简繁字幕的标签就是 <font color='cornflowerblue'>zh-CN,zh-TW,zh-Hans,zh-Hant,zh-HK</font> ，还有可能常用的也就是 <font color='cornflowerblue'>en</font> 和 <font color='cornflowerblue'>ja</font></li>
 <li> <font color='cornflowerblue'>–embed-subs</font> 可以直接将字幕封入视频，但封入后字幕标签会全部显示为 <font color='cornflowerblue'>chinese</font> ，而且无法再对字幕做调整。</li>
