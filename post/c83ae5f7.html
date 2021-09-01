@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3k 字
+      3.1k 字
     </span>
   
 
@@ -460,6 +460,7 @@
 
 <ul>
 <li>右键菜单新建 <font color='cornflowerblue'>Autohotkey Script</font> ，复制下面脚本模板，对应修改后保存即可使用。</li>
+<li>脚本不受中文输入法影响，不需切换输入法</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs css">;win+e 退出脚本<br><span class="hljs-selector-id">#E</span>::ExitApp<br><br>;打开快捷键说明文档<br><span class="hljs-selector-id">#H</span>::Run G:\software_portable\youtube\Y2B_HELP.md<br><br>;win+<span class="hljs-selector-tag">a</span> 打开AHK脚本转exe程序<br><span class="hljs-selector-id">#A</span>::Run C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe<br><br>;win+r 打开自定义下载位置路径下CMD<br><span class="hljs-selector-id">#R</span>::Run cmd /K cd /D <span class="hljs-string">&quot;D:\youtube_download&quot;</span><br><br>;win+d 打开自定义下载路径文件夹<br><span class="hljs-selector-id">#D</span>::Run explorer.exe <span class="hljs-string">&quot;D:\youtube_download&quot;</span><br><br>;左win+v 下载最高质量视频<br>&lt;<span class="hljs-selector-id">#V</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> %clipboard%<br><br>;右win+v 下载mp4格式最高质量视频并混流封面<br>&gt;<span class="hljs-selector-id">#V</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> --format &quot;(bestvideo<span class="hljs-selector-attr">[ext=mp4]</span><span class="hljs-selector-attr">[fps&lt;61]</span>+bestaudio<span class="hljs-selector-attr">[ext=m4a]</span>/best<span class="hljs-selector-attr">[ext=mp4]</span>/bestvideo+bestaudio/best)&quot; --write-thumbnail --embed-thumbnail %clipboard%<br><br>;win+m 只下载音频<br><span class="hljs-selector-id">#M</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> -x %clipboard%<br><br>;win+u 更新youtube-<span class="hljs-selector-tag">dl</span><br><span class="hljs-selector-id">#U</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> -U<br></code></pre></td></tr></table></figure>
 
