@@ -1651,8 +1651,8 @@
 <h3 id="3-2-5-下载格式设定"><a href="#3-2-5-下载格式设定" class="headerlink" title="3.2.5 下载格式设定"></a>3.2.5 下载格式设定</h3><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">--format &quot;bestvideo<span class="hljs-selector-attr">[vcodec=vp9]</span>+bestaudio<span class="hljs-selector-attr">[acodec=opus]</span>/best<span class="hljs-selector-attr">[ext=webm]</span>/best&quot;<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><font color='cornflowerblue'>–format</font> 可以指定下载格式，分辨率，如无特殊指定则默认下载最高质量</li>
-<li><font color='cornflowerblue'>youtube</font> 上编码质量最好的就是 <font color='cornflowerblue'>vp9</font> 和 <font color='cornflowerblue'>opus</font></li>
+<li><font color='cornflowerblue'>–format</font> 可以指定混流格式，下载编码，分辨率等等，如无特殊指定则默认下载最高质量</li>
+<li><font color='cornflowerblue'>youtube</font> 上编码质量最好的就是 <font color='cornflowerblue'>vp9</font> 和 <font color='cornflowerblue'>opus</font> </li>
 </ul>
 <p><a href="https://github.com/ytdl-org/youtube-dl#format-selection">官方文档 - 格式选择</a></p>
 <h3 id="3-2-6-字幕下载-选择-格式转换"><a href="#3-2-6-字幕下载-选择-格式转换" class="headerlink" title="3.2.6 字幕下载 选择 格式转换"></a>3.2.6 字幕下载 选择 格式转换</h3><p>常用配置</p>
@@ -1700,11 +1700,11 @@
 <p><a href="https://github.com/ytdl-org/youtube-dl/pull/25717">Fix Youtube’s WebP thumbnails by converting them to JPG</a></p>
 <p><a href="https://stackoverflow.com/questions/55561387/how-to-rebuild-python-youtube-dl-from-the-source">How to rebuild python youtube-dl from the source</a></p>
 <p><a href="https://ywnz.com/linuxjc/5418.html">Youtube-dl教程与使用例子</a></p>
-<h1 id="4-进阶2：-autohotkey-快捷键传参"><a href="#4-进阶2：-autohotkey-快捷键传参" class="headerlink" title="4. 进阶2： autohotkey 快捷键传参"></a>4. 进阶2： <font color='cornflowerblue'>autohotkey</font> 快捷键传参</h1><p>强大的热键脚本工具</p>
+<h1 id="4-进阶2：-autohotkey-热键辅助脚本"><a href="#4-进阶2：-autohotkey-热键辅助脚本" class="headerlink" title="4. 进阶2： autohotkey 热键辅助脚本"></a>4. 进阶2： <font color='cornflowerblue'>autohotkey</font> 热键辅助脚本</h1><p><font color='cornflowerblue'>AHK</font> 是非常强大的热键自定义脚本工具，依靠其灵活的自定功能可以进一步简化 <font color='cornflowerblue'>youtube-dl</font> 命令行模式下的操作，提高可用性的同时让这套下载组合高度符合自用习惯。</p>
 <h2 id="4-1-下载-amp-教程"><a href="#4-1-下载-amp-教程" class="headerlink" title="4.1  下载 &amp; 教程"></a>4.1  下载 &amp; 教程</h2><ul>
 <li><a href="https://www.autohotkey.com/">官网</a></li>
 </ul>
-<p><span class="label label-primary">注意：</span> 建议下载 <font color='cornflowerblue'>1.1</font> 版本</p>
+<p><span class="label label-primary"><font color='cornflowerblue'>注意</font></span> 建议下载 <font color='cornflowerblue'>1.1</font> 版本 </p>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210901042454.png" alt="2021.09.01 最新版本为 1.1.33.10"></p>
 <ul>
 <li><a href="https://www.autoahk.com/">AHK中文网</a></li>
@@ -1717,9 +1717,16 @@
             <p>如有简体中文路径，编码字符集需设置为 <font color='cornflowerblue'>GB2312</font> ，否则会报错。</p>
           </div>
 
+<p><font color='cornflowerblue'><span class="label label-warning"><strong>脚本特点</strong></span></font></p>
 <ul>
-<li>右键菜单新建 <font color='cornflowerblue'>Autohotkey Script</font> ，复制下面脚本模板，对应修改后保存即可使用。</li>
-<li>脚本不受中文输入法影响，不需切换输入法</li>
+<li>常用命令输入简化为几组热键</li>
+<li>复制视频链接后热键自动组合输出为 <font color='cornflowerblue'>cmd</font> 可用的下载链接</li>
+<li>脚本不受中文输入法影响，无需切换输入法</li>
+</ul>
+<p><font color='cornflowerblue'><span class="label label-warning"><strong>脚本使用</strong></span></font></p>
+<ul>
+<li>鼠标右键菜单 - 新建 - 选择 <font color='cornflowerblue'>Autohotkey Script</font> ，生成空脚本</li>
+<li>复制下面脚本模板到空脚本，对应需求修改后保存即可使用</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">;win+e 退出脚本<br><span class="hljs-selector-id">#E</span>::ExitApp<br><br>;打开快捷键说明文档<br><span class="hljs-selector-id">#H</span>::Run G:\software_portable\youtube\Y2B_HELP.md<br><br>;win+<span class="hljs-selector-tag">a</span> 打开AHK脚本转exe程序<br><span class="hljs-selector-id">#A</span>::Run C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe<br><br>;win+r 打开自定义下载位置路径下CMD<br><span class="hljs-selector-id">#R</span>::Run cmd /K cd /D <span class="hljs-string">&quot;D:\youtube_download&quot;</span><br><br>;win+d 打开自定义下载路径文件夹<br><span class="hljs-selector-id">#D</span>::Run explorer.exe <span class="hljs-string">&quot;D:\youtube_download&quot;</span><br><br>;左win+v 下载最高质量视频<br>&lt;<span class="hljs-selector-id">#V</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> %clipboard%<br><br>;右win+v 下载mp4格式最高质量视频并混流封面<br>&gt;<span class="hljs-selector-id">#V</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> --format &quot;(bestvideo<span class="hljs-selector-attr">[ext=mp4]</span><span class="hljs-selector-attr">[fps&lt;61]</span>+bestaudio<span class="hljs-selector-attr">[ext=m4a]</span>/best<span class="hljs-selector-attr">[ext=mp4]</span>/bestvideo+bestaudio/best)&quot; --write-thumbnail --embed-thumbnail %clipboard%<br><br>;win+m 只下载音频<br><span class="hljs-selector-id">#M</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> -x %clipboard%<br><br>;win+u 更新youtube-<span class="hljs-selector-tag">dl</span><br><span class="hljs-selector-id">#U</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> -U<br></code></pre></td></tr></table></figure>
 
