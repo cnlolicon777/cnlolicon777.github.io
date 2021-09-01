@@ -1587,7 +1587,7 @@
 <ul>
 <li><font color='cornflowerblue'>–add-metadata</font> 是个人建议必选的参数，<font color='cornflowerblue'>youtube</font> 上很多教程视频使用的章节分段数据就包含在元数据信息中，这个参数会将章节信息写入视频。</li>
 </ul>
-<h2 id="3-3-参考"><a href="#3-3-参考" class="headerlink" title="3.3 参考"></a>3.3 参考</h2><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></p>
+<h2 id="3-3-参考文章"><a href="#3-3-参考文章" class="headerlink" title="3.3 参考文章"></a>3.3 参考文章</h2><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></p>
 <p><a href="https://www.jianshu.com/p/5143faa6056d">youtube-dl详细配置文件</a></p>
 <p><a href="https://sspai.com/post/42409">开源而强大的视频下载工具——youtube-dl</a></p>
 <p><a href="https://www.jianshu.com/p/0c21406eb866">Windows 10 右键添加 “open cmd” 和 “open cmd(admin)”</a></p>
