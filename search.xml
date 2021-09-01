@@ -395,7 +395,7 @@
 </ul>
 <p>在自用博客根目录打开 <font color='cornflowerblue'>git-bash</font> </p>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210901160348.png" alt="打开 git bash"></p>
-<p>完成博客的本地更新后，进行上传，操作和 <font color='cornflowerblue'>CMD</font> 下一致：</p>
+<p>完成博客的本地更新之后，进行上传，操作和 <font color='cornflowerblue'>CMD</font> 下一致：</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
 
 ]]></content>
