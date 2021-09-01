@@ -450,9 +450,10 @@
 
 
 <p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font></p>
-<p>修改配置参数防止 <font color='cornflowerblue'>README.md</font> 被 <font color='cornflowerblue'>Hexo</font> 渲染为 <font color='cornflowerblue'>html</font></p>
+<p>定位到 <code>skip_render:</code> ，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">skip_render:</span> <span class="hljs-string">README.md</span><br></code></pre></td></tr></table></figure>
 
+<p>修改配置参数是为了防止 <font color='cornflowerblue'>README.md</font> 被 <font color='cornflowerblue'>Hexo</font> 渲染为 <font color='cornflowerblue'>html</font></p>
 ]]></content>
       <categories>
         <category>博客配置</category>
@@ -1509,12 +1510,14 @@
 <li><a href="https://sourceforge.net/projects/atomicparsley/files/">AtomicParsley</a></li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831171729.png" alt="只需要 AtomicParsley.exe "></p>
-<h2 id="2-2-添加环境变量"><a href="#2-2-添加环境变量" class="headerlink" title="2.2 添加环境变量"></a>2.2 添加环境变量</h2><ul>
-<li>将上述程序统一放到一个 <font color='red'>全英文</font> 路径，例如：</li>
+<h2 id="2-2-添加环境变量"><a href="#2-2-添加环境变量" class="headerlink" title="2.2 添加环境变量"></a>2.2 添加环境变量</h2><p>将上述程序统一放到一个 <font color='red'>全英文</font> 路径</p>
+<ul>
+<li>例：</li>
 </ul>
 <figure class="highlight taggerscript"><table><tr><td class="code"><pre><code class="hljs taggerscript">G:<span class="hljs-symbol">\s</span>oftware_portable<span class="hljs-symbol">\y</span>outube<br></code></pre></td></tr></table></figure>
 
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831172852.png" alt="所需程序一览"></p>
+<p><font color='green'><strong>将该路径添加环境变量</strong></font></p>
 <ul>
 <li><code>win</code><font color='cornflowerblue'>+</font><code>r</code>  呼出运行界面，键入：</li>
 </ul>
@@ -1522,29 +1525,19 @@
 
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831173511.png" alt="运行界面"></p>
 <ul>
-<li>调出系统属性面板 - 高级 - 点选环境变量</li>
+<li>调出<font color='cornflowerblue'>系统属性面板</font> - <font color='cornflowerblue'>高级</font> - 点选<font color='cornflowerblue'>环境变量</font></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831174308.png" alt="系统属性面板"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831174308.png" alt="系统属性"></p>
 <ul>
-<li>双击用户变量/系统变量的 <font color='cornflowerblue'>path</font> 栏 - 添加环境变量</li>
+<li>双击用户变量/系统变量的 <font color='cornflowerblue'>path</font> 栏 - 添加<font color='cornflowerblue'>环境变量</font></li>
 </ul>
 <div class="note note-danger">
             <p>多账号添加系统变量，单账号添加用户变量</p>
           </div>
 
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831175214.png"></p>
-<p>到这里 <font color='cornflowerblue'>youtube-dl</font> 主体配置完毕。</p>
-<h2 id="2-3-右键菜单-“open-cmd”"><a href="#2-3-右键菜单-“open-cmd”" class="headerlink" title="2.3 右键菜单 “open cmd”"></a>2.3 右键菜单 <font color='cornflowerblue'>“open cmd”</font></h2><p>作用：省去 <code>win</code><font color='cornflowerblue'>+</font><code>r</code> 调用 <font color='cornflowerblue'>cmd</font> 后 <font color='cornflowerblue'>cd</font> 到当前文件夹的操作，在任意文件夹内右键即可调出当前路径下  <font color='cornflowerblue'>cmd</font> 。</p>
-<div class="note note-success">
-            <p>也可直接在当前路径下地址栏键入 <font color='cornflowerblue'>cmd</font> 调出</p>
-          </div>
-
-<div class="note note-success">
-            <p>无特殊需求可直接 <code>shift</code><font color='cornflowerblue'>+</font><code>鼠标右键</code> 呼出 <font color='cornflowerblue'>powershell</font> 来传参</p>
-          </div>
-
-
-
+<p>到这里 <font color='cornflowerblue'>youtube-dl</font> 主体使用环境配置完毕。</p>
+<h2 id="2-3-右键菜单-“open-cmd”-可选"><a href="#2-3-右键菜单-“open-cmd”-可选" class="headerlink" title="2.3 右键菜单 “open cmd”[可选]"></a>2.3 右键菜单 <font color='cornflowerblue'>“open cmd”</font>[可选]</h2><p>作用：省去 <code>win</code><font color='cornflowerblue'>+</font><code>r</code> 调用 <font color='cornflowerblue'>cmd</font> 后 <font color='cornflowerblue'>cd</font> 到当前文件夹的操作，在任意文件夹内右键即可调出当前路径下  <font color='cornflowerblue'>cmd</font> 。</p>
 <ul>
 <li>复制下列脚本到文本编辑器，保存为 <font color='cornflowerblue'>.reg</font> 格式：</li>
 </ul>
@@ -1552,6 +1545,13 @@
 
 <ul>
 <li>双击 <font color='cornflowerblue'>.reg</font> 文件即可完成右键菜单添加</li>
+</ul>
+<p><font color='green'><strong>替代方案</strong></font></p>
+<ul>
+<li><p>在资源管理器地址栏键入 <code>cmd</code> 即可调出当前路径下 <font color='cornflowerblue'>cmd</font> 界面</p>
+</li>
+<li><p>当前文件夹下空白位置 <code>shift</code><font color='cornflowerblue'>+</font><code>鼠标右键</code> 调出 <font color='cornflowerblue'>powershell</font> 界面</p>
+</li>
 </ul>
 <h1 id="3-进阶1：-youtube-dl-conf-配置文件"><a href="#3-进阶1：-youtube-dl-conf-配置文件" class="headerlink" title="3. 进阶1： youtube-dl.conf 配置文件"></a>3. 进阶1： <font color='cornflowerblue'>youtube-dl.conf</font> 配置文件</h1><p>先举个例子：</p>
 <ul>
