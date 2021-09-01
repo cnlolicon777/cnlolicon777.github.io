@@ -182,110 +182,130 @@
             <p>fluid Version: 1.8.11</p>
           </div>
 
-<h1 id="配置-next-主题"><a href="#配置-next-主题" class="headerlink" title="配置 next 主题"></a>配置 <strong><code>next</code></strong> 主题</h1><h2 id="1-next-主题安装"><a href="#1-next-主题安装" class="headerlink" title="1. next 主题安装"></a>1. <code>next</code> 主题安装</h2><p><a class="btn" href="https://github.com/theme-next/hexo-theme-next/archive/refs/tags/v7.8.0.zip" title="鼠标左击在新标签页打开">next 7.8.0 release 下载地址</a></p>
-<p>解压下载完成的 <code>hexo-theme-next-7.8.0.zip</code> ，文件夹重命名为 <code>next_7.8</code> </p>
+<h1 id="配置-next-主题"><a href="#配置-next-主题" class="headerlink" title="配置 next 主题"></a>配置 <font color='cornflowerblue'>next</font> 主题</h1><h2 id="1-next-主题安装"><a href="#1-next-主题安装" class="headerlink" title="1. next 主题安装"></a>1. <font color='cornflowerblue'>next</font> 主题安装</h2><p><a class="btn" href="https://github.com/theme-next/hexo-theme-next/archive/refs/tags/v7.8.0.zip" title="鼠标左击在新标签页打开">next 7.8.0 release 下载地址</a></p>
+<p>解压下载完成的 <font color='cornflowerblue'>hexo-theme-next-7.8.0.zip</font> ，文件夹重命名为 <code>next_7.8</code> </p>
 <p>拷贝文件夹到博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 的 <code>themes</code> 文件夹里</p>
-<h2 id="2-next-主题启用"><a href="#2-next-主题启用" class="headerlink" title="2. next 主题启用"></a>2. <code>next</code> 主题启用</h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code></p>
-<p>定位到 <code>Themes: landscape</code> 修改如下即可启用 <code>next</code> 主题：</p>
+<h2 id="2-next-主题启用"><a href="#2-next-主题启用" class="headerlink" title="2. next 主题启用"></a>2. <font color='cornflowerblue'>next</font> 主题启用</h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font></p>
+<p>定位到 <code>Themes: landscape</code> 修改如下即可启用 <font color='cornflowerblue'>next</font> 主题：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">Themes:</span> <span class="hljs-string">next_7.8</span><br></code></pre></td></tr></table></figure>
 
-<p>清除 <code>Hexo</code> 缓存</p>
+<p>清除 <font color='cornflowerblue'>Hexo</font> 缓存</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></td></tr></table></figure>
 
-<p>重建 <code>Hexo</code> 缓存 </p>
+<p>重建 <font color='cornflowerblue'>Hexo</font> 缓存 </p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure>
 
-<p>启动 <code>Hexo</code> 本地站点</p>
+<p>启动 <font color='cornflowerblue'>Hexo</font> 本地站点</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
 
 <p>浏览器打开 <code>http://0.0.0.0:4000/</code> 查看主题是否启用成功。</p>
-<h2 id="3-next-主题设置"><a href="#3-next-主题设置" class="headerlink" title="3. next 主题设置"></a>3. <code>next</code> 主题设置</h2><p>打开 <strong>next</strong> 根目录 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code> 下主题配置文件 <code>_config.yml</code></p>
-<h3 id="3-1-设定-Scheme-主题风格"><a href="#3-1-设定-Scheme-主题风格" class="headerlink" title="3.1 设定 Scheme (主题风格)"></a>3.1 设定 <code>Scheme (主题风格)</code></h3><p>定位到 <code>Scheme Settings</code> 部分，修改如下：</p>
+<h2 id="3-next-主题设置"><a href="#3-next-主题设置" class="headerlink" title="3. next 主题设置"></a>3. <font color='cornflowerblue'>next</font> 主题设置</h2><p>打开 <strong>next</strong> 根目录 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code> 下主题配置文件 <font color='cornflowerblue'>_config.yml</font></p>
+<h3 id="3-1-设定-Scheme-主题风格"><a href="#3-1-设定-Scheme-主题风格" class="headerlink" title="3.1 设定 Scheme (主题风格)"></a>3.1 设定 <font color='cornflowerblue'>Scheme (主题风格)</font></h3><p>定位到 <code>Scheme Settings</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># ---------------------------------------------------------------</span><br><span class="hljs-comment"># Scheme Settings</span><br><span class="hljs-comment"># ---------------------------------------------------------------</span><br><br><span class="hljs-comment"># Schemes</span><br><span class="hljs-comment">#scheme: Muse</span><br><span class="hljs-comment">#scheme: Mist</span><br><span class="hljs-comment">#scheme: Pisces</span><br><span class="hljs-attr">scheme:</span> <span class="hljs-string">Gemini</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-2-设定-back2top-返回顶部按钮显示阅读进度"><a href="#3-2-设定-back2top-返回顶部按钮显示阅读进度" class="headerlink" title="3.2 设定 back2top (返回顶部按钮显示阅读进度)"></a>3.2 设定 <code>back2top (返回顶部按钮显示阅读进度)</code></h3><p>定位到 <code>back2top:</code> 部分，修改如下：</p>
+<h3 id="3-2-设定-back2top-返回顶部按钮"><a href="#3-2-设定-back2top-返回顶部按钮" class="headerlink" title="3.2 设定 back2top (返回顶部按钮)"></a>3.2 设定 <font color='cornflowerblue'>back2top (返回顶部按钮)</font></h3><p>定位到 <code>back2top:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">back2top:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Back to top in sidebar.</span><br>  <span class="hljs-attr">sidebar:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># Scroll percent label in b2t button.</span><br>  <span class="hljs-attr">scrollpercent:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-3-设定-highlight-theme-语法高亮风格"><a href="#3-3-设定-highlight-theme-语法高亮风格" class="headerlink" title="3.3 设定 highlight_theme (语法高亮风格)"></a>3.3 设定 <code>highlight_theme (语法高亮风格)</code></h3><p>定位到 <code>highlight_theme:</code> 部分，修改如下：</p>
+<h3 id="3-3-设定-highlight-theme-语法高亮风格"><a href="#3-3-设定-highlight-theme-语法高亮风格" class="headerlink" title="3.3 设定 highlight_theme (语法高亮风格)"></a>3.3 设定 <font color='cornflowerblue'>highlight_theme (语法高亮风格)</font></h3><p>定位到 <code>highlight_theme:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">highlight_theme:</span> <span class="hljs-string">night</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-4-设定-copy-button-代码一键复制按钮"><a href="#3-4-设定-copy-button-代码一键复制按钮" class="headerlink" title="3.4 设定 copy_button (代码一键复制按钮)"></a>3.4 设定 <code>copy_button (代码一键复制按钮)</code></h3><p>定位到 <code>copy_button:</code> 部分，修改如下：</p>
+<h3 id="3-4-设定-copy-button-代码复制按钮"><a href="#3-4-设定-copy-button-代码复制按钮" class="headerlink" title="3.4 设定 copy_button (代码复制按钮)"></a>3.4 设定 <font color='cornflowerblue'>copy_button (代码复制按钮)</font></h3><p>定位到 <code>copy_button:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">copy_button:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Show text copy result.</span><br>  <span class="hljs-attr">show_result:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Available values: default | flat | mac</span><br>  <span class="hljs-attr">style:</span> <span class="hljs-string">flat</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-5-设定-reading-progress-顶部加载条"><a href="#3-5-设定-reading-progress-顶部加载条" class="headerlink" title="3.5 设定 reading_progress (顶部加载条)"></a>3.5 设定 <code>reading_progress (顶部加载条)</code></h3><p>定位到 <code>reading_progress:</code> 部分，修改如下：</p>
+<h3 id="3-5-设定-reading-progress-顶部加载条"><a href="#3-5-设定-reading-progress-顶部加载条" class="headerlink" title="3.5 设定 reading_progress (顶部加载条)"></a>3.5 设定 <font color='cornflowerblue'>reading_progress (顶部加载条)</font></h3><p>定位到 <code>reading_progress:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Reading progress bar</span><br><span class="hljs-attr">reading_progress:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <br>  <span class="hljs-comment"># Available values: top | bottom</span><br>  <span class="hljs-attr">position:</span> <span class="hljs-string">top</span><br>  <span class="hljs-attr">color:</span> <span class="hljs-string">&quot;#37c6c0&quot;</span><br>  <span class="hljs-attr">height:</span> <span class="hljs-string">3px</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-6-设定-toc（文章目录菜单）"><a href="#3-6-设定-toc（文章目录菜单）" class="headerlink" title="3.6 设定 toc（文章目录菜单）"></a>3.6 设定 <code>toc（文章目录菜单）</code></h3><p>定位到 <code>toc:</code> 部分，修改如下：</p>
+<h3 id="3-6-设定-toc-文章目录菜单"><a href="#3-6-设定-toc-文章目录菜单" class="headerlink" title="3.6 设定 toc (文章目录菜单)"></a>3.6 设定 <font color='cornflowerblue'>toc (文章目录菜单)</font></h3><p>定位到 <code>toc:</code> 部分，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">toc:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Automatically add list number to toc.</span><br>  <span class="hljs-attr">number:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># If true, all words will placed on next lines if header width longer then sidebar width.</span><br>  <span class="hljs-attr">wrap:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-comment"># If true, all level of TOC in a post will be displayed, rather than the activated part of it.</span><br>  <span class="hljs-attr">expand_all:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># Maximum heading depth of generated toc.</span><br>  <span class="hljs-attr">max_depth:</span> <span class="hljs-number">6</span><br></code></pre></td></tr></table></figure>
 
-<p>解决中文目录菜单无法点击跳转</p>
-<p>打开 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source\js</code> 目录下 <code>util.js</code> 文件</p>
-<p>定位到 <code>registerSidebarTOC: function()</code> ：</p>
-<p>增加2行代码：</p>
+
+
+<p><font color='red'>解决中文目录菜单无法点击跳转</font></p>
+<ul>
+<li>打开 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source\js</code> 目录下 <font color='cornflowerblue'>util.js</font> 文件</li>
+</ul>
+<ul>
+<li>定位到 <code>registerSidebarTOC: function()</code> </li>
+</ul>
+<ul>
+<li>增加2行代码：</li>
+</ul>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> target = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-built_in">decodeURI</span>(link.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>)).replace(<span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>));<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight aspectj"><table><tr><td class="code"><pre><code class="hljs aspectj"><span class="hljs-keyword">return</span> <span class="hljs-keyword">target</span>;<br></code></pre></td></tr></table></figure>
 
-<p>注释2行代码：</p>
+<ul>
+<li>注释2行代码：</li>
+</ul>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span> var target = document.getElementById(event.currentTarget.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>).replace(<span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>));<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight sas"><table><tr><td class="code"><pre><code class="hljs sas">// <span class="hljs-meta">return</span> document.getElementById(<span class="hljs-meta">link</span>.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>).<span class="hljs-meta">replace</span>(<span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>));<br></code></pre></td></tr></table></figure>
 
-<p>修改如下：</p>
+<ul>
+<li>修改如下：</li>
+</ul>
 <p><a href="https://github.com/theme-next/hexo-theme-next/pull/1540/files">github pull</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/next_solve_zh_toc_cannot_jump.png" alt="代码增删图示"></p>
-<h1 id="配置-fluid-主题"><a href="#配置-fluid-主题" class="headerlink" title="配置 fluid 主题"></a>配置 <strong><code>fluid</code></strong> 主题</h1><h2 id="1-fluid-主题安装"><a href="#1-fluid-主题安装" class="headerlink" title="1. fluid 主题安装"></a>1. <code>fluid</code> 主题安装</h2><p><a class="btn" href="https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/tags/v1.8.11.zip" title="鼠标左击在新标签页打开">fluid 1.8.11 release 下载地址</a></p>
-<p>解压下载完成的 <code>hexo-theme-fluid-1.8.11.zip</code> ，文件夹重命名为 <code>fluid_1.8.11</code></p>
+<h1 id="配置-fluid-主题"><a href="#配置-fluid-主题" class="headerlink" title="配置 fluid 主题"></a>配置 <font color='cornflowerblue'>fluid</font> 主题</h1><h2 id="1-fluid-主题安装"><a href="#1-fluid-主题安装" class="headerlink" title="1. fluid 主题安装"></a>1. <font color='cornflowerblue'>fluid</font> 主题安装</h2><p><a class="btn" href="https://github.com/fluid-dev/hexo-theme-fluid/archive/refs/tags/v1.8.11.zip" title="鼠标左击在新标签页打开">fluid 1.8.11 release 下载地址</a></p>
+<p>解压下载完成的 <font color='cornflowerblue'>hexo-theme-fluid-1.8.11.zip</font> ，文件夹重命名为 <code>fluid_1.8.11</code></p>
 <p>拷贝文件夹到博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 的 <code>themes</code> 文件夹里</p>
-<h2 id="2-fluid-主题启用"><a href="#2-fluid-主题启用" class="headerlink" title="2. fluid 主题启用"></a>2. <code>fluid</code> 主题启用</h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code></p>
-<p>定位到 <code>Themes: </code> 修改如下即可启用 <code>fluid</code> 主题：</p>
+<h2 id="2-fluid-主题启用"><a href="#2-fluid-主题启用" class="headerlink" title="2. fluid 主题启用"></a>2. <font color='cornflowerblue'>fluid</font> 主题启用</h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font></p>
+<p>定位到 <code>Themes: </code> 修改如下即可启用 <font color='cornflowerblue'>fluid</font> 主题：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">Themes:</span> <span class="hljs-string">fluid_1.8.11</span><br></code></pre></td></tr></table></figure>
 
-<p>清除 <code>Hexo</code> 缓存</p>
+<p>清除 <font color='cornflowerblue'>Hexo</font> 缓存</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></td></tr></table></figure>
 
-<p>重建 <code>Hexo</code> 缓存 </p>
+<p>重建 <font color='cornflowerblue'>Hexo</font> 缓存 </p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure>
 
-<p>启动 <code>Hexo</code> 本地站点</p>
+<p>启动 <font color='cornflowerblue'>Hexo</font> 本地站点</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
 
 <p>浏览器打开 <code>http://0.0.0.0:4000/</code> 查看主题是否启用成功。</p>
-<h2 id="3-next-主题设置-1"><a href="#3-next-主题设置-1" class="headerlink" title="3. next 主题设置"></a>3. <code>next</code> 主题设置</h2><p>打开 <strong>fluid</strong> 根目录 <code>G:\software\Blog\cnlolicon777Blog\themes\fluid_1.8.11</code> 下主题配置文件 <code>_config.yml</code></p>
-<h3 id="3-1-设定-主题暗色模式"><a href="#3-1-设定-主题暗色模式" class="headerlink" title="3.1 设定 主题暗色模式"></a>3.1 设定 <code>主题暗色模式</code></h3><p>定位到 <code># 主题暗色模式</code> ，修改如下：</p>
+<h2 id="3-next-主题设置-1"><a href="#3-next-主题设置-1" class="headerlink" title="3. next 主题设置"></a>3. <font color='cornflowerblue'>next</font> 主题设置</h2><p>打开 <strong>fluid</strong> 根目录 <code>G:\software\Blog\cnlolicon777Blog\themes\fluid_1.8.11</code> 下主题配置文件 <font color='cornflowerblue'>_config.yml</font></p>
+<h3 id="3-1-设定-主题暗色模式"><a href="#3-1-设定-主题暗色模式" class="headerlink" title="3.1 设定 主题暗色模式"></a>3.1 设定 <font color='cornflowerblue'>主题暗色模式</font></h3><p>定位到 <code># 主题暗色模式</code> ，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">default:</span> <span class="hljs-string">dark</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-2-设定-导航栏-Navigation-bar"><a href="#3-2-设定-导航栏-Navigation-bar" class="headerlink" title="3.2 设定 导航栏 (Navigation bar)"></a>3.2 设定 <code>导航栏 (Navigation bar)</code></h3><p>定位到 <code># Navigation bar</code></p>
-<p>修改 <code>blog_title:</code></p>
+<h3 id="3-2-设定-导航栏-Navigation-bar"><a href="#3-2-设定-导航栏-Navigation-bar" class="headerlink" title="3.2 设定 导航栏 (Navigation bar)"></a>3.2 设定 <font color='cornflowerblue'>导航栏 (Navigation bar)</font></h3><p>定位到 <code># Navigation bar</code></p>
+<ul>
+<li>修改 <code>blog_title:</code></li>
+</ul>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">blog_title:</span> <span class="hljs-string">cnlolicon777&#x27;s</span> <span class="hljs-string">Blog</span><br></code></pre></td></tr></table></figure>
 
-<p>修改 <code>不透明度</code></p>
+<ul>
+<li>修改 <code>不透明度</code></li>
+</ul>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">alpha:</span> <span class="hljs-number">0.6</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-3-设定-首页-Home-Page"><a href="#3-3-设定-首页-Home-Page" class="headerlink" title="3.3 设定 首页 (Home Page)"></a>3.3 设定 <code>首页 (Home Page)</code></h3><p>定位到 <code># Home Page</code></p>
-<p>修改 <code># 头图高度，屏幕百分比</code></p>
+<h3 id="3-3-设定-首页-Home-Page"><a href="#3-3-设定-首页-Home-Page" class="headerlink" title="3.3 设定 首页 (Home Page)"></a>3.3 设定 <font color='cornflowerblue'>首页 (Home Page)</font></h3><p>定位到 <code># Home Page</code></p>
+<ul>
+<li>修改 <code># 头图高度，屏幕百分比</code></li>
+</ul>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">banner_img_height:</span> <span class="hljs-number">70</span><br></code></pre></td></tr></table></figure>
 
-<p>修改 <code># 首页副标题的独立设置</code></p>
+<ul>
+<li>修改 <code># 首页副标题的独立设置</code></li>
+</ul>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">text:</span> <span class="hljs-string">&quot;有则加勉，无莫强求&quot;</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-4-设定-文章右侧目录-TOC"><a href="#3-4-设定-文章右侧目录-TOC" class="headerlink" title="3.4 设定 文章右侧目录 (TOC)"></a>3.4 设定 <code>文章右侧目录 (TOC)</code></h3><p>定位到 <code># Table of contents (TOC)</code> ，修改如下：</p>
+<h3 id="3-4-设定-文章右侧目录-TOC"><a href="#3-4-设定-文章右侧目录-TOC" class="headerlink" title="3.4 设定 文章右侧目录 (TOC)"></a>3.4 设定 <font color='cornflowerblue'>文章右侧目录 (TOC)</font></h3><p>定位到 <code># Table of contents (TOC)</code> ，修改如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">collapseDepth:</span> <span class="hljs-number">6</span><br></code></pre></td></tr></table></figure>
 
 
@@ -304,16 +324,17 @@
   <entry>
     <title>Hexo + github 搭建静态博客</title>
     <url>/post/874eb030.html</url>
-    <content><![CDATA[<h2 id="1-创建一个-github-账号"><a href="#1-创建一个-github-账号" class="headerlink" title="1.创建一个 github 账号"></a>1.创建一个 <font color='cornflowerblue'>github</font> 账号</h2><span id="more"></span>
+    <content><![CDATA[<h1 id="1-创建一个-github-账号"><a href="#1-创建一个-github-账号" class="headerlink" title="1.创建一个 github 账号"></a>1.创建一个 <font color='cornflowerblue'>github</font> 账号</h1><span id="more"></span>
 
 <p>创建一个新号 （*@qq.com 为注册邮箱），账号名 <code>cnlolicon777</code></p>
-<h2 id="2-创建一个-github-仓库"><a href="#2-创建一个-github-仓库" class="headerlink" title="2.创建一个 github 仓库"></a>2.创建一个 <font color='cornflowerblue'>github</font> 仓库</h2><p>打开 <a class="btn" href="https://github.com/" title="鼠标左击在新标签页打开">github首页</a> ，点击 <code>Create repository</code></p>
-<h3 id="Repository-name-填写"><a href="#Repository-name-填写" class="headerlink" title="Repository name 填写"></a><code>Repository name</code> 填写</h3><figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">c<span class="hljs-symbol">nlolicon777</span>.github.io<br></code></pre></td></tr></table></figure>
+<h1 id="2-创建一个-github-仓库"><a href="#2-创建一个-github-仓库" class="headerlink" title="2.创建一个 github 仓库"></a>2.创建一个 <font color='cornflowerblue'>github</font> 仓库</h1><p>打开 <a class="btn" href="https://github.com/" title="鼠标左击在新标签页打开">github首页</a> ，点击 <code>Create repository</code></p>
+<p><code>Repository name</code> 填写</p>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">c<span class="hljs-symbol">nlolicon777</span>.github.io<br></code></pre></td></tr></table></figure>
 
 <p>勾选 <code>Add a README file</code> 后点击 <code>Create repository</code> 创建成功</p>
-<h2 id="3-安装-nodes-js"><a href="#3-安装-nodes-js" class="headerlink" title="3 .安装 nodes.js"></a>3 .安装 <font color='cornflowerblue'>nodes.js</font></h2><p><a class="btn" href="https://nodejs.org/en/" title="鼠标左击在新标签页打开">nodes.js 下载地址</a></p>
+<h1 id="3-安装-nodes-js"><a href="#3-安装-nodes-js" class="headerlink" title="3 .安装 nodes.js"></a>3 .安装 <font color='cornflowerblue'>nodes.js</font></h1><p><a class="btn" href="https://nodejs.org/en/" title="鼠标左击在新标签页打开">nodes.js 下载地址</a></p>
 <p>安装到 <code>G:\software</code> 文件夹</p>
-<h2 id="4-安装-git-for-windows"><a href="#4-安装-git-for-windows" class="headerlink" title="4.安装 git for windows"></a>4.安装 <font color='cornflowerblue'>git for windows</font></h2><p><a class="btn" href="https://gitforwindows.org/" title="鼠标左击在新标签页打开">git for windows 下载地址</a></p>
+<h1 id="4-安装-git-for-windows"><a href="#4-安装-git-for-windows" class="headerlink" title="4.安装 git for windows"></a>4.安装 <font color='cornflowerblue'>git for windows</font></h1><p><a class="btn" href="https://gitforwindows.org/" title="鼠标左击在新标签页打开">git for windows 下载地址</a></p>
 <p>安装到 <code>G:\software</code> 文件夹</p>
 <p>安装过程需要切换的勾选：</p>
 <div class="note note-danger">
@@ -329,7 +350,7 @@
           </div>
 
 <p>​    </p>
-<h2 id="5-github-ssh-配置"><a href="#5-github-ssh-配置" class="headerlink" title="5. github ssh 配置"></a>5. <font color='cornflowerblue'>github ssh</font> 配置</h2><p>双击打开 <code>G:\software\Git\</code> 安装路径下 <code>git-bash.exe</code></p>
+<h1 id="5-github-ssh-配置"><a href="#5-github-ssh-配置" class="headerlink" title="5. github ssh 配置"></a>5. <font color='cornflowerblue'>github ssh</font> 配置</h1><p>双击打开 <code>G:\software\Git\</code> 安装路径下 <code>git-bash.exe</code></p>
 <p>复制如下代码到界面（<strong>git-bash界面鼠标右键粘贴</strong>）</p>
 <figure class="highlight excel"><table><tr><td class="code"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> rsa -C <span class="hljs-string">&quot;github 注册邮箱&quot;</span><br></code></pre></td></tr></table></figure>
 
@@ -340,7 +361,7 @@
 <p>title 键入 <code>cnlolicon777</code></p>
 <p>Key 键入 C:\Users\用户.ssh 目录下 <code>id_rsa.pub</code> 文件中的内容</p>
 <p>然后点击创建完成</p>
-<h2 id="6-Hexo-安装"><a href="#6-Hexo-安装" class="headerlink" title="6. Hexo 安装"></a>6. <font color='cornflowerblue'>Hexo</font> 安装</h2><p><a class="btn" href="https://hexo.io/zh-cn/docs/" title="鼠标左击在新标签页打开">hexo官方文档</a></p>
+<h1 id="6-Hexo-安装"><a href="#6-Hexo-安装" class="headerlink" title="6. Hexo 安装"></a>6. <font color='cornflowerblue'>Hexo</font> 安装</h1><p><a class="btn" href="https://hexo.io/zh-cn/docs/" title="鼠标左击在新标签页打开">hexo官方文档</a></p>
 <p>在本地 <code>G:\software\</code> 新建 <strong>Blog</strong> 文件夹并打开该路径下 <strong>CMD</strong></p>
 <p>复制如下代码并回车</p>
 <figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure>
@@ -358,7 +379,7 @@
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
 
 <p>然后在浏览器键入 <code>http://localhost:4000</code> 即可访问</p>
-<h2 id="7-Hexo-发布至-github"><a href="#7-Hexo-发布至-github" class="headerlink" title="7. Hexo 发布至 github"></a>7. <font color='cornflowerblue'>Hexo</font> 发布至 <font color='cornflowerblue'>github</font></h2><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code></p>
+<h1 id="7-Hexo-发布至-github"><a href="#7-Hexo-发布至-github" class="headerlink" title="7. Hexo 发布至 github"></a>7. <font color='cornflowerblue'>Hexo</font> 发布至 <font color='cornflowerblue'>github</font></h1><p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font></p>
 <p>修改内容：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/cnlolicon777/cnlolicon777.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
 
@@ -372,7 +393,7 @@
 <p>安装完成后先后键入如下命令</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
 
-<p>如果提示 <strong>fail</strong> ，键入如下命令</p>
+<p>如果提示 <font color='red'><strong>fail</strong></font> ，键入如下命令</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><code class="hljs verilog">git <span class="hljs-keyword">config</span> --<span class="hljs-keyword">global</span> user<span class="hljs-variable">.email</span> <span class="hljs-string">&quot;github 注册邮箱&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>继续键入如下命令</p>
@@ -384,7 +405,7 @@
           </div>
 
 <p>回车后就上传成功</p>
-<h3 id="7-1-github-更换上传验证为-token-令牌"><a href="#7-1-github-更换上传验证为-token-令牌" class="headerlink" title="7.1  github 更换上传验证为 token 令牌"></a>7.1  <font color='cornflowerblue'>github</font> 更换上传验证为 <font color='cornflowerblue'>token</font> 令牌</h3><ul>
+<h2 id="7-1-github-更换上传验证为-token-令牌"><a href="#7-1-github-更换上传验证为-token-令牌" class="headerlink" title="7.1  github 更换上传验证为 token 令牌"></a>7.1  <font color='cornflowerblue'>github</font> 更换上传验证为 <font color='cornflowerblue'>token</font> 令牌</h2><ul>
 <li><font color='cornflowerblue'>Github</font> 平台从 <font color='orange'>2021.08.13 </font><font color='green'>09:00 PST</font> 开始正式废除了基于邮箱密码的 <font color='cornflowerblue'>git</font> 身份验证</li>
 <li>需要切换到基于 <font color='cornflowerblue'>token</font> 的验证才能执行 <font color='cornflowerblue'>git</font> 操作</li>
 <li>之前用同账号注册图床仓库时已经生成过 <font color='cornflowerblue'>token</font> ，直接使用即可</li>
@@ -405,8 +426,10 @@
 <figure class="highlight gcode"><table><tr><td class="code"><pre><code class="hljs gcode">c<span class="hljs-symbol">nlolicon777</span><br></code></pre></td></tr></table></figure>
 
 <ul>
-<li>可以勾选 <font color='cornflowerblue'>show input</font> 检查拼写错误</li>
-<li>检查无误后回车</li>
+<li><p>可以勾选 <font color='cornflowerblue'>show input</font> 检查拼写错误</p>
+</li>
+<li><p>检查无误后回车</p>
+</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210901162613.png" alt="username 验证"></p>
 <ul>
@@ -417,6 +440,19 @@
 <li>确认无误后回车完成 <font color='cornflowerblue'>Blog</font> 更新的上传。</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210901163607.png" alt="上传成功"></p>
+<h1 id="8-添加-README-md"><a href="#8-添加-README-md" class="headerlink" title="8. 添加 README.md"></a>8. 添加 <font color='cornflowerblue'>README.md</font></h1><p><font color='cornflowerblue'>README.md</font> 文件会作为 <font color='cornflowerblue'>github</font> 的首页说明存在</p>
+<p>可以放入 <font color='cornflowerblue'>Blog</font> 的网址</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cnlolicon777.github.io/<br></code></pre></td></tr></table></figure>
+
+<p>保存到 <code>source</code> 根目录</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><code class="hljs taggerscript">G:<span class="hljs-symbol">\s</span>oftware<span class="hljs-symbol">\B</span>log<span class="hljs-symbol">\c</span>nlolicon777Blog<span class="hljs-symbol">\s</span>ource<br></code></pre></td></tr></table></figure>
+
+
+
+<p>打开博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font></p>
+<p>修改配置参数防止 <font color='cornflowerblue'>README.md</font> 被 <font color='cornflowerblue'>Hexo</font> 渲染为 <font color='cornflowerblue'>html</font></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">skip_render:</span> <span class="hljs-string">README.md</span><br></code></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>博客配置</category>
@@ -429,18 +465,18 @@
   <entry>
     <title>Hexo 博客插件安装与设置</title>
     <url>/post/41e763fc.html</url>
-    <content><![CDATA[<h2 id="Hexo-文章永久链接插件"><a href="#Hexo-文章永久链接插件" class="headerlink" title="Hexo 文章永久链接插件"></a><code>Hexo</code> 文章永久链接插件</h2><span id="more"></span>
+    <content><![CDATA[<h1 id="1-Hexo-文章永久链接插件"><a href="#1-Hexo-文章永久链接插件" class="headerlink" title="1. Hexo 文章永久链接插件"></a>1. <font color='cornflowerblue'>Hexo</font> 文章永久链接插件</h1><span id="more"></span>
 
 <p><a class="btn" href="https://github.com/rozbo/hexo-abbrlink" title="鼠标左击在新标签页打开">hexo-abbrlink 项目地址</a></p>
-<h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p>博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
+<h2 id="1-1-安装配置"><a href="#1-1-安装配置" class="headerlink" title="1.1 安装配置"></a>1.1 安装配置</h2><p>博客根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install hexo-abbrlink <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
 
-<p>然后在 <code>G:\software\Blog\cnlolicon777Blog</code> 站点配置文件 <code>_config.yml</code>  中修改为如下并保存：</p>
+<p>然后在 <code>G:\software\Blog\cnlolicon777Blog</code> 站点配置文件 <font color='cornflowerblue'>_config.yml</font>  中修改为如下并保存：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">url:</span> <span class="hljs-string">https://cnlolicon777.github.io</span><br><br><span class="hljs-attr">permalink:</span> <span class="hljs-string">archives/:abbrlink.html</span><br><span class="hljs-attr">abbrlink:</span>  <br><span class="hljs-attr">alg:</span> <span class="hljs-string">crc32</span>  <span class="hljs-comment"># 算法：crc16(default) and crc32  </span><br><span class="hljs-attr">rep:</span> <span class="hljs-string">hex</span>    <span class="hljs-comment"># 进制：dec(default) and hexpermalink_defaults:</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
+<h2 id="1-2-注意事项"><a href="#1-2-注意事项" class="headerlink" title="1.2 注意事项"></a>1.2 注意事项</h2><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></td></tr></table></figure>
 
 <p>再重新渲染才能成功：</p>
@@ -450,10 +486,10 @@
 
 
 
-<h2 id="Hexo-内容搜索"><a href="#Hexo-内容搜索" class="headerlink" title="Hexo 内容搜索"></a><code>Hexo</code> 内容搜索</h2><h3 id="安装配置-1"><a href="#安装配置-1" class="headerlink" title="安装配置"></a>安装配置</h3><p>在 <strong>Blog</strong> 根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
+<h1 id="2-Hexo-内容搜索"><a href="#2-Hexo-内容搜索" class="headerlink" title="2. Hexo 内容搜索"></a>2. <font color='cornflowerblue'>Hexo</font> 内容搜索</h1><h2 id="2-1-安装配置"><a href="#2-1-安装配置" class="headerlink" title="2.1 安装配置"></a>2.1 安装配置</h2><p>在 <font color='cornflowerblue'>Blog</font> 根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 安装插件：</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install hexo-generator-searchdb <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
 
-<p>修改 <code>G:\software\Blog\cnlolicon777Blog</code> 目录下站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
+<p>修改 <code>G:\software\Blog\cnlolicon777Blog</code> 目录下站点配置文件 <font color='cornflowerblue'>_config.yml</font> ，添加如下内容：</p>
 <div class="note note-danger">
             <p>fluid 主题本身集成搜索功能，如已安装该插件则注释掉站点配置文件 <code>search</code> 部分</p>
           </div>
@@ -461,16 +497,16 @@
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># 本地搜索</span><br><span class="hljs-comment"># npm install hexo-generator-searchdb --save</span><br><span class="hljs-attr">search:</span><br>  <span class="hljs-attr">path:</span> <span class="hljs-string">search.xml</span><br>  <span class="hljs-attr">field:</span> <span class="hljs-string">post</span><br>  <span class="hljs-attr">format:</span> <span class="hljs-string">html</span><br>  <span class="hljs-attr">limit:</span> <span class="hljs-number">100</span><br></code></pre></td></tr></table></figure>
 
 <ul>
-<li>path：索引文件的路径，相对于站点根目录</li>
-<li>field：搜索范围，默认是 <code>post</code> ，还可以选择 <code>page</code> 、 <code>all</code> ，设置成 all 表示搜索所有页面</li>
-<li>limit：限制搜索的条目数</li>
+<li><span class="label label-primary"><strong>path</strong></span> 索引文件的路径，相对于站点根目录</li>
+<li><span class="label label-primary"><strong>field</strong></span> 搜索范围，默认是 <code>post</code> ，还可以选择 <code>page</code> 、 <code>all</code> ，设置成 all 表示搜索所有页面</li>
+<li><span class="label label-primary"><strong>limit</strong></span> 限制搜索的条目数</li>
 </ul>
-<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code> 目录下主题配置文件 <code>_config.yml</code></p>
+<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8</code> 目录下主题配置文件 <font color='cornflowerblue'>_config.yml</font></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Local Search</span><br><span class="hljs-comment"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="hljs-attr">local_search:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="注意事项-1"><a href="#注意事项-1" class="headerlink" title="注意事项"></a>注意事项</h3><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
+<h2 id="2-2-注意事项"><a href="#2-2-注意事项" class="headerlink" title="2.2 注意事项"></a>2.2 注意事项</h2><p>上面配置做完后需要先执行如下命令清掉之前的缓存：</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br></code></pre></td></tr></table></figure>
 
 <p>再重新渲染才能成功：</p>
@@ -480,49 +516,76 @@
 
 
 
-<h2 id="Live-2d-看板娘"><a href="#Live-2d-看板娘" class="headerlink" title="Live-2d 看板娘"></a><code>Live-2d</code> 看板娘</h2><h3 id="安装配置-2"><a href="#安装配置-2" class="headerlink" title="安装配置"></a>安装配置</h3><h4 id="工具和模型下载地址"><a href="#工具和模型下载地址" class="headerlink" title="工具和模型下载地址"></a>工具和模型下载地址</h4><p><a class="btn" href="https://github.com/stevenjoezhang/live2d-widget" title="鼠标左击在新标签页打开">张书樵魔改 live2d-widget 项目地址</a></p>
+<h1 id="3-Live-2d-看板娘"><a href="#3-Live-2d-看板娘" class="headerlink" title="3. Live-2d 看板娘"></a>3. <font color='cornflowerblue'>Live-2d </font>看板娘</h1><h2 id="3-1-安装配置"><a href="#3-1-安装配置" class="headerlink" title="3.1 安装配置"></a>3.1 安装配置</h2><h3 id="3-1-1-工具和模型下载地址"><a href="#3-1-1-工具和模型下载地址" class="headerlink" title="3.1.1 工具和模型下载地址"></a>3.1.1 工具和模型下载地址</h3><p><a class="btn" href="https://github.com/stevenjoezhang/live2d-widget" title="鼠标左击在新标签页打开">张书樵魔改 live2d-widget 项目地址</a></p>
 <p><a class="btn" href="https://github.com/xiazeyu/live2d-widget-models" title="鼠标左击在新标签页打开">看板娘模型仓库1</a></p>
 <p><a class="btn" href="https://github.com/evrstr/live2d-widget-models" title="鼠标左击在新标签页打开">看板娘模型仓库2</a></p>
 <p><a class="btn" href="https://github.com/summerscar/live2dDemo" title="鼠标左击在新标签页打开">看板娘模型选择</a></p>
-<h4 id="初阶版"><a href="#初阶版" class="headerlink" title="初阶版"></a>初阶版</h4><p>安装插件 <code>hexo-helper-live2d</code> </p>
+<h3 id="3-1-2-初阶版"><a href="#3-1-2-初阶版" class="headerlink" title="3.1.2 初阶版"></a>3.1.2 初阶版</h3><p>安装插件 <font color='cornflowerblue'>hexo-helper-live2d</font></p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">npm</span> install –save hexo-helper-live<span class="hljs-number">2</span>d<br></code></pre></td></tr></table></figure>
 
-<p>可以命令行安装的，执行下列命令直接安装</p>
+
+
+<p><span class="label label-primary"><strong>模型安装</strong></span></p>
+<p>可以命令行安装的</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><code class="hljs ada">npm install 模型名称 <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
 
-<p>无法命令行安装的：</p>
-<p>比如血小板模型 <a href="https://github.com/evrstr/live2d-widget-models">60.kesyoban</a>，<a href="https://github.com/evrstr/live2d-widget-models">61.platelet</a> [来源：<a href="https://github.com/evrstr/live2d-widget-models">看板娘模型仓库2</a>]</p>
-<p>整个仓库打包下载，然后复制压缩包 <code>live2d_evrstr</code> 路径下文件夹 <code>kesyoban</code> ，<code>platelet</code></p>
-<p>在根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下新建文件夹 <code>live2d_models</code> ，将复制的模型文件夹放入</p>
-<p>模型文件夹中 <code>model.json</code> 文件统一命名为 <code>文件夹名称.model.json</code> 格式（例：kesyoban.model.json）</p>
-<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code> 在末尾添加：</p>
+<p>无法命令行安装的 [例：血小板模型 <a href="https://github.com/evrstr/live2d-widget-models">60.kesyoban</a>，<a href="https://github.com/evrstr/live2d-widget-models">61.platelet</a>] </p>
+<ul>
+<li>整个仓库打包下载，然后复制压缩包 <code>live2d_evrstr</code> 路径下文件夹 <code>kesyoban</code> ，<code>platelet</code></li>
+</ul>
+<ul>
+<li>在根目录 <code>G:\software\Blog\cnlolicon777Blog</code> 下新建文件夹 <code>live2d_models</code> ，将复制的模型文件夹放入</li>
+</ul>
+<ul>
+<li>模型文件夹中 <font color='cornflowerblue'>model.json</font> 文件统一命名为 <code>文件夹名称.model.json</code> 格式（例：kesyoban.model.json）</li>
+</ul>
+<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font> </p>
+<ul>
+<li>末尾添加如下代码</li>
+</ul>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># live2d</span><br><span class="hljs-comment"># https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</span><br><span class="hljs-comment"># https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md</span><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span> <br>  <span class="hljs-attr">scriptFrom:</span> <span class="hljs-string">local</span> <span class="hljs-comment"># 默认</span><br>  <span class="hljs-attr">pluginRootPath:</span> <span class="hljs-string">live2dw/</span> <span class="hljs-comment"># 插件在站点上的根目录(相对路径)</span><br>  <span class="hljs-attr">pluginJsPath:</span> <span class="hljs-string">lib/</span> <span class="hljs-comment"># 脚本文件相对与插件根目录路径</span><br>  <span class="hljs-attr">pluginModelPath:</span> <span class="hljs-string">assets/</span> <span class="hljs-comment"># 模型文件相对与插件根目录路径</span><br>  <span class="hljs-attr">tagMode:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中</span><br>  <span class="hljs-attr">debug:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 调试, 是否在控制台输出日志</span><br>  <span class="hljs-attr">model:</span><br>    <span class="hljs-attr">use:</span> <span class="hljs-string">kesyoban</span> <span class="hljs-comment"># 对应  scale: 0.8 width: 180 height: 300 hOffset: 0 vOffset: -12</span><br>    <span class="hljs-comment"># use: platelet # 对应  width: 268 height: 300 hOffset: 3 vOffset: 5</span><br>    <span class="hljs-comment"># use: wanko # 博客根目录/live2d_models/ 下的目录名</span><br>    <span class="hljs-comment"># use: ./wives/wanko # 相对于博客根目录的路径</span><br>    <span class="hljs-comment"># use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 自定义 url</span><br>    <span class="hljs-attr">scale:</span> <span class="hljs-number">0.8</span><br>    <span class="hljs-attr">hHeadPos:</span> <span class="hljs-number">0.5</span><br>    <span class="hljs-attr">vHeadPos:</span> <span class="hljs-number">0.618</span><br>  <span class="hljs-attr">display:</span><br>    <span class="hljs-attr">superSample:</span> <span class="hljs-number">2</span> <span class="hljs-comment"># 超采样等级</span><br>    <span class="hljs-attr">position:</span> <span class="hljs-string">left</span> <span class="hljs-comment"># 显示位置 left/right</span><br>    <span class="hljs-attr">width:</span> <span class="hljs-number">180</span><br>    <span class="hljs-attr">height:</span> <span class="hljs-number">300</span><br>    <span class="hljs-attr">hOffset:</span> <span class="hljs-number">0</span> <span class="hljs-comment"># 水平偏移</span><br>    <span class="hljs-attr">vOffset:</span> <span class="hljs-number">-12</span> <span class="hljs-comment"># 垂直偏移</span><br>  <span class="hljs-attr">mobile:</span><br>    <span class="hljs-attr">show:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 是否在移动设备上显示</span><br>    <span class="hljs-attr">scale:</span> <span class="hljs-number">0.5</span> <span class="hljs-comment"># 缩放</span><br>  <span class="hljs-attr">react:</span><br>    <span class="hljs-attr">opacityDefault:</span> <span class="hljs-number">0.7</span> <span class="hljs-comment"># 透明度</span><br>    <span class="hljs-attr">opacityOnHover:</span> <span class="hljs-number">0.2</span><br></code></pre></td></tr></table></figure>
 
-<p>最后执行命令即可生效：</p>
+<ul>
+<li>最后重新渲染即可生效</li>
+</ul>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g </span><br><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
 
-<p>本地查看无问题后上传：</p>
+<ul>
+<li>本地查看无问题后上传</li>
+</ul>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><p>如有安装 <strong>初阶版</strong> ，先移除，否者会同时生效2个看板娘：</p>
+<h3 id="3-1-3-进阶版"><a href="#3-1-3-进阶版" class="headerlink" title="3.1.3 进阶版"></a>3.1.3 进阶版</h3><p>如有安装 <strong>初阶版</strong> ，先移除，否者会同时生效2个看板娘：</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">npm</span> uninstall hexo-helper-live<span class="hljs-number">2</span>d<br></code></pre></td></tr></table></figure>
 
 <p>下载 <a href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget</a> 最新版 <a href="https://github.com/stevenjoezhang/live2d-widget/releases/tag/v0.8.3">v0.8.3</a></p>
-<p>解压出来的文件夹 <code>live2d-widget-0.8.3</code> 改名为 <code>libe2d-widget</code></p>
-<p>复制到 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source</code> 位置</p>
-<p>修改文件夹 <code>live2d-widget</code> 中 <code>autoload.js</code></p>
+<ul>
+<li>解压出来的文件夹 <code>live2d-widget-0.8.3</code> 改名为 <code>libe2d-widget</code></li>
+</ul>
+<ul>
+<li>复制到 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\source</code> 位置</li>
+</ul>
+<p>修改文件夹 <code>live2d-widget</code> 中 <font color='cornflowerblue'>autoload.js</font></p>
 <figure class="highlight abnf"><table><tr><td class="code"><pre><code class="hljs abnf">const live2d_path = <span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/&quot;</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 
-<p>改为本地绝对路径：</p>
+<ul>
+<li>改为本地绝对路径：</li>
+</ul>
 <figure class="highlight abnf"><table><tr><td class="code"><pre><code class="hljs abnf">const live2d_path = <span class="hljs-string">&quot;/live2d-widget/&quot;</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
 
-<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\layout</code> 文件夹中 <code>_layout.swig</code></p>
-<p><code>&lt;head&gt;</code> 标签下先增加如下依赖，否则无法加载：</p>
+
+
+<p>修改 <code>G:\software\Blog\cnlolicon777Blog\themes\next_7.8\layout</code> 文件夹中 <font color='cornflowerblue'>_layout.swig</font></p>
+<ul>
+<li><code>&lt;head&gt;</code> 标签下增加如下依赖，否则无法加载：</li>
+</ul>
 <figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css&quot;</span>&gt;<br></code></pre></td></tr></table></figure>
 
-<p><code>&lt;footer&gt;</code> 标签下增加：</p>
+<ul>
+<li><code>&lt;footer&gt;</code> 标签下增加：</li>
+</ul>
 <figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/live2d-widget/autoload.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
 
 
@@ -531,21 +594,28 @@
             <p>如有安装初阶版，跳过下面这步</p>
           </div>
 
-<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <code>_config.yml</code>，在末尾添加：</p>
+<p>打开 <code>G:\software\Blog\cnlolicon777Blog</code> 下站点配置文件 <font color='cornflowerblue'>_config.yml</font></p>
+<ul>
+<li>末尾添加</li>
+</ul>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># live2d</span><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
-<p>最后执行命令即可生效：</p>
+<ul>
+<li>最后重新渲染即可生效</li>
+</ul>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g </span><br><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure>
 
-<p>本地查看无问题后上传：</p>
+<ul>
+<li>本地查看无问题后上传</li>
+</ul>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="注意事项-2"><a href="#注意事项-2" class="headerlink" title="注意事项"></a>注意事项</h3><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <code>waifu.css</code> 修改看板大小与位置，<code>waifu-tips.json</code> 修改显示的对话</p>
+<h2 id="3-2-注意事项"><a href="#3-2-注意事项" class="headerlink" title="3.2 注意事项"></a>3.2 注意事项</h2><p>1.进阶版 <code>live2d-widget</code> 文件夹中 <font color='cornflowerblue'>waifu.css</font> 修改看板大小与位置，<font color='cornflowerblue'>waifu-tips.json</font> 修改显示的对话</p>
 <p>2.进阶版如需增加模型需自制 <a href="https://github.com/fghrsh/live2d_api">live2d_api</a></p>
-<p>3.目前使用初阶版，<code>libe2d-widget</code> 路径下 <code>autoload.js</code> 通过注释 <code>const live2d_path = &quot;/live2d-widget/&quot;</code> 使进阶版失效。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a class="btn" href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/" title="鼠标左击在新标签页打开">hexo添加看板娘</a></p>
+<p>3.目前使用初阶版，<code>libe2d-widget</code> 路径下 <font color='cornflowerblue'>autoload.js</font> 通过注释 <code>const live2d_path = &quot;/live2d-widget/&quot;</code> 使进阶版失效。</p>
+<h2 id="3-3-参考文章"><a href="#3-3-参考文章" class="headerlink" title="3.3 参考文章"></a>3.3 参考文章</h2><p><a class="btn" href="https://www.chensheng.group/2020/07/27/135-hexo%E7%9C%8B%E6%9D%BF%E5%A8%98/" title="鼠标左击在新标签页打开">hexo添加看板娘</a></p>
 <p><a class="btn" href="https://www.dazhuanlan.com/2020/03/10/5e66d67bcf1e4/" title="鼠标左击在新标签页打开">Next配置live2d 看板娘</a></p>
 <p><a class="btn" href="https://www.soyawww.com/2019/08/17/hexo%20next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%82%A3%E4%BA%9B%E4%BA%8B%EF%BC%88%E4%B8%80%EF%BC%89/" title="鼠标左击在新标签页打开">hexo next主题美化那些事（一）</a></p>
 <p><a class="btn" href="https://github.com/EYHN/hexo-helper-live2d" title="鼠标左击在新标签页打开">hexo-helper-live2d 中文 readme</a></p>
@@ -1514,7 +1584,10 @@
 
 
 
-<h2 id="3-2-常用参数详解"><a href="#3-2-常用参数详解" class="headerlink" title="3.2 常用参数详解"></a>3.2 常用参数详解</h2><p>仅以自用参数为主</p>
+<h2 id="3-2-常用参数说明"><a href="#3-2-常用参数说明" class="headerlink" title="3.2 常用参数说明"></a>3.2 常用参数说明</h2><ul>
+<li>仅以自用参数为主</li>
+<li>详细说明见 </li>
+</ul>
 <h3 id="3-2-1-封面下载和混流"><a href="#3-2-1-封面下载和混流" class="headerlink" title="3.2.1 封面下载和混流"></a>3.2.1 封面下载和混流</h3><ul>
 <li>下载视频封面</li>
 </ul>
@@ -1546,12 +1619,12 @@
 <p>要在配置文件中生效，则须分别为 <font color='cornflowerblue'>youtube-dl</font> 和 <font color='cornflowerblue'>aria2</font> 指定才能生效：</p>
 <figure class="highlight brainfuck"><table><tr><td class="code"><pre><code class="hljs brainfuck">--<span class="hljs-comment">proxy</span> <span class="hljs-comment">127</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">1:25378</span><br><br>--<span class="hljs-comment">external</span><span class="hljs-literal">-</span><span class="hljs-comment">downloader</span> <span class="hljs-comment">aria2c</span> --<span class="hljs-comment">external</span><span class="hljs-literal">-</span><span class="hljs-comment">downloader</span><span class="hljs-literal">-</span><span class="hljs-comment">args</span> <span class="hljs-comment">&quot;</span>--<span class="hljs-comment">all</span><span class="hljs-literal">-</span><span class="hljs-comment">proxy=http://127</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">1:25378</span> --<span class="hljs-comment">file</span><span class="hljs-literal">-</span><span class="hljs-comment">allocation=prealloc</span> <span class="hljs-literal">-</span><span class="hljs-comment">x</span> <span class="hljs-comment">16</span> <span class="hljs-literal">-</span><span class="hljs-comment">s</span> <span class="hljs-comment">16</span> <span class="hljs-literal">-</span><span class="hljs-comment">k</span> <span class="hljs-comment">1M&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><span class="label label-primary">注意：</span><font color='cornflowerblue'><palylist_url></font> 链接批量下载很难成功调用 <font color='cornflowerblue'>aria2</font> 加速，建议使用 <font color='cornflowerblue'>/videos</font> 链接批量下载，例：</p>
+<p><span class="label label-primary">注意</span> <font color='cornflowerblue'><palylist_url></font> 链接批量下载很难成功调用 <font color='cornflowerblue'>aria2</font> 加速，建议使用 <font color='cornflowerblue'>/videos</font> 链接批量下载，例：</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>www.youtube.com<span class="hljs-regexp">/c/</span>JFlaMusic/videos<br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-2-3-格式化下载文件名和路径"><a href="#3-2-3-格式化下载文件名和路径" class="headerlink" title="3.2.3 格式化下载文件名和路径"></a>3.2.3 格式化下载文件名和路径</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出，通过使用 <code>%</code>开头的转换说明符对文件名包含路径的字符串模板化输出</p>
+<h3 id="3-2-3-下载文件名格式化"><a href="#3-2-3-下载文件名格式化" class="headerlink" title="3.2.3 下载文件名格式化"></a>3.2.3 下载文件名格式化</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出，通过使用 <code>%</code>开头的转换说明符对文件名包含路径的字符串模板化输出</p>
 <p><a href="https://github.com/ytdl-org/youtube-dl#output-template">官方文档 - 支持的转移说明符</a></p>
 <p>例：</p>
 <ul>
@@ -1570,7 +1643,7 @@
 <figure class="highlight arcade"><table><tr><td class="code"><pre><code class="hljs arcade">--download-archive G:<span class="hljs-regexp">/software_portable/y</span>outube/archive.txt<br></code></pre></td></tr></table></figure>
 
 <div class="note note-danger">
-            <p><font color='cornflowerblue'>–download-archive</font> 不支持 <code>%</code> 开头的转移说明符用作路径格式化，只能设置固定路径。</p>
+            <p><font color='cornflowerblue'>–download-archive</font> <font color='red'>不支持</font> <code>%</code> 开头的转换说明符用作路径格式化，只能设置固定路径。</p>
           </div>
 
 
@@ -1586,7 +1659,7 @@
 <figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm"><span class="hljs-meta"># download sub</span><br>--write-<span class="hljs-keyword">sub</span><br><span class="hljs-meta"># set download sub language</span><br>--<span class="hljs-keyword">sub</span>-lang <span class="hljs-built_in">zh</span>-CN,<span class="hljs-built_in">zh</span>-TW,<span class="hljs-built_in">zh</span>-Hans,<span class="hljs-built_in">zh</span>-Hant,<span class="hljs-built_in">zh</span>-HK,en<br><span class="hljs-meta"># convert vtt to srt</span><br>--convert-subtitles srt<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><font color='cornflowerblue'>–write-sub</font> 下载的 <font color='cornflowerblue'>youtube</font> 字幕默认都是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性建议转制为 <font color='cornflowerblue'>srt</font> 格式</li>
+<li><font color='cornflowerblue'>–write-sub</font> 下载的 <font color='cornflowerblue'>youtube</font> 字幕默认是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性转制为 <font color='cornflowerblue'>srt</font> 格式</li>
 <li><font color='cornflowerblue'>–convert-subtitles srt</font> 能够自动在视频下载完成后将 <font color='cornflowerblue'>vtt</font> 格式的字幕转换为 <font color='cornflowerblue'>srt</font> 格式并删除原档</li>
 <li><font color='cornflowerblue'>–sub-lang</font> 用于设定下载的字幕语言，基本简繁字幕的标签就是 <font color='cornflowerblue'>zh-CN,zh-TW,zh-Hans,zh-Hant,zh-HK</font> ，还有可能常用的也就是 <font color='cornflowerblue'>en</font> 和 <font color='cornflowerblue'>ja</font></li>
 <li> <font color='cornflowerblue'>–embed-subs</font> 可以直接将字幕封入视频，但封入后字幕标签会全部显示为 <font color='cornflowerblue'>chinese</font> ，而且无法再对字幕做调整。</li>
@@ -1619,7 +1692,7 @@
 <ul>
 <li><font color='cornflowerblue'>–add-metadata</font> 是个人建议必选的参数，<font color='cornflowerblue'>youtube</font> 上很多教程视频使用的章节分段数据就包含在元数据信息中，这个参数会将章节信息写入视频。</li>
 </ul>
-<h2 id="3-3-参考文章"><a href="#3-3-参考文章" class="headerlink" title="3.3 参考文章"></a>3.3 参考文章</h2><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></p>
+<h2 id="3-3-参考资料"><a href="#3-3-参考资料" class="headerlink" title="3.3 参考资料"></a>3.3 参考资料</h2><p><a href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></p>
 <p><a href="https://www.jianshu.com/p/5143faa6056d">youtube-dl详细配置文件</a></p>
 <p><a href="https://sspai.com/post/42409">开源而强大的视频下载工具——youtube-dl</a></p>
 <p><a href="https://www.jianshu.com/p/0c21406eb866">Windows 10 右键添加 “open cmd” 和 “open cmd(admin)”</a></p>

@@ -328,7 +328,10 @@
 
 
 
-<h2 id="3-2-常用参数详解"><a href="#3-2-常用参数详解" class="headerlink" title="3.2 常用参数详解"></a>3.2 常用参数详解</h2><p>仅以自用参数为主</p>
+<h2 id="3-2-常用参数说明"><a href="#3-2-常用参数说明" class="headerlink" title="3.2 常用参数说明"></a>3.2 常用参数说明</h2><ul>
+<li>仅以自用参数为主</li>
+<li>详细说明见 </li>
+</ul>
 <h3 id="3-2-1-封面下载和混流"><a href="#3-2-1-封面下载和混流" class="headerlink" title="3.2.1 封面下载和混流"></a>3.2.1 封面下载和混流</h3><ul>
 <li>下载视频封面</li>
 </ul>
@@ -360,12 +363,12 @@
 <p>要在配置文件中生效，则须分别为 <font color='cornflowerblue'>youtube-dl</font> 和 <font color='cornflowerblue'>aria2</font> 指定才能生效：</p>
 <figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck">--<span class="hljs-comment">proxy</span> <span class="hljs-comment">127</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">1:25378</span><br><br>--<span class="hljs-comment">external</span><span class="hljs-literal">-</span><span class="hljs-comment">downloader</span> <span class="hljs-comment">aria2c</span> --<span class="hljs-comment">external</span><span class="hljs-literal">-</span><span class="hljs-comment">downloader</span><span class="hljs-literal">-</span><span class="hljs-comment">args</span> <span class="hljs-comment">&quot;</span>--<span class="hljs-comment">all</span><span class="hljs-literal">-</span><span class="hljs-comment">proxy=http://127</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">0</span><span class="hljs-string">.</span><span class="hljs-comment">1:25378</span> --<span class="hljs-comment">file</span><span class="hljs-literal">-</span><span class="hljs-comment">allocation=prealloc</span> <span class="hljs-literal">-</span><span class="hljs-comment">x</span> <span class="hljs-comment">16</span> <span class="hljs-literal">-</span><span class="hljs-comment">s</span> <span class="hljs-comment">16</span> <span class="hljs-literal">-</span><span class="hljs-comment">k</span> <span class="hljs-comment">1M&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><span class="label label-primary">注意：</span><font color='cornflowerblue'><palylist_url></font> 链接批量下载很难成功调用 <font color='cornflowerblue'>aria2</font> 加速，建议使用 <font color='cornflowerblue'>/videos</font> 链接批量下载，例：</p>
+<p><span class="label label-primary">注意</span> <font color='cornflowerblue'><palylist_url></font> 链接批量下载很难成功调用 <font color='cornflowerblue'>aria2</font> 加速，建议使用 <font color='cornflowerblue'>/videos</font> 链接批量下载，例：</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>www.youtube.com<span class="hljs-regexp">/c/</span>JFlaMusic/videos<br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="3-2-3-格式化下载文件名和路径"><a href="#3-2-3-格式化下载文件名和路径" class="headerlink" title="3.2.3 格式化下载文件名和路径"></a>3.2.3 格式化下载文件名和路径</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出，通过使用 <code>%</code>开头的转换说明符对文件名包含路径的字符串模板化输出</p>
+<h3 id="3-2-3-下载文件名格式化"><a href="#3-2-3-下载文件名格式化" class="headerlink" title="3.2.3 下载文件名格式化"></a>3.2.3 下载文件名格式化</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出，通过使用 <code>%</code>开头的转换说明符对文件名包含路径的字符串模板化输出</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl#output-template">官方文档 - 支持的转移说明符</a></p>
 <p>例：</p>
 <ul>
@@ -384,7 +387,7 @@
 <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">--download-archive G:<span class="hljs-regexp">/software_portable/y</span>outube/archive.txt<br></code></pre></td></tr></table></figure>
 
 <div class="note note-danger">
-            <p><font color='cornflowerblue'>–download-archive</font> 不支持 <code>%</code> 开头的转移说明符用作路径格式化，只能设置固定路径。</p>
+            <p><font color='cornflowerblue'>–download-archive</font> <font color='red'>不支持</font> <code>%</code> 开头的转换说明符用作路径格式化，只能设置固定路径。</p>
           </div>
 
 
@@ -400,7 +403,7 @@
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-meta"># download sub</span><br>--write-<span class="hljs-keyword">sub</span><br><span class="hljs-meta"># set download sub language</span><br>--<span class="hljs-keyword">sub</span>-lang <span class="hljs-built_in">zh</span>-CN,<span class="hljs-built_in">zh</span>-TW,<span class="hljs-built_in">zh</span>-Hans,<span class="hljs-built_in">zh</span>-Hant,<span class="hljs-built_in">zh</span>-HK,en<br><span class="hljs-meta"># convert vtt to srt</span><br>--convert-subtitles srt<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><font color='cornflowerblue'>–write-sub</font> 下载的 <font color='cornflowerblue'>youtube</font> 字幕默认都是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a target="_blank" rel="noopener" href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性建议转制为 <font color='cornflowerblue'>srt</font> 格式</li>
+<li><font color='cornflowerblue'>–write-sub</font> 下载的 <font color='cornflowerblue'>youtube</font> 字幕默认是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a target="_blank" rel="noopener" href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性转制为 <font color='cornflowerblue'>srt</font> 格式</li>
 <li><font color='cornflowerblue'>–convert-subtitles srt</font> 能够自动在视频下载完成后将 <font color='cornflowerblue'>vtt</font> 格式的字幕转换为 <font color='cornflowerblue'>srt</font> 格式并删除原档</li>
 <li><font color='cornflowerblue'>–sub-lang</font> 用于设定下载的字幕语言，基本简繁字幕的标签就是 <font color='cornflowerblue'>zh-CN,zh-TW,zh-Hans,zh-Hant,zh-HK</font> ，还有可能常用的也就是 <font color='cornflowerblue'>en</font> 和 <font color='cornflowerblue'>ja</font></li>
 <li> <font color='cornflowerblue'>–embed-subs</font> 可以直接将字幕封入视频，但封入后字幕标签会全部显示为 <font color='cornflowerblue'>chinese</font> ，而且无法再对字幕做调整。</li>
@@ -433,7 +436,7 @@
 <ul>
 <li><font color='cornflowerblue'>–add-metadata</font> 是个人建议必选的参数，<font color='cornflowerblue'>youtube</font> 上很多教程视频使用的章节分段数据就包含在元数据信息中，这个参数会将章节信息写入视频。</li>
 </ul>
-<h2 id="3-3-参考文章"><a href="#3-3-参考文章" class="headerlink" title="3.3 参考文章"></a>3.3 参考文章</h2><p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></p>
+<h2 id="3-3-参考资料"><a href="#3-3-参考资料" class="headerlink" title="3.3 参考资料"></a>3.3 参考资料</h2><p><a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/5143faa6056d">youtube-dl详细配置文件</a></p>
 <p><a target="_blank" rel="noopener" href="https://sspai.com/post/42409">开源而强大的视频下载工具——youtube-dl</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0c21406eb866">Windows 10 右键添加 “open cmd” 和 “open cmd(admin)”</a></p>
