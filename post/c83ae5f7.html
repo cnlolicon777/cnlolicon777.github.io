@@ -237,12 +237,13 @@
 <li>自动合并音视频轨道为完整视频 [ffmpeg]</li>
 <li>(可选)自动下载封面并封装进MP4容器 [AtomicParsley]</li>
 </ul>
-<h1 id="2-环境配置"><a href="#2-环境配置" class="headerlink" title="2. 环境配置"></a>2. 环境配置</h1><h2 id="2-1-下载"><a href="#2-1-下载" class="headerlink" title="2.1 下载"></a>2.1 下载</h2><ul>
-<li><a target="_blank" rel="noopener" href="http://ytdl-org.github.io/youtube-dl/download.html">youtube-dl 最新版</a> </li>
+<h1 id="2-环境配置"><a href="#2-环境配置" class="headerlink" title="2. 环境配置"></a>2. 环境配置</h1><p><font color='cornflowerblue'><span class="label label-warning"><strong>仅说明编译版环境配置</strong></span></font></p>
+<h2 id="2-1-下载"><a href="#2-1-下载" class="headerlink" title="2.1 下载"></a>2.1 下载</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://ytdl-org.github.io/youtube-dl/download.html">youtube-dl</a> </li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831164822.png" srcset="/img/loading.gif" lazyload alt="确认所需的 c++ 2010 Service Pack1 有安装"></p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/BtbN/FFmpeg-Builds/releases">ffmpeg 最新版组件</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/BtbN/FFmpeg-Builds/releases">ffmpeg</a></li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831170353.png" srcset="/img/loading.gif" lazyload alt="只需要bin文件夹下三个编译文件"></p>
 <ul>
@@ -262,20 +263,20 @@
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831172852.png" srcset="/img/loading.gif" lazyload alt="所需程序一览"></p>
 <p><font color='green'><strong>将该路径添加环境变量</strong></font></p>
 <ul>
-<li><code>win</code><font color='cornflowerblue'>+</font><code>r</code>  呼出运行界面，键入：</li>
+<li><code>win</code><font color='cornflowerblue'>+</font><code>r</code>  呼出<font color='cornflowerblue'>运行</font>界面，键入：</li>
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">sysdm.cpl<br></code></pre></td></tr></table></figure>
 
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831173511.png" srcset="/img/loading.gif" lazyload alt="运行界面"></p>
 <ul>
-<li>调出<font color='cornflowerblue'>系统属性面板</font> - <font color='cornflowerblue'>高级</font> - 点选<font color='cornflowerblue'>环境变量</font></li>
+<li>调出<font color='cornflowerblue'>系统属性</font>面板 - <font color='cornflowerblue'>高级</font> - 点选<font color='cornflowerblue'>环境变量</font></li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831174308.png" srcset="/img/loading.gif" lazyload alt="系统属性"></p>
 <ul>
 <li>双击用户变量/系统变量的 <font color='cornflowerblue'>path</font> 栏 - 添加<font color='cornflowerblue'>环境变量</font></li>
 </ul>
 <div class="note note-danger">
-            <p>多账号添加系统变量，单账号添加用户变量</p>
+            <p>多账户使用添加系统变量，单账户添加用户变量</p>
           </div>
 
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210831175214.png" srcset="/img/loading.gif" lazyload></p>
@@ -314,7 +315,6 @@
             <p>配置文件中不可出现中文，注释说明使用英文</p>
           </div>
 
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhaobang/p/7192684.html">YouTube-dl 使用命令中文说明</a></p>
 <ul>
 <li><p>新建一个 <font color='cornflowerblue'>.txt</font> 文档，写入准备常驻的常驻参数，保存为 <font color='cornflowerblue'>.conf</font> </p>
 </li>
@@ -327,9 +327,10 @@
 
 
 
-<h2 id="3-2-常用参数说明"><a href="#3-2-常用参数说明" class="headerlink" title="3.2 常用参数说明"></a>3.2 常用参数说明</h2><ul>
-<li>仅以自用参数为主</li>
-<li>详细说明见 </li>
+<h2 id="3-2-常用参数说明"><a href="#3-2-常用参数说明" class="headerlink" title="3.2 常用参数说明"></a>3.2 常用参数说明</h2><p>仅以自用参数为主和举例，更多参数使用：</p>
+<ul>
+<li>全参数简易中文说明 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhaobang/p/7192684.html">YouTube-dl 使用命令中文说明</a></li>
+<li>官方说明和使用案例 <a target="_blank" rel="noopener" href="https://github.com/ytdl-org/youtube-dl">youtube-dl readme</a></li>
 </ul>
 <h3 id="3-2-1-封面下载和混流"><a href="#3-2-1-封面下载和混流" class="headerlink" title="3.2.1 封面下载和混流"></a>3.2.1 封面下载和混流</h3><ul>
 <li>下载视频封面</li>
@@ -341,15 +342,19 @@
 </ul>
 <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada"><span class="hljs-comment">--embed-thumbnail</span><br></code></pre></td></tr></table></figure>
 
-<p>自用参数里并未包含这两个参数，个人已弃用。</p>
-<p><font color='cornflowerblue'>–write-thumbnail</font> 就是单纯的下载封面，<font color='cornflowerblue'>youtube-dl</font> 已合并自动 <font color='cornflowerblue'>webp convert to jpg</font> 的功能。</p>
-<p><font color='cornflowerblue'>–embed-thumbnail</font> 涉及了调用 <font color='cornflowerblue'>AtomicParsley</font> ，使用该功能参与混流的缺陷：</p>
+<ul>
+<li><p><font color='cornflowerblue'>–write-thumbnail</font> 就是下载封面，<font color='cornflowerblue'>youtube-dl</font> 已合并自动 <font color='cornflowerblue'>webp convert to jpg</font> 的功能</p>
+</li>
+<li><p><font color='cornflowerblue'>–embed-thumbnail</font> 调用 <font color='cornflowerblue'>AtomicParsley</font> 将封面混流进视/音频</p>
+</li>
+</ul>
 <div class="note note-danger">
             <p><font color='cornflowerblue'>AtomicParsley</font> 支持 <font color='cornflowerblue'>(MP4/MP3)格式容器</font> 封装 <font color='cornflowerblue'>(JPG/PNG)格式图片</font> 做封面</p>
           </div>
 
+<p>自用参数里并未包含这两个参数，已弃用：</p>
 <ul>
-<li>用此方法封装的 <font color='cornflowerblue'>MP4</font> 格式视频在 <font color='cornflowerblue'>kodi</font> 下无法使用 <code>&quot;自动播放下一个视频&quot;</code> 的功能，会卡住</li>
+<li>用此方法封装的 <font color='cornflowerblue'>MP4</font> 格式视频在 <font color='cornflowerblue'>kodi</font> 下无法使用 <code>&quot;自动播放下一个视频&quot;</code> 功能，会卡住</li>
 <li><font color='cornflowerblue'>MP4</font> 容器下，<font color='cornflowerblue'>youtube-dl</font> 不会下载编码质量最好的 <font color='cornflowerblue'>VP9</font> 和 <font color='cornflowerblue'>OPUS</font> ，而是下载 <font color='cornflowerblue'>AVC</font> 和 <font color='cornflowerblue'>AAC</font></li>
 <li><font color='cornflowerblue'>youtube</font> 的 <font color='cornflowerblue'>AVC</font> 编码视频相比 <font color='cornflowerblue'>VP9</font> 有肉眼可见的画质差距</li>
 <li><font color='cornflowerblue'>youtube</font> 的 <font color='cornflowerblue'>AAC</font> 编码音频一刀切了 <code>16khz</code> 以上的部分 </li>
@@ -447,8 +452,12 @@
 <h2 id="4-1-下载-amp-教程"><a href="#4-1-下载-amp-教程" class="headerlink" title="4.1  下载 &amp; 教程"></a>4.1  下载 &amp; 教程</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://www.autohotkey.com/">官网</a></li>
 </ul>
-<p><span class="label label-primary"><font color='cornflowerblue'>注意</font></span> 建议下载 <font color='cornflowerblue'>1.1</font> 版本 </p>
+<p><font color='cornflowerblue'><span class="label label-warning"><strong>注意</strong></span></font> </p>
+<ul>
+<li>下载 <font color='cornflowerblue'>1.1</font> 版本 </li>
+</ul>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210901042454.png" srcset="/img/loading.gif" lazyload alt="2021.09.01 最新版本为 1.1.33.10"></p>
+<p><font color='cornflowerblue'><span class="label label-warning"><strong>常用教程网站</strong></span></font></p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.autoahk.com/">AHK中文网</a></li>
 <li><a target="_blank" rel="noopener" href="http://ahkcn.sourceforge.net/docs/AutoHotkey.htm">AHK 中文教程 v1.1.15.01 在线版</a></li>
@@ -473,7 +482,7 @@
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs css">;win+e 退出脚本<br><span class="hljs-selector-id">#E</span>::ExitApp<br><br>;打开快捷键说明文档<br><span class="hljs-selector-id">#H</span>::Run G:\software_portable\youtube\Y2B_HELP.md<br><br>;win+<span class="hljs-selector-tag">a</span> 打开AHK脚本转exe程序<br><span class="hljs-selector-id">#A</span>::Run C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe<br><br>;win+r 打开自定义下载位置路径下CMD<br><span class="hljs-selector-id">#R</span>::Run cmd /K cd /D <span class="hljs-string">&quot;D:\youtube_download&quot;</span><br><br>;win+d 打开自定义下载路径文件夹<br><span class="hljs-selector-id">#D</span>::Run explorer.exe <span class="hljs-string">&quot;D:\youtube_download&quot;</span><br><br>;左win+v 下载最高质量视频<br>&lt;<span class="hljs-selector-id">#V</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> %clipboard%<br><br>;右win+v 下载mp4格式最高质量视频并混流封面<br>&gt;<span class="hljs-selector-id">#V</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> --format &quot;(bestvideo<span class="hljs-selector-attr">[ext=mp4]</span><span class="hljs-selector-attr">[fps&lt;61]</span>+bestaudio<span class="hljs-selector-attr">[ext=m4a]</span>/best<span class="hljs-selector-attr">[ext=mp4]</span>/bestvideo+bestaudio/best)&quot; --write-thumbnail --embed-thumbnail %clipboard%<br><br>;win+m 只下载音频<br><span class="hljs-selector-id">#M</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> -x %clipboard%<br><br>;win+u 更新youtube-<span class="hljs-selector-tag">dl</span><br><span class="hljs-selector-id">#U</span>::SendInput &#123;TEXT&#125;youtube-<span class="hljs-selector-tag">dl</span> -U<br></code></pre></td></tr></table></figure>
 
-<p>可使用安装路径下 <font color='cornflowerblue'>Ahk2Exe.exe</font> 工具将脚本转为 <font color='cornflowerblue'>.exe</font> 执行文件，可以添加图标。</p>
+<p>可使用安装路径下 <font color='cornflowerblue'>Ahk2Exe.exe</font> 工具将脚本转为 <font color='cornflowerblue'>.exe</font> 执行文件，添加图标。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/cnlolicon777/imagebed/images/20210901053928.png" srcset="/img/loading.gif" lazyload alt="Ahk2Exe 使用方法"></p>
 <ul>
 <li><font color='cornflowerblue'>Y2B_HELP.md</font> </li>
@@ -567,7 +576,7 @@
                     
                     
                       <a href="/post/abe8f358.html">
-                        <span class="hidden-mobile">字幕转制 - ASS转SUP</span>
+                        <span class="hidden-mobile">字幕转制 - ASS 转 SUP</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
