@@ -1667,7 +1667,7 @@
 
 
 
-<h3 id="3-2-3-下载文件名格式化"><a href="#3-2-3-下载文件名格式化" class="headerlink" title="3.2.3 下载文件名格式化"></a>3.2.3 下载文件名格式化</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出：通过使用 <code>%</code> 开头的转换说明符设定文件输出字符串的模板</p>
+<h3 id="3-2-3-下载文件名格式化"><a href="#3-2-3-下载文件名格式化" class="headerlink" title="3.2.3 下载文件名格式化"></a>3.2.3 下载文件名格式化</h3><p> <font color='cornflowerblue'>-o format</font>  格式化输出：使用转换说明符设定文件输出字符串的模板</p>
 <p><a href="https://github.com/ytdl-org/youtube-dl#output-template">官方文档 - 支持的转换说明符</a></p>
 <p>例：</p>
 <ul>
@@ -1686,7 +1686,7 @@
 <figure class="highlight arcade"><table><tr><td class="code"><pre><code class="hljs arcade">--download-archive G:<span class="hljs-regexp">/software_portable/y</span>outube/archive.txt<br></code></pre></td></tr></table></figure>
 
 <div class="note note-danger">
-            <p><font color='cornflowerblue'>–download-archive</font> <font color='red'>不支持</font> <code>%</code> 开头的转换说明符用作路径格式化，只能设置固定路径。</p>
+            <p><font color='cornflowerblue'>–download-archive</font> <font color='red'>不支持</font> 转换说明符用作路径格式化，只能设置固定路径。</p>
           </div>
 
 
@@ -1698,18 +1698,18 @@
 <li><font color='cornflowerblue'>youtube</font> 上编码质量最好的就是 <font color='cornflowerblue'>vp9</font> 和 <font color='cornflowerblue'>opus</font> </li>
 </ul>
 <p><a href="https://github.com/ytdl-org/youtube-dl#format-selection">官方文档 - 格式选择</a></p>
-<h3 id="3-2-6-字幕下载-选择-格式转换"><a href="#3-2-6-字幕下载-选择-格式转换" class="headerlink" title="3.2.6 字幕下载 选择 格式转换"></a>3.2.6 字幕下载 选择 格式转换</h3><p>常用配置</p>
+<h3 id="3-2-6-字幕下载-选择-格式转换"><a href="#3-2-6-字幕下载-选择-格式转换" class="headerlink" title="3.2.6 字幕下载 选择 格式转换"></a>3.2.6 字幕下载 选择 格式转换</h3><p><strong>常用配置</strong></p>
 <figure class="highlight avrasm"><table><tr><td class="code"><pre><code class="hljs avrasm"><span class="hljs-meta"># download sub</span><br>--write-<span class="hljs-keyword">sub</span><br><span class="hljs-meta"># set download sub language</span><br>--<span class="hljs-keyword">sub</span>-lang <span class="hljs-built_in">zh</span>-CN,<span class="hljs-built_in">zh</span>-TW,<span class="hljs-built_in">zh</span>-Hans,<span class="hljs-built_in">zh</span>-Hant,<span class="hljs-built_in">zh</span>-HK,en<br><span class="hljs-meta"># convert vtt to srt</span><br>--convert-subtitles srt<br></code></pre></td></tr></table></figure>
 
 <ul>
 <li><font color='cornflowerblue'>–write-sub</font> 下载的 <font color='cornflowerblue'>youtube</font> 字幕默认是 <font color='cornflowerblue'>vtt</font> 格式，目前支持该格式的字幕滤镜非常少（已知的只有 <font color='cornflowerblue'>pinterf</font> 魔改的 <a href="https://github.com/pinterf/xy-VSFilter/releases">XySubFilter</a>），考虑各平台兼容性转制为 <font color='cornflowerblue'>srt</font> 格式</li>
 <li><font color='cornflowerblue'>–convert-subtitles srt</font> 能够自动在视频下载完成后将 <font color='cornflowerblue'>vtt</font> 格式的字幕转换为 <font color='cornflowerblue'>srt</font> 格式并删除原档</li>
 <li><font color='cornflowerblue'>–sub-lang</font> 用于设定下载的字幕语言，基本简繁字幕的标签就是 <font color='cornflowerblue'>zh-CN,zh-TW,zh-Hans,zh-Hant,zh-HK</font> ，还有可能常用的也就是 <font color='cornflowerblue'>en</font> 和 <font color='cornflowerblue'>ja</font></li>
-<li> <font color='cornflowerblue'>–embed-subs</font> 可以直接将字幕封入视频，但封入后字幕标签会全部显示为 <font color='cornflowerblue'>chinese</font> ，而且无法再对字幕做调整。</li>
+<li> <font color='cornflowerblue'>–embed-subs</font> 可以直接将字幕封入视频，但封装后字幕语言标签会丢失</li>
 </ul>
 <p>例1：有字幕但下载不到</p>
 <ul>
-<li>可能是用了不常见的标签，<font color='cornflowerblue'>cmd</font> 传参： </li>
+<li>视频有字幕但没下载，可能是用了未包含于配置的标签，<font color='cornflowerblue'>cmd</font> 传参： </li>
 </ul>
 <figure class="highlight brainfuck"><table><tr><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">youtube</span><span class="hljs-literal">-</span><span class="hljs-comment">dl</span> --<span class="hljs-comment">ignore</span><span class="hljs-literal">-</span><span class="hljs-comment">config</span> --<span class="hljs-comment">list</span><span class="hljs-literal">-</span><span class="hljs-comment">subs</span> &lt;<span class="hljs-comment">url</span>&gt;<br></code></pre></td></tr></table></figure>
 
